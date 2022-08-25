@@ -9,8 +9,8 @@ description:
   requirements:
     - SQLLite
   toc:
-    - Прво поглавље
-    - Друго поглавље
+    - Основно о базама података
+    - Пројектовање
   externalLinks:  
     - text: SQLLite
       href: https://www.sqlite.org/download.html
@@ -19,22 +19,79 @@ description:
   shortDescription: Базе података за трећи разред специјализованих ИТ одељења
 
 lessons:
-  - title: Lesson 1
+  - title: Основно о базама података
     guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
-    description: Your first lesson. Description is not required attribute
-    folder: 1_Lesson
+    folder: 1_0_Osnovno o bazama podataka
     activities:
       - type: reading
-        title: Intro
-        file: intro.rst 
-        description: #Optional
+        title: Основно о базама података - лекција
+        file: 1_01_Osnovno o bazama podataka_lekcija.rst
         guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
-      - type: video
-        title: Video activity for your lesson
-        decription: Nice video
-        url: https://www.youtube.com/watch?v=2KYuzJKemXw
-        guid: 978760d0-a133-4ffd-af30-85fdb38aa384
       - type: quiz
-        title: Test your students
-        file: quiz.rst
-        guid: dd96bf63-e558-4540-95a6-00b96e45e3ef
+        title: Основно о базама података - квиз
+        file: 1_02_Osnovno o bazama podataka_kviz.rst
+        guid: dd96bf63-e558-4540-95a6-00b96e45e3ef      
+      - type: reading
+        title: Системи за управљање базом података
+        file: 1_03_SUBP_lekcija.rst
+        guid: 9b4a5360-36a7-47c2-858a-a378ad29f0e2 
+  -  title: Пројектовање
+     guid: 60fbd3d6-d1ae-454f-a2f6-63f9c9c8fc1f
+     folder: 2_0_Projektovanje
+     activities:
+      - type: reading
+        title: Ентитети и инстанце
+        file: 2_01_Projektovanje_entiteti i instance.rst
+        guid: af249ec5-2a13-4a0a-8eb3-5abadf28b50c
+      - type: reading
+        title: Атрибути
+        file: 2_02_Projektovanje_atributi.rst
+        guid: 3f0fab54-846b-4389-86c2-e2ec54517379
+      - type: quiz
+        title: Ентитети, инстанце и атрибути - квиз
+        file: 2_03_Projektovanje_eia_kviz.rst
+        guid: d99bec7e-9027-4240-a20c-d411bdf1486a
+      - type: reading
+        title: Везе
+        file: 2_04_Projektovanje_veze.rst
+        guid: 1429e309-adf6-4fa8-a7e5-263928162049
+      - type: quiz
+        title: Везе - квиз
+        file: 2_05_Projektovanje_veze_kviz.rst
+        guid: bf6b0308-92ba-49e6-9f91-db8b8586243f
+      - type: reading
+        title: Посебне ситуације на моделу
+        file: 2_06_Projektovanje_posebne situacije.rst
+        guid: d6b53964-f25d-46e0-aa00-9d543a2c250b
+      - type: reading
+        title: Модел и додатна документација
+        file: 2_07_Projektovanje_model i dodatna dokumentacija.rst
+        guid: ce7b4ff1-49c3-498e-b308-9d1f5e5e8ace
+  -  title: Задаци
+     guid: 0af9a981-7192-46c0-b77c-84ba8c5fdd01
+     folder: 2_1_Zadaci
+     activities:
+      - type: reading
+        title: Задаци - упутство
+        file: 2_11_Zadaci_uputstvo.rst
+        guid: 1a54effa-4327-45bb-86f2-7517fa5b5477
+      - type: reading
+        title: Задаци са два ентитета
+        file: 2_12_Zadaci sa dva entiteta.rst
+        guid: 74769860-46e5-4acf-872e-72d06c6f8783
+      - type: reading
+        title: Задаци 1-М
+        file: 2_13_Zadaci 1-M.rst
+        guid: 0e4789f8-7f55-4e13-a07f-d6267fa7f893
+      - type: reading
+        title: Задаци M-М
+        file: 2_14_Zadaci M-M.rst
+        guid: efbfebfe-5aab-41b7-9234-c58479f59135
+      - type: reading
+        title: Разни задаци
+        file: 2_15_Zadaci razni.rst
+        guid: 8a2ddf2d-256f-44a6-96e6-f1f3f32ef8dc
+      - type: reading
+        title: Нерешени задаци
+        file: 2_16_Zadaci nereseni.rst
+        guid: ae91319d-45b8-4f02-9d14-ef4b686c3adb
