@@ -11,6 +11,10 @@ description:
   toc:
     - Основно о базама података
     - Пројектовање
+    - Задаци
+    - Нормализација
+    - Дизајн табела у бази података
+
   externalLinks:  
     - text: SQLLite
       href: https://www.sqlite.org/download.html
@@ -95,3 +99,36 @@ lessons:
         title: Нерешени задаци
         file: 2_16_Zadaci nereseni.rst
         guid: ae91319d-45b8-4f02-9d14-ef4b686c3adb
+  -  title: Нормализација
+     guid: e3f281aa-f4a4-4bdc-b4e4-7c2484393845
+     folder: 2_2_Normalizacija
+     activities:
+      - type: reading
+        title: Нормализација
+        file: 2_21_Normalizacija_lekcija.rst
+        guid: 855f0a0d-b8be-4ff7-9065-4fc68ee2f4ef
+      - type: reading
+        title: Нормализација - задаци
+        file: 2_21_Normalizacija_zadaci.rst
+        guid: ab294619-9125-48d6-92e6-6d466d3cb1b7
+  -  title: Дизајн табела у бази података
+     guid: 54ff11d4-13ba-4417-8c74-107cb22068a7
+     folder: 2_3_Dizajn tabela
+     activities:
+      - type: reading
+        title: Дизајн табела у бази података - ентитети и веза 1:M
+        file: 2_31_Dizajn tabela_entiteti i veza 1M.rst
+        guid: 81551a17-7c0e-4607-b315-22dbd81e9a56
+      - type: reading
+        title: Дизајн табела у бази података - везе 1:1 и M:M
+        file: 2_32_Dizajn tabela_veze 11 i MM.rst
+        guid: 0d92e102-f57b-4274-a6e9-e94499cde935  
+      - type: reading
+        title: Дизајн табела у бази података - надтип са подтиповима
+        file: 2_33_Dizajn tabela_nadtip sa podtipovima.rst
+        guid: 6f783303-da3b-4bcb-84b5-5f0988f20f22    
+      - type: reading
+        title: Дизајн табела у бази података - задаци
+        file: 2_34_Dizajn tabela_zadaci.rst
+        guid: 159e24af-a34f-4cbf-b59e-7ddea3161672           
+        
