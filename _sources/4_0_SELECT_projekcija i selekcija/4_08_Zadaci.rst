@@ -110,10 +110,10 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
 .. reveal:: 4082
     :showtitle: Прикажи решење 
     :hidetitle: Сакриј
-     
+
  ::
 
-   SELECT adresa FROM proizvodjaci
+   SELECT naziv, opis FROM proizvodjaci
    WHERE naziv='Dacia'
 
  .. image:: ../../_images/slika_408k.png
@@ -130,7 +130,7 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
 
  ::
 
-   SELECT naziv FROM kategorije 
+   SELECT naziv, opis FROM kategorije
    WHERE id_kategorije=3
 
  .. image:: ../../_images/slika_408l.png
@@ -142,17 +142,17 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
  Написати упит којим се приказују ознака модела и јачина мотора за све аутомобиле који користе дизел.
 
 .. reveal:: 4084
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
+	:showtitle: Прикажи решење 
+	:hidetitle: Сакриј
 
  ::
 
-   SELECT oznaka, jacina_motora FROM modeli
-   WHERE tip_goriva='dizel'
+	SELECT oznaka, jacina_motora FROM modeli
+	WHERE tip_goriva='dizel'
 
  .. image:: ../../_images/slika_408m.png
-   :width: 400
-   :align: center
+		:width: 400
+		:align: center
 
 .. questionnote::
 
@@ -223,3 +223,4 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
  .. image:: ../../_images/slika_408q.png
    :width: 400
    :align: center
+
