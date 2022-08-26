@@ -90,3 +90,5 @@ PROIZVOD: #id, naziv, cena.
 
 PROIZVOĐAČ: #id_proizvoda, naziv, PIB, adresa.
 
+
+

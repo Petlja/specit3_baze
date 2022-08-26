@@ -14,6 +14,14 @@ description:
     - Задаци
     - Нормализација
     - Дизајн табела у бази података
+    - Пример моделовања - факултет
+    - Пример моделовања - продаја дигиталних композиција
+    - Креирање табела
+    - База података библиотеке
+    - Упит SELECT - пројекција и селекција
+    - Упит SELECT - функције и подупити
+    - Продаја дигиталних композиција - база
+    - Погледи
 
   externalLinks:  
     - text: SQLLite
@@ -131,4 +139,227 @@ lessons:
         title: Дизајн табела у бази података - задаци
         file: 2_34_Dizajn tabela_zadaci.rst
         guid: 159e24af-a34f-4cbf-b59e-7ddea3161672           
-        
+  -  title: Пример моделовања - факултет
+     guid: 089ab44d-75bb-48ed-b252-b57a4b3cfa9f
+     folder: 2_4_Model baze za fakultet
+     activities:
+      - type: reading
+        title: Пример моделовања - факултет
+        file: 2_41_Model baze za fakultet.rst
+        guid: 8ec46790-d6fc-4e53-8b15-9eea01ef9b02    
+  -  title: Пример моделовања - продаја дигиталних композиција
+     guid: bec23ecd-314a-4ccc-ba65-78b94eb0570b
+     folder: 2_5_Model baze za pesme
+     activities:
+      - type: reading
+        title: Пример моделовања - продаја дигиталних композиција
+        file: 2_51_ Model baze za muziku.rst
+        guid: bb4e905a-9a5f-4360-afc7-fd1448a87030    
+      - type: reading
+        title: Пројектни задатак
+        file: 2_52_Projektni zadatak.rst
+        guid: 44f23abc-fa33-4ffa-9e57-f562163973da       
+  -  title: Креирање табела
+     guid: 4ae36f28-6adb-4503-81d6-cbcc5ec439c2
+     folder: 3_0_Kreiranje tabela_CREATE TABLE
+     activities: 
+      - type: reading
+        title: Команда CREATE TABLE
+        file: 3_01_Komanda CREATE TABLE.rst
+        guid: ae3e3d8c-2f96-48df-a0a3-d0667ef585c5
+      - type: reading
+        title: Креирање табела - команда CREATE TABLE и везе 1:M и M:M
+        file: 3_02_Komanda CREATE TABLE i veze 1M i MM.rst
+        guid: acd12de1-bf51-45dc-b94d-b20b2a342549    
+      - type: reading
+        title: Креирање табела - команда CREATE TABLE - примери
+        file: 3_03_Komanda CREATE TABLE_primeri.rst
+        guid: 53b74ea3-ef59-4226-a443-ffd268ea85a4   
+      - type: quiz
+        title: Креирање табела - команда CREATE TABLE - квиз
+        file: 3_04_Komanda CREATE TABLE_kviz.rst
+        guid: 8dd3abe4-297e-4b5f-9bdc-846b955bdfa7  
+      - type: reading
+        title: Задатак
+        file: 3_05_Komanda CREATE TABLE_zadatak.rst
+        guid: 71390859-703b-488a-8415-6c0f1aaf5180  
+      - type: reading
+        title: Креирање базе помоћу алата SQL Server Management Studio
+        file: 3_06_SQL Server Management Studio.rst
+        guid: 070c8d20-cc1f-4c17-aede-a0b67e040419 
+      - type: reading
+        title: Креирање база - команде CREATE ALTER TABLE и DROP TABLE
+        file: 3_07_CREATE ALTER TABLE i DROP TABLE.rst
+        guid: 26692ab5-f29e-4507-8675-2d0011e57df0
+      - type: reading
+        title: Рад са подацима
+        file: 3_08_Rad sa podacima.rst
+        guid: a5068a93-b140-4582-9128-198039fb6f0a 
+      - type: quiz
+        title: Рад са подацима - квиз
+        file: 3_09_Rad sa podacima_kviz.rst
+        guid: 21d64374-2987-4f93-9bd7-47268e57f065         
+      - type: reading
+        title: Задатак
+        file: 3_010_Zadatak.rst
+        guid: 3f549e29-f99d-4f35-94b8-024c04193b78
+  -  title: База података библиотеке
+     guid: 2d7d53e4-bb76-462f-a602-d97da12e1891
+     folder: 3_1_Baza podataka biblioteke
+     activities: 
+      - type: reading
+        title: База података библиотеке - преглед модела и базе
+        file: 3_11_Pregled modela i baze.rst
+        guid: 76f724a8-97a5-40a0-aaef-2cc557344f6a  
+      - type: reading
+        title: База података библиотеке - креирање базе и табела
+        file: 3_12_Kreiranje baze i tabela.rst
+        guid: b2f70053-adaf-455a-8509-c00c52a4547f       
+      - type: reading
+        title: База података библиотеке - унос података
+        file: 3_13_Unos podataka.rst
+        guid: 09c4ad56-5ee5-4aad-b14c-2552e9e8e1ed
+      - type: reading
+        title: База података библиотеке - дијаграм
+        file: 3_14_Dijagram.rst
+        guid: e100e5da-6e6a-4294-9e28-acd955ede164
+      - type: reading
+        title: База података библиотеке - други начин за креирање базе
+        file: 3_15_Drugi nacin za kreiranje baze.rst
+        guid: 84135acb-cac9-4bee-893d-bcfec84b5ab7
+  -  title: Упит SELECT - пројекција и селекција
+     guid: 09106b60-2443-4c59-bd10-d6070b16e2af
+     folder: 4_0_SELECT_projekcija i selekcija
+     activities: 
+      - type: reading
+        title: Упит SELECT - упит из једне табеле - пројекција
+        file: 4_01_Upit iz jedne tabele_projekcija.rst
+        guid: 18c26bf6-a30d-4dc4-80a8-23e454c6c79e
+      - type: quiz
+        title: Упит SELECT - упит из једне табеле - пројекција - квиз
+        file: 4_02_Upit iz jedne tabele_projekcija_kviz.rst
+        guid: 85ffe184-edc8-496b-8556-87c9bfd4919b
+      - type: reading      
+        title: Упит SELECT - упит из једне табеле - пројекција - задаци
+        file: 4_03_Upit iz jedne tabele_projekcija_zadaci.rst
+        guid: 85d2a994-12e5-4452-8d94-4705caa4c373
+      - type: reading  
+        title: Упит SELECT - упит из једне табеле - селекција
+        file: 4_04_Upit iz jedne tabele_selekcija.rst
+        guid: 8bb3c29e-ed76-4ecf-b24b-5144f0b52612
+      - type: quiz
+        title: Упит SELECT - упит из једне табеле - селекција - квиз
+        file: 4_05_Upit iz jedne tabele_selekcija_kviz.rst
+        guid: 6c474399-a204-4a0a-bb13-08a7b2d3d474
+      - type: reading
+        title: Упит SELECT - упит из једне табеле - селекција - задаци
+        file: 4_06_Upit iz jedne tabele_selekcija_zadaci.rst
+        guid: 41d2b66e-ecad-411b-969b-3511de20f9ef    
+      - type: reading
+        title: Упит SELECT - упит из једне табеле - пројекција и селекција - задаци
+        file: 4_07_Upit iz jedne tabele_projekcija_selekcija_zadaci.rst
+        guid: adee1180-47ef-4f40-80c4-1e42ca6ae004  
+      - type: reading
+        title: Задаци
+        file: 4_08_Zadaci.rst
+        guid: 2abd43cb-cf05-4204-8517-2517759d0a74         
+  -  title: Упит SELECT - спајање табела
+     guid: b4338097-dd09-4d58-a355-38f30c386a64
+     folder: 4_1_SELECT_spajanje tabela
+     activities: 
+      - type: reading
+        title: Упит SELECT - спајање табела
+        file: 4_11_Spajanje tabela.rst
+        guid: d31daeb6-041b-4915-8aa9-d182be89a5ea   
+      - type: quiz
+        title: Упит SELECT - спајање табела - квиз
+        file: 4_12_Spajanje tabela_kviz.rst
+        guid: 3702abaf-cdc5-4928-b56c-6df4677e5853
+      - type: reading
+        title: Упит SELECT - спајање табела - задаци
+        file: 4_13_Spajanje tabela_zadaci.rst
+        guid: 4880495a-7b84-4ed8-9793-b7bf31fca79c  
+      - type: reading
+        title: Задаци
+        file: 4_14_Zadaci.rst
+        guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb  
+      - type: reading
+        title: Задаци
+        file: 4_14_Zadaci.rst
+        guid: 6f8d81bb-b856-4d9a-becb-40aaf88e24e2         
+  -  title: Упит SELECT - функције и подупити
+     guid: 45c17dca-df4a-4fe7-bd87-9f539dbd799e
+     folder: 4_2_SELECT_funkcije i podupiti
+     activities:                
+      - type: reading
+        title: Упит SELECT - употреба функција
+        file: 4_21_Upotreba funkcija.rst
+        guid: ee2d46f5-52d4-41a9-a7d4-1f9f366d6189  
+      - type: reading
+        title: Упит SELECT - употреба функција - задаци
+        file: 4_22_Upotreba funkcija_zadaci.rst
+        guid: ed21b380-c657-4cc6-bb28-c80760cd13f6  
+      - type: reading
+        title: Упит SELECT - подупити
+        file: 4_23_Podupiti.rst
+        guid: 1a9459b3-c618-4396-b178-e5cdf4906cdd    
+      - type: reading
+        title: Упит SELECT - подупити - задаци
+        file: 4_24_Podupiti_zadaci.rst
+        guid: 81741a81-b06c-4f3a-b642-873d04fa2682        
+  -  title: Продаја дигиталних композиција - база
+     guid: 93ef0f2d-d9c5-471e-8ddc-e992175faa1d
+     folder: 4_3_Baza Pesme
+     activities:          
+      - type: reading
+        title: База података за продају дигиталних композиција
+        file: 4_31_Kreiranje baze pesme_1.rst
+        guid: 7b2bd923-30a1-416d-af7f-b31d83f8ac31
+      - type: reading
+        title: База података за продају дигиталних композиција
+        file: 4_32_Kreiranje baze pesme_2.rst
+        guid: 8df796b0-3449-40a6-8514-f23ef1c5e9a3
+      - type: reading
+        title: Задаци - пројекција и селекција
+        file: 4_33_Zadaci_ projekcija i selekcija.rst
+        guid: f950ab15-0041-459b-9211-367843156e2c
+      - type: reading
+        title: Задаци - спајање табела
+        file: 4_34_Zadaci_ spajanje tabela.rst
+        guid: c413f14f-fae5-46a1-ac5d-87304065f08e
+      - type: reading
+        title: Задаци - групне функције и једна табела
+        file: 4_35_Zadaci_ grupne funkcije i jedna tabela.rst
+        guid: afe3e450-43a5-4115-8152-73f22aa0213b
+      - type: reading
+        title: Задаци - групне функције и спајање табела
+        file: 4_36_Zadaci_ grupne funkcije i spajanje tabela.rst
+        guid: f47d5ce0-b1f6-4d73-aa30-dbaa86dada6b
+  -  title: Погледи
+     guid: def95e99-5549-4261-9e56-9b68f84c7bc9
+     folder: 4_4_Pogledi
+     activities:  
+      - type: reading
+        title: Погледи
+        file: 4_41_Pogledi.rst
+        guid: 7bd669aa-9ca7-4f04-88d2-404201cfea5b
+  -  title: Пројектни задатак
+     guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
+     folder: 5_0_Projektni zadatak
+     activities:  
+      - type: reading
+        title: Погледи
+        file: 5_01_Projektni zadatak.rst
+        guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
+  -  title: Додаци
+     guid: d6871dd1-6ccd-4895-99d3-51d7a09d2072
+     folder: 6_0 Dodaci
+     activities:  
+      - type: reading
+        title: База података библиотеке – ORACLE
+        file: 6_01_DODATAK A_Оracle.rst
+        guid: 3a1d6709-1b4c-4d64-a258-acca0455cbf7
+      - type: reading
+        title: База података библиотеке – SQLLite
+        file: 6_02_DODATAK B_SQLLite.rst
+        guid: 4acdd986-d508-477b-bb46-2b69dd16e512
