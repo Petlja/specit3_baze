@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Упит SELECT - спајање табела</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'specit3_baze';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'specit3_baze';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sqlite.org/download.html" target="_blank">SQLLite</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Базе података за трећи разред специјализованих ИТ одељења</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_0_Osnovno%20o%20bazama%20podataka>
+                    <h5>Основно о базама података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_0_Osnovno%20o%20bazama%20podataka/1_01_Osnovno%20o%20bazama%20podataka_lekcija.html><div class="studioLecture" id=activity-1_01_Osnovno%20o%20bazama%20podataka_lekcija><i class="fas fa-file-alt activity-icon"></i>Основно о базама података - лекција</div></a>
+                <a href=../1_0_Osnovno%20o%20bazama%20podataka/1_02_Osnovno%20o%20bazama%20podataka_kviz.html><div class="studioLecture" id=activity-1_02_Osnovno%20o%20bazama%20podataka_kviz><i class="far fa-question-circle activity-icon"></i>Основно о базама података - квиз</div></a>
+                <a href=../1_0_Osnovno%20o%20bazama%20podataka/1_03_SUBP_lekcija.html><div class="studioLecture" id=activity-1_03_SUBP_lekcija><i class="fas fa-file-alt activity-icon"></i>Системи за управљање базом података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_0_Projektovanje>
+                    <h5>Пројектовање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_0_Projektovanje/2_01_Projektovanje_entiteti%20i%20instance.html><div class="studioLecture" id=activity-2_01_Projektovanje_entiteti%20i%20instance><i class="fas fa-file-alt activity-icon"></i>Ентитети и инстанце</div></a>
+                <a href=../2_0_Projektovanje/2_02_Projektovanje_atributi.html><div class="studioLecture" id=activity-2_02_Projektovanje_atributi><i class="fas fa-file-alt activity-icon"></i>Атрибути</div></a>
+                <a href=../2_0_Projektovanje/2_03_Projektovanje_eia_kviz.html><div class="studioLecture" id=activity-2_03_Projektovanje_eia_kviz><i class="far fa-question-circle activity-icon"></i>Ентитети, инстанце и атрибути - квиз</div></a>
+                <a href=../2_0_Projektovanje/2_04_Projektovanje_veze.html><div class="studioLecture" id=activity-2_04_Projektovanje_veze><i class="fas fa-file-alt activity-icon"></i>Везе</div></a>
+                <a href=../2_0_Projektovanje/2_05_Projektovanje_veze_kviz.html><div class="studioLecture" id=activity-2_05_Projektovanje_veze_kviz><i class="far fa-question-circle activity-icon"></i>Везе - квиз</div></a>
+                <a href=../2_0_Projektovanje/2_06_Projektovanje_posebne%20situacije.html><div class="studioLecture" id=activity-2_06_Projektovanje_posebne%20situacije><i class="fas fa-file-alt activity-icon"></i>Посебне ситуације на моделу</div></a>
+                <a href=../2_0_Projektovanje/2_07_Projektovanje_model%20i%20dodatna%20dokumentacija.html><div class="studioLecture" id=activity-2_07_Projektovanje_model%20i%20dodatna%20dokumentacija><i class="fas fa-file-alt activity-icon"></i>Модел и додатна документација</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_1_Zadaci>
+                    <h5>Задаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_1_Zadaci/2_11_Zadaci_uputstvo.html><div class="studioLecture" id=activity-2_11_Zadaci_uputstvo><i class="fas fa-file-alt activity-icon"></i>Задаци - упутство</div></a>
+                <a href=../2_1_Zadaci/2_12_Zadaci%20sa%20dva%20entiteta.html><div class="studioLecture" id=activity-2_12_Zadaci%20sa%20dva%20entiteta><i class="fas fa-file-alt activity-icon"></i>Задаци са два ентитета</div></a>
+                <a href=../2_1_Zadaci/2_13_Zadaci%201-M.html><div class="studioLecture" id=activity-2_13_Zadaci%201-M><i class="fas fa-file-alt activity-icon"></i>Задаци 1-М</div></a>
+                <a href=../2_1_Zadaci/2_14_Zadaci%20M-M.html><div class="studioLecture" id=activity-2_14_Zadaci%20M-M><i class="fas fa-file-alt activity-icon"></i>Задаци M-М</div></a>
+                <a href=../2_1_Zadaci/2_15_Zadaci%20razni.html><div class="studioLecture" id=activity-2_15_Zadaci%20razni><i class="fas fa-file-alt activity-icon"></i>Разни задаци</div></a>
+                <a href=../2_1_Zadaci/2_16_Zadaci%20nereseni.html><div class="studioLecture" id=activity-2_16_Zadaci%20nereseni><i class="fas fa-file-alt activity-icon"></i>Нерешени задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_2_Normalizacija>
+                    <h5>Нормализација</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_2_Normalizacija/2_21_Normalizacija_lekcija.html><div class="studioLecture" id=activity-2_21_Normalizacija_lekcija><i class="fas fa-file-alt activity-icon"></i>Нормализација</div></a>
+                <a href=../2_2_Normalizacija/2_21_Normalizacija_zadaci.html><div class="studioLecture" id=activity-2_21_Normalizacija_zadaci><i class="fas fa-file-alt activity-icon"></i>Нормализација - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_3_Dizajn%20tabela>
+                    <h5>Дизајн табела у бази података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_3_Dizajn%20tabela/2_31_Dizajn%20tabela_entiteti%20i%20veza%201M.html><div class="studioLecture" id=activity-2_31_Dizajn%20tabela_entiteti%20i%20veza%201M><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - ентитети и веза 1:M</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_32_Dizajn%20tabela_veze%2011%20i%20MM.html><div class="studioLecture" id=activity-2_32_Dizajn%20tabela_veze%2011%20i%20MM><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - везе 1:1 и M:M</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_33_Dizajn%20tabela_nadtip%20sa%20podtipovima.html><div class="studioLecture" id=activity-2_33_Dizajn%20tabela_nadtip%20sa%20podtipovima><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - надтип са подтиповима</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_34_Dizajn%20tabela_zadaci.html><div class="studioLecture" id=activity-2_34_Dizajn%20tabela_zadaci><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_4_Model%20baze%20za%20fakultet>
+                    <h5>Пример моделовања - факултет</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_4_Model%20baze%20za%20fakultet/2_41_Model%20baze%20za%20fakultet.html><div class="studioLecture" id=activity-2_41_Model%20baze%20za%20fakultet><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - факултет</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                    <h5>Пример моделовања - продаја дигиталних композиција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_0_Kreiranje%20tabela_CREATE%20TABLE>
+                    <h5>Креирање табела</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_01_Komanda%20CREATE%20TABLE.html><div class="studioLecture" id=activity-3_01_Komanda%20CREATE%20TABLE><i class="fas fa-file-alt activity-icon"></i>Команда CREATE TABLE</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_02_Komanda%20CREATE%20TABLE%20i%20veze%201M%20i%20MM.html><div class="studioLecture" id=activity-3_02_Komanda%20CREATE%20TABLE%20i%20veze%201M%20i%20MM><i class="fas fa-file-alt activity-icon"></i>Креирање табела - команда CREATE TABLE и везе 1:M и M:M</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_03_Komanda%20CREATE%20TABLE_primeri.html><div class="studioLecture" id=activity-3_03_Komanda%20CREATE%20TABLE_primeri><i class="fas fa-file-alt activity-icon"></i>Креирање табела - команда CREATE TABLE - примери</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_04_Komanda%20CREATE%20TABLE_kviz.html><div class="studioLecture" id=activity-3_04_Komanda%20CREATE%20TABLE_kviz><i class="far fa-question-circle activity-icon"></i>Креирање табела - команда CREATE TABLE - квиз</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_05_Komanda%20CREATE%20TABLE_zadatak.html><div class="studioLecture" id=activity-3_05_Komanda%20CREATE%20TABLE_zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_06_SQL%20Server%20Management%20Studio.html><div class="studioLecture" id=activity-3_06_SQL%20Server%20Management%20Studio><i class="fas fa-file-alt activity-icon"></i>Креирање базе помоћу алата SQL Server Management Studio</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE.html><div class="studioLecture" id=activity-3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE><i class="fas fa-file-alt activity-icon"></i>Креирање база - команде CREATE ALTER TABLE и DROP TABLE</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_08_Rad%20sa%20podacima.html><div class="studioLecture" id=activity-3_08_Rad%20sa%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са подацима</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_09_Rad%20sa%20podacima_kviz.html><div class="studioLecture" id=activity-3_09_Rad%20sa%20podacima_kviz><i class="far fa-question-circle activity-icon"></i>Рад са подацима - квиз</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_010_Zadatak.html><div class="studioLecture" id=activity-3_010_Zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_1_Baza%20podataka%20biblioteke>
+                    <h5>База података библиотеке</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_1_Baza%20podataka%20biblioteke/3_11_Pregled%20modela%20i%20baze.html><div class="studioLecture" id=activity-3_11_Pregled%20modela%20i%20baze><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - преглед модела и базе</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_12_Kreiranje%20baze%20i%20tabela.html><div class="studioLecture" id=activity-3_12_Kreiranje%20baze%20i%20tabela><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - креирање базе и табела</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_13_Unos%20podataka.html><div class="studioLecture" id=activity-3_13_Unos%20podataka><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - унос података</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_14_Dijagram.html><div class="studioLecture" id=activity-3_14_Dijagram><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - дијаграм</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_15_Drugi%20nacin%20za%20kreiranje%20baze.html><div class="studioLecture" id=activity-3_15_Drugi%20nacin%20za%20kreiranje%20baze><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - други начин за креирање базе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_0_SELECT_projekcija%20i%20selekcija>
+                    <h5>Упит SELECT - пројекција и селекција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_0_SELECT_projekcija%20i%20selekcija/4_01_Upit%20iz%20jedne%20tabele_projekcija.html><div class="studioLecture" id=activity-4_01_Upit%20iz%20jedne%20tabele_projekcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_02_Upit%20iz%20jedne%20tabele_projekcija_kviz.html><div class="studioLecture" id=activity-4_02_Upit%20iz%20jedne%20tabele_projekcija_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција - квиз</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_03_Upit%20iz%20jedne%20tabele_projekcija_zadaci.html><div class="studioLecture" id=activity-4_03_Upit%20iz%20jedne%20tabele_projekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_04_Upit%20iz%20jedne%20tabele_selekcija.html><div class="studioLecture" id=activity-4_04_Upit%20iz%20jedne%20tabele_selekcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - селекција</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_05_Upit%20iz%20jedne%20tabele_selekcija_kviz.html><div class="studioLecture" id=activity-4_05_Upit%20iz%20jedne%20tabele_selekcija_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - упит из једне табеле - селекција - квиз</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_06_Upit%20iz%20jedne%20tabele_selekcija_zadaci.html><div class="studioLecture" id=activity-4_06_Upit%20iz%20jedne%20tabele_selekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - селекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_07_Upit%20iz%20jedne%20tabele_projekcija_selekcija_zadaci.html><div class="studioLecture" id=activity-4_07_Upit%20iz%20jedne%20tabele_projekcija_selekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција и селекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_08_Zadaci.html><div class="studioLecture" id=activity-4_08_Zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_1_SELECT_spajanje%20tabela>
+                    <h5>Упит SELECT - спајање табела</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_1_SELECT_spajanje%20tabela/4_11_Spajanje%20tabela.html><div class="studioLecture" id=activity-4_11_Spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - спајање табела</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_12_Spajanje%20tabela_kviz.html><div class="studioLecture" id=activity-4_12_Spajanje%20tabela_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - спајање табела - квиз</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_13_Spajanje%20tabela_zadaci.html><div class="studioLecture" id=activity-4_13_Spajanje%20tabela_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - спајање табела - задаци</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_14_Zadaci.html><div class="studioLecture" id=activity-4_14_Zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_2_SELECT_funkcije%20i%20podupiti>
+                    <h5>Упит SELECT - функције и подупити</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_2_SELECT_funkcije%20i%20podupiti/4_21_Upotreba%20funkcija.html><div class="studioLecture" id=activity-4_21_Upotreba%20funkcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - употреба функција</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_22_Upotreba%20funkcija_zadaci.html><div class="studioLecture" id=activity-4_22_Upotreba%20funkcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - употреба функција - задаци</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_23_Podupiti.html><div class="studioLecture" id=activity-4_23_Podupiti><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - подупити</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_24_Podupiti_zadaci.html><div class="studioLecture" id=activity-4_24_Podupiti_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - подупити - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_3_Baza%20Pesme>
+                    <h5>Продаја дигиталних композиција - база</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_3_Baza%20Pesme/4_31_Kreiranje%20baze%20pesme_1.html><div class="studioLecture" id=activity-4_31_Kreiranje%20baze%20pesme_1><i class="fas fa-file-alt activity-icon"></i>База података за продају дигиталних композиција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_32_Kreiranje%20baze%20pesme_2.html><div class="studioLecture" id=activity-4_32_Kreiranje%20baze%20pesme_2><i class="fas fa-file-alt activity-icon"></i>База података за продају дигиталних композиција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_33_Zadaci_%20projekcija%20i%20selekcija.html><div class="studioLecture" id=activity-4_33_Zadaci_%20projekcija%20i%20selekcija><i class="fas fa-file-alt activity-icon"></i>Задаци - пројекција и селекција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_34_Zadaci_%20spajanje%20tabela.html><div class="studioLecture" id=activity-4_34_Zadaci_%20spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - спајање табела</div></a>
+                <a href=../4_3_Baza%20Pesme/4_35_Zadaci_%20grupne%20funkcije%20i%20jedna%20tabela.html><div class="studioLecture" id=activity-4_35_Zadaci_%20grupne%20funkcije%20i%20jedna%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - групне функције и једна табела</div></a>
+                <a href=../4_3_Baza%20Pesme/4_36_Zadaci_%20grupne%20funkcije%20i%20spajanje%20tabela.html><div class="studioLecture" id=activity-4_36_Zadaci_%20grupne%20funkcije%20i%20spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - групне функције и спајање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_4_Pogledi>
+                    <h5>Погледи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_4_Pogledi/4_41_Pogledi.html><div class="studioLecture" id=activity-4_41_Pogledi><i class="fas fa-file-alt activity-icon"></i>Погледи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_0_Projektni%20zadatak>
+                    <h5>Пројектни задатак</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_0_Projektni%20zadatak/5_01_Projektni%20zadatak.html><div class="studioLecture" id=activity-5_01_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Погледи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_0%20Dodaci>
+                    <h5>Додаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="select">
+<h1>Упит SELECT - спајање табела<a class="headerlink" href="#select" title="Permalink to this headline">¶</a></h1>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Подаци који се иначе виде заједно на једном месту, у бази података се чувају у различитим
+табелама. Већ смо анализирали, на пример, корице једног примерка књиге. На тим корицама је
+назив књиге, као и основни подаци о ауторима и издавачу. Сви ови подаци се у бази података,
+што смо већ научили, чувају у четири табеле: knjige, autori, izdavaci и primerci. Ово је
+веома важно и максимално спречава непотребно понављање података и смањује могућност за
+настајање разних грешака.</p>
+<p>Међутим, када претражујемо базу, нама су за исти извештај најчешће потребни подаци из
+различитих табела. Да бисмо то постигли, треба да правилно спојимо табеле. Не би било добро
+ако бисмо, на пример, повезали име аутора са књигом коју није написао, или књигу са
+издавачем који је није објавио. Важно је да се добро савлада правилно упаривање података
+из различитих табела које су повезане системом страних и одговарајућих примарних кључева.</p>
+
+    </div></div>
+<p>Увек прво треба проверити да ли се сви подаци који су нам неопходни да изградимо упит налазе
+у једној табели. Ако је то случај, спајање табела нам није потребно. Међутим, најчешће за
+исти упит тражимо податке који се налазе у различитим табелама, тако да је спајање табела
+изузетно важно.</p>
+<p>Упознаћемо могућности упита SELECT који узима податке из више табела кроз пример базе података
+библиотеке. Следи списак свих табела са колонама. Примарни кључеви су истакнути болдом, а страни
+италиком.</p>
+<a class="reference internal image-reference" href="../_images/slika_4011.png"><img alt="../_images/slika_4011.png" class="align-center" src="../_images/slika_4011.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_401a1.png"><img alt="../_images/slika_401a1.png" class="align-center" src="../_images/slika_401a1.png" style="width: 780px;" /></a>
+<p>Упити се пишу и покрећу када се кликне <em>New Query</em> након што се покрене систем <em>SQL Server</em>
+и кликне на креирану базу <em>Biblioteka</em> у прозору <em>Object Explorer</em>. Фајл са упитима
+<em>SQLQuery1.sql</em> може, али и не мора да се сачува.</p>
+<p>Након што се унесе једна команда, кликне се на дугме <em>Execute</em>. Уколико се у простору за
+писање команди налази више њих, потребно је обележити ону коју желимо да покренемо. Ако
+има више база података, обавезно проверити да ли је поред овог дугмета назив базе у којој
+желите да вршите упите.</p>
+<a class="reference internal image-reference" href="../_images/slika_401b1.png"><img alt="../_images/slika_401b1.png" class="align-center" src="../_images/slika_401b1.png" style="width: 390px;" /></a>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<ol class="arabic simple">
+<li><p>Написати упит којим се, уз презиме члана, приказују износ и година плаћене чланарине.</p></li>
+</ol>
+
+    </p></div></div>
+<p>Ова два података се налазе у различитим табелама које су повезане. Потребно је спојити те
+табеле и то тако што се упореде по једнакости вредности страног кључа и одговарајућег
+примарног кључа. У овом случају стани кључ је колона <em>broj_clanske_karte</em>, која се налази у
+табели <em>clanarine</em>, а примарни кључ је колона која се зове исто <em>broj_clanske_karte</em> и налази
+се у табели <em>clanovi</em>. Након кључне речи FROM наводимо називе табела које спајамо и између
+кључну реч JOIN, после чега следе кључна реч ON и услов спајања. Како у ове две табеле
+постоје колоне које се зову исто, када пишемо услов спајања, потребно је да испред назива
+колоне додамо и назив табеле да би се знало на коју колону се мисли.</p>
+<a class="reference internal image-reference" href="../_images/slika_411a.png"><img alt="../_images/slika_411a.png" class="align-center" src="../_images/slika_411a.png" style="width: 780px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">god</span><span class="p">,</span> <span class="n">iznos</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">clanarine</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">clanarine</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/slika_411b.png"><img alt="../_images/slika_411b.png" class="align-center" src="../_images/slika_411b.png" style="width: 390px;" /></a>
+<p>Потпуно је свеједно редослед којим напишемо табеле, па и следећи упит има исти резултат.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">god</span><span class="p">,</span> <span class="n">iznos</span>
+<span class="n">FROM</span> <span class="n">clanarine</span> <span class="n">JOIN</span> <span class="n">clanovi</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">clanarine</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Имајте на уму да је у делу упита где наводимо услов спајања након кључне речи ON прво
+наведена колона која је страни кључ clanarine.broj_clanske_karte, а затим колона која
+је одговарајући примарни кључ. Неће бити никакве разлике и ако променимо редослед, па
+и следећи упит има исти резултат.</p>
+<dl class="simple">
+<dt>::</dt><dd><p>SELECT prezime, god, iznos
+FROM clanarine JOIN clanovi
+ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
+</dd>
+</dl>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>2. Написати упит којим се, уз презиме и имејл адресу члана, приказују износ и година плаћене
+чланарине, али само за чланове који имају имејл адресу. Податке приказати уређене абецедно
+по презимену.</p>
+
+    </p></div></div>
+<p>Овај упит је проширење претходног и садржи селекцију којом бирамо само неке редове, као и
+сортирање резултата.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">god</span><span class="p">,</span> <span class="n">iznos</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">clanarine</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">clanarine</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">mejl_adresa</span> <span class="n">IS</span> <span class="n">NOT</span> <span class="n">NULL</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">prezime</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/slika_411c.png"><img alt="../_images/slika_411c.png" class="align-center" src="../_images/slika_411c.png" style="width: 390px;" /></a>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<ol class="arabic simple" start="3">
+<li><p>Написати упит којим се приказују назив књиге и назив њеног издавача.</p></li>
+</ol>
+
+    </p></div></div>
+<p>Ова два података се налазе у различитим табелама које су повезане. Потребно је спојити те табеле.</p>
+<a class="reference internal image-reference" href="../_images/slika_411d.png"><img alt="../_images/slika_411d.png" class="align-center" src="../_images/slika_411d.png" style="width: 780px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Knjiga&quot;</span><span class="p">,</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Izdavac&quot;</span>
+<span class="n">FROM</span> <span class="n">knjige</span> <span class="n">JOIN</span> <span class="n">izdavaci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="o">=</span><span class="n">izdavaci</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/slika_411e.png"><img alt="../_images/slika_411e.png" class="align-center" src="../_images/slika_411e.png" style="width: 620px;" /></a>
+<p>Како се у ове две табеле налазе две колоне <em>naziv</em> (једна се односи на назив књиге, а друга
+на назив издавача), обавезно испред имена колоне мора да се наведе име табеле. Како, међутим,
+у обе табеле постоји само једна колона <em>id_izdavaca</em> и само једна колона <em>id</em>, можемо да
+изоставимо називе табела испред назива колона, па упит може да се напише и на следећи начин.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Knjiga&quot;</span><span class="p">,</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Izdavac&quot;</span>
+<span class="n">FROM</span> <span class="n">knjige</span> <span class="n">JOIN</span> <span class="n">izdavaci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">id_izdavaca</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Можемо, ради краћег записа, табелама да доделимо нове кратке називе који се користе само у
+упиту. У наредном упиту ћемо табелу <em>knjige</em> назвати привремено <em>k</em>, а табелу <em>izdavaci</em> ћемо
+назвати <em>i</em>. У том случају свуда у упиту користимо кратке називе.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">k</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Knjiga&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Izdavac&quot;</span>
+<span class="n">FROM</span> <span class="n">knjige</span> <span class="n">k</span> <span class="n">JOIN</span> <span class="n">izdavaci</span> <span class="n">i</span> <span class="n">ON</span> <span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="o">=</span><span class="n">i</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<ol class="arabic simple" start="4">
+<li><p>Написати упит којим се приказују презиме запосленог и презиме његовог менаџера.</p></li>
+</ol>
+
+    </p></div></div>
+<p>Ови подаци, и презиме менаџера и презиме запосленог, налазе се у истој табели која има страни
+кључ <em>id_manadzera</em> који показује на примарни кључ исте табеле <em>id</em>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zaposleni</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">mejl</span><span class="p">,</span> <span class="n">datum_zaposlenja</span><span class="p">,</span> <span class="n">plata</span><span class="p">,</span> <span class="n">id_menadzera</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>У овој ситуацији је обавезна употреба кратких назива табела који се користе само у упиту.
+У упиту ћемо симулирати ситуацију као да имамо две табеле: једну из које читамо податке о
+запосленом, и другу из које читамо податке о његовом менаџеру.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">z</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Zaposleni&quot;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Menadzer&quot;</span>
+<span class="n">FROM</span> <span class="n">zaposleni</span> <span class="n">z</span> <span class="n">JOIN</span> <span class="n">zaposleni</span> <span class="n">m</span> <span class="n">ON</span> <span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">id_menadzera</span><span class="o">=</span><span class="n">m</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>5. Написати упит којим се приказују име и презиме члана, датум позајмице, инвентарски број
+примерка и идентификациони број књиге за све позајмице током месеца маја 2019. године.</p>
+
+    </p></div></div>
+<a class="reference internal image-reference" href="../_images/slika_411f.png"><img alt="../_images/slika_411f.png" class="align-center" src="../_images/slika_411f.png" style="width: 620px;" /></a>
+<p>Подаци које тражимо налазе се у три повезане табеле, па је потребно да их све три повежемо,
+тако што прво спојимо две, па онда урадимо и спајање са трећом.</p>
+<p>Неки од података, и то име и презиме члана, као и датум узимања књиге, налазе се у по једној
+од ове три табеле, тако да испред назива одговарајућих колона није неопходно додати назив табеле.
+Пошто колона <em>inventarski_broj</em>, коју такође желимо да испишемо, постоји у две табеле, <em>primerci</em>
+и <em>pozajmice</em>, потребно је додати назив табеле испред назива те колоне. Како спајамо по једнакости
+овог података, потпуно је свеједно који назив табеле додамо, тј. свеједно је да ли напишемо
+<em>primerci.inventarski_broj</em> или <em>pozajmice.inventarski_broj</em> у SELECT делу SELECT упита.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">datum_uzimanja</span>
+<span class="n">FROM</span> <span class="n">primerci</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">clanovi</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">datum_uzimanja</span><span class="o">&gt;=</span><span class="s1">&#39;2019-05-01&#39;</span> <span class="n">AND</span> <span class="n">datum_uzimanja</span><span class="o">&lt;=</span><span class="s1">&#39;2019-05-31&#39;</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/slika_411g.png"><img alt="../_images/slika_411g.png" class="align-center" src="../_images/slika_411g.png" style="width: 620px;" /></a>
+<p>Табеле смо могли да спојимо и другим редоследом, на пример:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">primerci</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">clanovi</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Или:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">clanovi</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Или:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Свеједно је којим редом спајамо табеле док год водимо рачуна о томе да спајамо табеле које
+су директно повезане. Дакле, у овом случају само нисмо могли да почнемо спајање тако што ћемо
+за прве две табеле које спајамо да изаберемо табеле <em>clanovi</em> и <em>primerci</em> зато што оне нису
+директно повезане системом страних и примарних кључева.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>6. Написати упит којим се приказују подаци о тренутно издатим књигама (текуће позајмице): име
+и презиме члана, датум позајмице, инвентарски број примерка и идентификациони број књиге.</p>
+
+    </p></div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">datum_uzimanja</span>
+<span class="n">FROM</span> <span class="n">primerci</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">clanovi</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">datum_vracanja</span> <span class="n">IS</span> <span class="n">NULL</span>
+</pre></div>
+</div>
+<p>Упит је сличан претходном, потребно је спојити три табеле, само што треба да се уради селекција
+оних редова код којих још нема датума враћања.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>7. Написати упит којим се приказују подаци о свим позајмицама: име и презиме члана, датум позајмице,
+инвентарски број узетог примерка и назив књиге.</p>
+
+    </p></div></div>
+<a class="reference internal image-reference" href="../_images/slika_411h.png"><img alt="../_images/slika_411h.png" class="align-center" src="../_images/slika_411h.png" style="width: 620px;" /></a>
+<p>Овај упит узима податке из четири повезане табеле па је потребно да спојимо две, које ћемо потом
+спојити са трећом, и на крају са четвртом.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">datum_uzimanja</span><span class="p">,</span> <span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">primerci</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<ol class="arabic simple" start="8">
+<li><p>Написати упит којим се приказују назив књиге и име аутора. Резултат уредити по називу књиге.</p></li>
+</ol>
+
+    </p></div></div>
+<a class="reference internal image-reference" href="../_images/slika_411i.png"><img alt="../_images/slika_411i.png" class="align-center" src="../_images/slika_411i.png" style="width: 780px;" /></a>
+<p>Иако су нам потребна два податка који се налазе у две различите табеле, назив књиге из табеле
+<em>knjige</em> и име аутора из табеле <em>autori</em>, ове табеле нису директно повезане па, да бисмо добили
+жељене податке, морамо да повежемо три табеле.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">naziv</span><span class="p">,</span> <span class="n">ime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">prezime</span> <span class="s2">&quot;Autor&quot;</span>
+<span class="n">FROM</span> <span class="n">autori</span> <span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">naziv</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<ol class="arabic simple" start="9">
+<li><p>Написати упит којим се приказују називи књигa чији је један од аутора Мијодраг Ђуришић.</p></li>
+</ol>
+
+    </p></div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">autori</span> <span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">ime</span><span class="o">=</span><span class="s1">&#39;Mijodrag&#39;</span> <span class="n">AND</span> <span class="n">prezime</span><span class="o">=</span><span class="s1">&#39;Djurisic&#39;</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>10. Написати упит којим се приказују називи књига које је из библиотеке узимао члан са бројем
+чланске карте 22, али без понављања. Дакле, уколико је члан током година колико је члан
+библиотеке узимао исту књигу неколико пута, назив те књиге треба да се прикаже само једном.</p>
+
+    </p></div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">primerci</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">primerci</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">broj_clanske_karte</span><span class="o">=</span><span class="mi">22</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>11. Написати упит којим се приказују имена чланова и имена аутора чије су књиге читали, без
+понављања (исти члан је могао да чита неколико књига истог аутора).</p>
+
+    </p></div></div>
+<p>У овом упиту је важно обратити пажњу на то да се у две различите табеле налазе колоне са
+истим називима и да је обавезно да се наведу називи табела из којих се узимају. Овај упит
+захтева и велики број спајања табела.</p>
+<a class="reference internal image-reference" href="../_images/slika_411j.png"><img alt="../_images/slika_411j.png" class="align-center" src="../_images/slika_411j.png" style="width: 780px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">clanovi</span><span class="o">.</span><span class="n">ime</span><span class="o">+</span><span class="s1">&#39;  &#39;</span><span class="o">+</span><span class="n">clanovi</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Clan&quot;</span><span class="p">,</span> <span class="n">autori</span><span class="o">.</span><span class="n">ime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">autori</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Autor&quot;</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">primerci</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">autori</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Овај упит, ради прегледности резултата, има смисла уредити или по имену члана, или по имену
+аутора, у зависности од тога како желимо да анализирамо извештај. Уколико желимо да за сваког
+члана видимо прегледно које је ауторе читао, онда ћемо уредити резултат по члану.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">clanovi</span><span class="o">.</span><span class="n">ime</span><span class="o">+</span><span class="s1">&#39;  &#39;</span><span class="o">+</span><span class="n">clanovi</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Clan&quot;</span><span class="p">,</span> <span class="n">autori</span><span class="o">.</span><span class="n">ime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">autori</span><span class="o">.</span><span class="n">prezime</span> <span class="s2">&quot;Autor&quot;</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">primerci</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
+<span class="n">JOIN</span> <span class="n">autori</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="s2">&quot;Clan&quot;</span>
+</pre></div>
+</div>
+<p>Ако желимо да за сваког аутора видимо који чланови су читали његове књиге, уредићемо резултат
+по аутору.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>12. Написати упит којим се приказују називи издавача и називи њихових књига. Приказати и издаваче
+чијих књига нема у библиотеци.</p>
+
+    </p></div></div>
+<p>Подразумевано спајање је унутрашње спајање, тј. приказаће се само подаци који су повезани са
+подацима у другој табели. Уколико покренемо следећи упит, приказаће се само издавачи чије књиге
+имамо у библиотеци.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span><span class="p">,</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">izdavaci</span> <span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">izdavaci</span><span class="o">.</span><span class="n">id</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Уколико желимо да се на списку појави и издавач чије књиге немамо, онда је потребно да нагласимо
+да желимо спољно спајање, <strong>FULL OUTER JOIN</strong>, којим се приказују и неупарени подаци.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span><span class="p">,</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">izdavaci</span> <span class="n">FULL</span> <span class="n">OUTER</span> <span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">izdavaci</span><span class="o">.</span><span class="n">id</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Да бисмо видели резултат рада овог упита, пре него што га покренете, додајте у табелу <em>izdavaci</em>
+још један ред, податке о издавачу чије књиге немамо у библиотеци.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSERT</span> <span class="n">INTO</span> <span class="n">izdavaci</span> <span class="n">VALUES</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Vulkan&#39;</span><span class="p">,</span> <span class="n">null</span><span class="p">,</span> <span class="n">null</span><span class="p">)</span>
+</pre></div>
+</div>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>13. Написати упит којим се приказују називи издавача и називи њихових књига. Приказати и издаваче
+чијих књига нема у библиотеци. Уредити списак абецедно по називу издавача.</p>
+
+    </p></div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span><span class="p">,</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span>
+<span class="n">FROM</span> <span class="n">izdavaci</span> <span class="n">FULL</span> <span class="n">OUTER</span> <span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">izdavaci</span><span class="o">.</span><span class="n">id</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="p">)</span>
+<span class="n">ORDER</span> <span class="n">BY</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span>
+</pre></div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Креирање табела - команда CREATE TABLE и везе 1:M и M:M</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'specit3_baze';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'specit3_baze';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sqlite.org/download.html" target="_blank">SQLLite</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Базе података за трећи разред специјализованих ИТ одељења</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_0_Osnovno%20o%20bazama%20podataka>
+                    <h5>Основно о базама података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_0_Osnovno%20o%20bazama%20podataka/1_01_Osnovno%20o%20bazama%20podataka_lekcija.html><div class="studioLecture" id=activity-1_01_Osnovno%20o%20bazama%20podataka_lekcija><i class="fas fa-file-alt activity-icon"></i>Основно о базама података - лекција</div></a>
+                <a href=../1_0_Osnovno%20o%20bazama%20podataka/1_02_Osnovno%20o%20bazama%20podataka_kviz.html><div class="studioLecture" id=activity-1_02_Osnovno%20o%20bazama%20podataka_kviz><i class="far fa-question-circle activity-icon"></i>Основно о базама података - квиз</div></a>
+                <a href=../1_0_Osnovno%20o%20bazama%20podataka/1_03_SUBP_lekcija.html><div class="studioLecture" id=activity-1_03_SUBP_lekcija><i class="fas fa-file-alt activity-icon"></i>Системи за управљање базом података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_0_Projektovanje>
+                    <h5>Пројектовање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_0_Projektovanje/2_01_Projektovanje_entiteti%20i%20instance.html><div class="studioLecture" id=activity-2_01_Projektovanje_entiteti%20i%20instance><i class="fas fa-file-alt activity-icon"></i>Ентитети и инстанце</div></a>
+                <a href=../2_0_Projektovanje/2_02_Projektovanje_atributi.html><div class="studioLecture" id=activity-2_02_Projektovanje_atributi><i class="fas fa-file-alt activity-icon"></i>Атрибути</div></a>
+                <a href=../2_0_Projektovanje/2_03_Projektovanje_eia_kviz.html><div class="studioLecture" id=activity-2_03_Projektovanje_eia_kviz><i class="far fa-question-circle activity-icon"></i>Ентитети, инстанце и атрибути - квиз</div></a>
+                <a href=../2_0_Projektovanje/2_04_Projektovanje_veze.html><div class="studioLecture" id=activity-2_04_Projektovanje_veze><i class="fas fa-file-alt activity-icon"></i>Везе</div></a>
+                <a href=../2_0_Projektovanje/2_05_Projektovanje_veze_kviz.html><div class="studioLecture" id=activity-2_05_Projektovanje_veze_kviz><i class="far fa-question-circle activity-icon"></i>Везе - квиз</div></a>
+                <a href=../2_0_Projektovanje/2_06_Projektovanje_posebne%20situacije.html><div class="studioLecture" id=activity-2_06_Projektovanje_posebne%20situacije><i class="fas fa-file-alt activity-icon"></i>Посебне ситуације на моделу</div></a>
+                <a href=../2_0_Projektovanje/2_07_Projektovanje_model%20i%20dodatna%20dokumentacija.html><div class="studioLecture" id=activity-2_07_Projektovanje_model%20i%20dodatna%20dokumentacija><i class="fas fa-file-alt activity-icon"></i>Модел и додатна документација</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_1_Zadaci>
+                    <h5>Задаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_1_Zadaci/2_11_Zadaci_uputstvo.html><div class="studioLecture" id=activity-2_11_Zadaci_uputstvo><i class="fas fa-file-alt activity-icon"></i>Задаци - упутство</div></a>
+                <a href=../2_1_Zadaci/2_12_Zadaci%20sa%20dva%20entiteta.html><div class="studioLecture" id=activity-2_12_Zadaci%20sa%20dva%20entiteta><i class="fas fa-file-alt activity-icon"></i>Задаци са два ентитета</div></a>
+                <a href=../2_1_Zadaci/2_13_Zadaci%201-M.html><div class="studioLecture" id=activity-2_13_Zadaci%201-M><i class="fas fa-file-alt activity-icon"></i>Задаци 1-М</div></a>
+                <a href=../2_1_Zadaci/2_14_Zadaci%20M-M.html><div class="studioLecture" id=activity-2_14_Zadaci%20M-M><i class="fas fa-file-alt activity-icon"></i>Задаци M-М</div></a>
+                <a href=../2_1_Zadaci/2_15_Zadaci%20razni.html><div class="studioLecture" id=activity-2_15_Zadaci%20razni><i class="fas fa-file-alt activity-icon"></i>Разни задаци</div></a>
+                <a href=../2_1_Zadaci/2_16_Zadaci%20nereseni.html><div class="studioLecture" id=activity-2_16_Zadaci%20nereseni><i class="fas fa-file-alt activity-icon"></i>Нерешени задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_2_Normalizacija>
+                    <h5>Нормализација</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_2_Normalizacija/2_21_Normalizacija_lekcija.html><div class="studioLecture" id=activity-2_21_Normalizacija_lekcija><i class="fas fa-file-alt activity-icon"></i>Нормализација</div></a>
+                <a href=../2_2_Normalizacija/2_21_Normalizacija_zadaci.html><div class="studioLecture" id=activity-2_21_Normalizacija_zadaci><i class="fas fa-file-alt activity-icon"></i>Нормализација - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_3_Dizajn%20tabela>
+                    <h5>Дизајн табела у бази података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_3_Dizajn%20tabela/2_31_Dizajn%20tabela_entiteti%20i%20veza%201M.html><div class="studioLecture" id=activity-2_31_Dizajn%20tabela_entiteti%20i%20veza%201M><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - ентитети и веза 1:M</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_32_Dizajn%20tabela_veze%2011%20i%20MM.html><div class="studioLecture" id=activity-2_32_Dizajn%20tabela_veze%2011%20i%20MM><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - везе 1:1 и M:M</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_33_Dizajn%20tabela_nadtip%20sa%20podtipovima.html><div class="studioLecture" id=activity-2_33_Dizajn%20tabela_nadtip%20sa%20podtipovima><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - надтип са подтиповима</div></a>
+                <a href=../2_3_Dizajn%20tabela/2_34_Dizajn%20tabela_zadaci.html><div class="studioLecture" id=activity-2_34_Dizajn%20tabela_zadaci><i class="fas fa-file-alt activity-icon"></i>Дизајн табела у бази података - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_4_Model%20baze%20za%20fakultet>
+                    <h5>Пример моделовања - факултет</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_4_Model%20baze%20za%20fakultet/2_41_Model%20baze%20za%20fakultet.html><div class="studioLecture" id=activity-2_41_Model%20baze%20za%20fakultet><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - факултет</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                    <h5>Пример моделовања - продаја дигиталних композиција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_0_Kreiranje%20tabela_CREATE%20TABLE>
+                    <h5>Креирање табела</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_01_Komanda%20CREATE%20TABLE.html><div class="studioLecture" id=activity-3_01_Komanda%20CREATE%20TABLE><i class="fas fa-file-alt activity-icon"></i>Команда CREATE TABLE</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_02_Komanda%20CREATE%20TABLE%20i%20veze%201M%20i%20MM.html><div class="studioLecture" id=activity-3_02_Komanda%20CREATE%20TABLE%20i%20veze%201M%20i%20MM><i class="fas fa-file-alt activity-icon"></i>Креирање табела - команда CREATE TABLE и везе 1:M и M:M</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_03_Komanda%20CREATE%20TABLE_primeri.html><div class="studioLecture" id=activity-3_03_Komanda%20CREATE%20TABLE_primeri><i class="fas fa-file-alt activity-icon"></i>Креирање табела - команда CREATE TABLE - примери</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_04_Komanda%20CREATE%20TABLE_kviz.html><div class="studioLecture" id=activity-3_04_Komanda%20CREATE%20TABLE_kviz><i class="far fa-question-circle activity-icon"></i>Креирање табела - команда CREATE TABLE - квиз</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_05_Komanda%20CREATE%20TABLE_zadatak.html><div class="studioLecture" id=activity-3_05_Komanda%20CREATE%20TABLE_zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_06_SQL%20Server%20Management%20Studio.html><div class="studioLecture" id=activity-3_06_SQL%20Server%20Management%20Studio><i class="fas fa-file-alt activity-icon"></i>Креирање базе помоћу алата SQL Server Management Studio</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE.html><div class="studioLecture" id=activity-3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE><i class="fas fa-file-alt activity-icon"></i>Креирање база - команде CREATE ALTER TABLE и DROP TABLE</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_08_Rad%20sa%20podacima.html><div class="studioLecture" id=activity-3_08_Rad%20sa%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са подацима</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_09_Rad%20sa%20podacima_kviz.html><div class="studioLecture" id=activity-3_09_Rad%20sa%20podacima_kviz><i class="far fa-question-circle activity-icon"></i>Рад са подацима - квиз</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_010_Zadatak.html><div class="studioLecture" id=activity-3_010_Zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_1_Baza%20podataka%20biblioteke>
+                    <h5>База података библиотеке</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_1_Baza%20podataka%20biblioteke/3_11_Pregled%20modela%20i%20baze.html><div class="studioLecture" id=activity-3_11_Pregled%20modela%20i%20baze><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - преглед модела и базе</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_12_Kreiranje%20baze%20i%20tabela.html><div class="studioLecture" id=activity-3_12_Kreiranje%20baze%20i%20tabela><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - креирање базе и табела</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_13_Unos%20podataka.html><div class="studioLecture" id=activity-3_13_Unos%20podataka><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - унос података</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_14_Dijagram.html><div class="studioLecture" id=activity-3_14_Dijagram><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - дијаграм</div></a>
+                <a href=../3_1_Baza%20podataka%20biblioteke/3_15_Drugi%20nacin%20za%20kreiranje%20baze.html><div class="studioLecture" id=activity-3_15_Drugi%20nacin%20za%20kreiranje%20baze><i class="fas fa-file-alt activity-icon"></i>База података библиотеке - други начин за креирање базе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_0_SELECT_projekcija%20i%20selekcija>
+                    <h5>Упит SELECT - пројекција и селекција</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_0_SELECT_projekcija%20i%20selekcija/4_01_Upit%20iz%20jedne%20tabele_projekcija.html><div class="studioLecture" id=activity-4_01_Upit%20iz%20jedne%20tabele_projekcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_02_Upit%20iz%20jedne%20tabele_projekcija_kviz.html><div class="studioLecture" id=activity-4_02_Upit%20iz%20jedne%20tabele_projekcija_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција - квиз</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_03_Upit%20iz%20jedne%20tabele_projekcija_zadaci.html><div class="studioLecture" id=activity-4_03_Upit%20iz%20jedne%20tabele_projekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_04_Upit%20iz%20jedne%20tabele_selekcija.html><div class="studioLecture" id=activity-4_04_Upit%20iz%20jedne%20tabele_selekcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - селекција</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_05_Upit%20iz%20jedne%20tabele_selekcija_kviz.html><div class="studioLecture" id=activity-4_05_Upit%20iz%20jedne%20tabele_selekcija_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - упит из једне табеле - селекција - квиз</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_06_Upit%20iz%20jedne%20tabele_selekcija_zadaci.html><div class="studioLecture" id=activity-4_06_Upit%20iz%20jedne%20tabele_selekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - селекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_07_Upit%20iz%20jedne%20tabele_projekcija_selekcija_zadaci.html><div class="studioLecture" id=activity-4_07_Upit%20iz%20jedne%20tabele_projekcija_selekcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - упит из једне табеле - пројекција и селекција - задаци</div></a>
+                <a href=../4_0_SELECT_projekcija%20i%20selekcija/4_08_Zadaci.html><div class="studioLecture" id=activity-4_08_Zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_1_SELECT_spajanje%20tabela>
+                    <h5>Упит SELECT - спајање табела</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_1_SELECT_spajanje%20tabela/4_11_Spajanje%20tabela.html><div class="studioLecture" id=activity-4_11_Spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - спајање табела</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_12_Spajanje%20tabela_kviz.html><div class="studioLecture" id=activity-4_12_Spajanje%20tabela_kviz><i class="far fa-question-circle activity-icon"></i>Упит SELECT - спајање табела - квиз</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_13_Spajanje%20tabela_zadaci.html><div class="studioLecture" id=activity-4_13_Spajanje%20tabela_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - спајање табела - задаци</div></a>
+                <a href=../4_1_SELECT_spajanje%20tabela/4_14_Zadaci.html><div class="studioLecture" id=activity-4_14_Zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_2_SELECT_funkcije%20i%20podupiti>
+                    <h5>Упит SELECT - функције и подупити</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_2_SELECT_funkcije%20i%20podupiti/4_21_Upotreba%20funkcija.html><div class="studioLecture" id=activity-4_21_Upotreba%20funkcija><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - употреба функција</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_22_Upotreba%20funkcija_zadaci.html><div class="studioLecture" id=activity-4_22_Upotreba%20funkcija_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - употреба функција - задаци</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_23_Podupiti.html><div class="studioLecture" id=activity-4_23_Podupiti><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - подупити</div></a>
+                <a href=../4_2_SELECT_funkcije%20i%20podupiti/4_24_Podupiti_zadaci.html><div class="studioLecture" id=activity-4_24_Podupiti_zadaci><i class="fas fa-file-alt activity-icon"></i>Упит SELECT - подупити - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_3_Baza%20Pesme>
+                    <h5>Продаја дигиталних композиција - база</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_3_Baza%20Pesme/4_31_Kreiranje%20baze%20pesme_1.html><div class="studioLecture" id=activity-4_31_Kreiranje%20baze%20pesme_1><i class="fas fa-file-alt activity-icon"></i>База података за продају дигиталних композиција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_32_Kreiranje%20baze%20pesme_2.html><div class="studioLecture" id=activity-4_32_Kreiranje%20baze%20pesme_2><i class="fas fa-file-alt activity-icon"></i>База података за продају дигиталних композиција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_33_Zadaci_%20projekcija%20i%20selekcija.html><div class="studioLecture" id=activity-4_33_Zadaci_%20projekcija%20i%20selekcija><i class="fas fa-file-alt activity-icon"></i>Задаци - пројекција и селекција</div></a>
+                <a href=../4_3_Baza%20Pesme/4_34_Zadaci_%20spajanje%20tabela.html><div class="studioLecture" id=activity-4_34_Zadaci_%20spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - спајање табела</div></a>
+                <a href=../4_3_Baza%20Pesme/4_35_Zadaci_%20grupne%20funkcije%20i%20jedna%20tabela.html><div class="studioLecture" id=activity-4_35_Zadaci_%20grupne%20funkcije%20i%20jedna%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - групне функције и једна табела</div></a>
+                <a href=../4_3_Baza%20Pesme/4_36_Zadaci_%20grupne%20funkcije%20i%20spajanje%20tabela.html><div class="studioLecture" id=activity-4_36_Zadaci_%20grupne%20funkcije%20i%20spajanje%20tabela><i class="fas fa-file-alt activity-icon"></i>Задаци - групне функције и спајање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_4_Pogledi>
+                    <h5>Погледи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_4_Pogledi/4_41_Pogledi.html><div class="studioLecture" id=activity-4_41_Pogledi><i class="fas fa-file-alt activity-icon"></i>Погледи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_0_Projektni%20zadatak>
+                    <h5>Пројектни задатак</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_0_Projektni%20zadatak/5_01_Projektni%20zadatak.html><div class="studioLecture" id=activity-5_01_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Погледи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_0%20Dodaci>
+                    <h5>Додаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="create-table-1-m-m-m">
+<h1>Креирање табела - команда CREATE TABLE и везе 1:M и M:M<a class="headerlink" href="#create-table-1-m-m-m" title="Permalink to this headline">¶</a></h1>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Да би се избегла непотребна понављања података и могућност грешке, подаци које чувамо у бази података су распоређени у
+различите табеле, али су оне повезани и важно је разумети те везе.</p>
+<p>Две најчешће везе су један-према-више и више-према-више. Веза један-према-више захтева постојање додатне колоне у
+једној од табела која показује на другу табелу. Веза више-према-више је заправо додатна табела у бази. Детаљно ћемо
+објаснити како се креирају повезане табеле.</p>
+
+    </div></div>
+<p>Уколико имамо два ентитета повезана <strong>везом један-према-више</strong>, у једну од табела се додаје додатна колона која је страни
+кључ. Страни кључ се додаје као колона у ону табелу која је на страни „више“. Погледајмо следећи пример. Један издавач
+је објавио више књига. Нема смисла уз податке о издавачу чувати шифре свих књига које је објавио. Како је једну књигу
+објавио један издавач, онда уз податке о књизи можемо да чувамо и податак о томе ко ју је објавио. Тај податак је
+идентификација, шифра издавача – <em>id_izdavaca</em>.</p>
+<p><strong>Напомена</strong>: Овај модел је исправан уколико се узме у обзир претпостaвка да су сви примерци исте књиге у библиотеци
+од истог издавача.</p>
+<a class="reference internal image-reference" href="../_images/slika_302aa.png"><img alt="../_images/slika_302aa.png" class="align-center" src="../_images/slika_302aa.png" style="width: 200px;" /></a>
+<p>Следи дизајн табеле <em>knjige</em> у бази података.</p>
+<a class="reference internal image-reference" href="../_images/tabela_302a.png"><img alt="../_images/tabela_302a.png" class="align-center" src="../_images/tabela_302a.png" style="width: 700px;" /></a>
+<p>Страни кључ, колона <em>id_izdavaca</em> у табели knjige показује на примарни кључ, колону <em>id</em>, табеле <em>izdavaci</em>.
+Поред колоне која је страни кључ неопходно је додати реч <strong>REFERENCES</strong>, а након ње назив табеле и колоне на коју
+страни кључ показује. Није довољно само предвидети ову додатну колону која представља везу ка другој табели,
+већ је изузетно важно уз њу дефинисати и да је та колона страни кључ тако што се наведе реч REFERENCES и одговарајућа
+референца. На тај начин се обезбеђују додатне провере приликом рада са подацима у бази. Тако, на пример, неће бити
+могуће да се унесе књига са идентификационим бројем издавача који не постоји у табели <em>izdavaci</em>.</p>
+<p>У примеру који следи се примарни и страни кључ не зову исто.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">knjige</span>
+<span class="p">(</span> <span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span>
+<span class="n">naziv</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">id_izdavaca</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span> <span class="n">REFERENCES</span> <span class="n">izdavaci</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Приказано је како се страни кључ дефинише уз дефиницију колоне. Могуће је дефинисати и страни кључ након списка свих
+колона. У том случају је обавезно користити и кључне речи FOREIGN KEY, након којих се у загради наведе назив колоне
+која је страни кључ, а затим обавезан део са кључном речју REFERENCES.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">knjige</span>
+<span class="p">(</span> <span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span>
+<span class="n">naziv</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">id_izdavaca</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">FOREIGN</span> <span class="n">KEY</span> <span class="p">(</span><span class="n">id_izdavaca</span><span class="p">)</span> <span class="n">REFERENCES</span> <span class="n">izdavaci</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Уколико се након речи REFERENCES налази само назив табеле, подразумева се да страни кључ показује на примарни кључ те
+табеле.</p>
+<p>На следећој слици је приказано како би ове табеле, повезане кључевима, изгледале у бази података. Јасно се види да
+један издавач може да објави више књига.</p>
+<a class="reference internal image-reference" href="../_images/slika_302b.png"><img alt="../_images/slika_302b.png" class="align-center" src="../_images/slika_302b.png" style="width: 780px;" /></a>
+<p>На свим илустрацијама до сада се користе другачији скупови вредности за примарне кључеве у различитим табелама да би
+се илустрације лакше пратиле и разумеле. Међутим, чест је случај да се вредности у колонама које су примарни кључеви
+попуњавају бројевима редом 1, 2, 3, 4, и тако даље, па би приказана ситуација са претходне слике могла да изгледа и
+другачије, а са истим значењем. Важно је и у том случају да посматрамо и повезујемо вредности из колоне <em>id_izdavaca</em>,
+која је страни кључ у табели <em>knjige</em>, и вредности у колони <em>id</em>, која је примарни кључ табеле <em>izadavaci</em>.</p>
+<a class="reference internal image-reference" href="../_images/tabela_302b.png"><img alt="../_images/tabela_302b.png" class="align-center" src="../_images/tabela_302b.png" style="width: 650px;" /></a>
+<p>Приликом креирања страног кључа могуће је додати неку од опција за ажурирање UPDATE и брисање DELETE:</p>
+<ul class="simple">
+<li><p>CASCADE</p></li>
+<li><p>NO ACTION</p></li>
+<li><p>SET NULL</p></li>
+<li><p>SET DEFAULT</p></li>
+</ul>
+<p>За ажурирање има смисла дозволити каскадну измену. У нашем примеру би то значило да, уколико се измени вредност
+примарног кључа за издавача, каскадно ће се изменити и одговарајуће вредности страних кључева код свих књига тог
+издавача.</p>
+<a class="reference internal image-reference" href="../_images/slika_302c.png"><img alt="../_images/slika_302c.png" class="align-center" src="../_images/slika_302c.png" style="width: 700px;" /></a>
+<p>Каскадна опција можда није најбоље решење за брисање зато што би брисање једног реда у једној табели потенцијално
+обрисало податке из више редова више различитих табела, па тиме можда и значајан део целе базе. Узмимо, на пример,
+да желимо да обришемо једног издавача. Уколико је укључена каскадна опција, то би значило да би брисање тог једног
+реда узроковало брисање свих књига тог издавача, а затим брисање свих примерака тих књига, а онда и брисање свих
+позајмица тих примерака. Боље решење би било да се такво брисање не дозволи, у овом случају да се не дозволи брисање
+података о издавачу чије књиге имамо у библиотеци. Када брисање не успе, било би добро урадити неко архивирање података
+о књигама, примерцима и позајмицама издавача којег желимо да обришемо. Затим урадити брисање обрнутим редоследом,
+који је увек дозвољен, а то би подразумевало прво брисање свих позајмица, онда свих примерака, затим свих књига тог
+издавача, а на крају и самог издавача.</p>
+<a class="reference internal image-reference" href="../_images/slika_302d.png"><img alt="../_images/slika_302d.png" class="align-center" src="../_images/slika_302d.png" style="width: 780px;" /></a>
+<p>Како у овим табелама вредности страног кључа не могу да буду NULL, нити је дефинисана подразумевана вредност,
+друге две опције нису на располагању.</p>
+<p>Следи допуњена команда за креирање табеле.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">knjige</span>
+<span class="p">(</span> <span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span>
+<span class="n">naziv</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">id_izdavaca</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">FOREIGN</span> <span class="n">KEY</span> <span class="p">(</span><span class="n">id_izdavaca</span><span class="p">)</span> <span class="n">REFERENCES</span> <span class="n">izdavaci</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+<span class="n">ON</span> <span class="n">UPDATE</span> <span class="n">CASCADE</span> <span class="n">ON</span> <span class="n">DELETE</span> <span class="n">NO</span> <span class="n">ACTION</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Наравно, можда се установи да би друге опције биле боље решење након детаљне анализе захтева пословања. Можда нам не
+треба архива свих података о издавачу којег желимо да обришемо, па има смисла да укључимо каскадно брисање и тиме
+уштедимо време тако што нећемо морати све пешке да бришемо. Такође је могуће да не желимо да дозволимо измену вредности
+приманог кључа било које табеле. Следи измењена команда у складу са овим што је управо описано.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">knjige</span>
+<span class="p">(</span> <span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span>
+<span class="n">naziv</span> <span class="n">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">id_izdavaca</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
+<span class="n">FOREIGN</span> <span class="n">KEY</span> <span class="p">(</span><span class="n">id_izdavaca</span><span class="p">)</span> <span class="n">REFERENCES</span> <span class="n">izdavaci</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+<span class="n">ON</span> <span class="n">UPDATE</span> <span class="n">NO</span> <span class="n">ACTION</span> <span class="n">ON</span> <span class="n">DELETE</span> <span class="n">CASCADE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Следећа два ентитета повезана везом 1:М су <em>KNJIGA</em> и <em>PRIMERAK</em>.</p>
+<a class="reference internal image-reference" href="../_images/slika_302da.png"><img alt="../_images/slika_302da.png" class="align-center" src="../_images/slika_302da.png" style="width: 500px;" /></a>
+<p>Следи дизајн табеле <em>primerci</em> у бази података.</p>
+<a class="reference internal image-reference" href="../_images/tabela_302c.png"><img alt="../_images/tabela_302c.png" class="align-center" src="../_images/tabela_302c.png" style="width: 650px;" /></a>
+<p>Страни кључ, колона <em>id_knjige</em>, у табели knjige показује на примарни кључ, колону <em>id_knjige</em>, табеле <em>knjge</em>.
+У овом примеру се примарни и страни кључ зову исто.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">primerci</span>
+<span class="p">(</span> <span class="n">inventarski_broj</span> <span class="n">INT</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span>
+<span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span> <span class="n">REFERENCES</span> <span class="n">knjige</span><span class="p">(</span><span class="n">id_knjige</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>На следећој слици је приказано како би ове табеле, повезане кључевима, изгледале у бази података. Уколико желимо да
+сазнамо, на пример, ко је издавач примерака са инвентарским бројевима 12345 и 12346 (за које је очигледно да су
+примерци исте књиге), погледаћемо вредност страног кључа који садржи идентификацију књиге: 111. У табели <em>knjige</em> се
+види да је књига са идентификацијом 111: „Рачунарство и информатика за 4. разред гимназије“, а да је вредност страног
+кључа који садржи идентификацију њеног издавача: 1. У табели <em>izdavaci</em> се види да је издавач са идентификацијом 1:
+„Завод за уџбенике“.</p>
+<a class="reference internal image-reference" href="../_images/slika_302e.png"><img alt="../_images/slika_302e.png" class="align-center" src="../_images/slika_302e.png" style="width: 780px;" /></a>
+<p>Веза више-према-више се веома често среће у животу и одговара многим ситуацијама у оквиру различитих типова пословања.
+Ако као књиге посматрамо школске уџбенике, приметићемо да свака књига има више аутора, а аутори најчешће током свог
+рада напишу више књига. Овакву везу је немогуће реализовати у релационој бази података, па се на моделу уклања и
+уместо ње се поставља нови ентитет. Уколико нема бољег решења, назив новог ентитета може да буде комбинација назива
+почетна два ентитета повезана везом М:М.</p>
+<a class="reference internal image-reference" href="../_images/slika_302f.png"><img alt="../_images/slika_302f.png" class="align-center" src="../_images/slika_302f.png" style="width: 500px;" /></a>
+<p>Кратке цртице којима су везе прецртане значе да везе учествују у примарном јединственом идентификатору новог ентитета.
+Тако је примарни јединствени идентификатор новог ентитета који је дошао на место везе типа М:М, ентитета <em>АUTOR-KNJIGA</em>,
+заправо сложен и представља комбинацију примарних јединствених идентификатора ентитета <em>АUTOR</em> и <em>KNJIGA</em>:
+(<em>id_knjige</em>, <em>id_autora</em>).</p>
+<p>Следи мапирање, тј. дизајн табеле која ће бити креирана у бази података.</p>
+<a class="reference internal image-reference" href="../_images/tabela_302g.png"><img alt="../_images/tabela_302g.png" class="align-center" src="../_images/tabela_302g.png" style="width: 650px;" /></a>
+<p>Табеле <em>knjige</em> и <em>autori</em> су већ креиране. Команда CREATE TABLE језика <em>SQL</em> којом се креира табела <em>autori_knjige</em> у
+релационој бази података која има два страна кључа и један сложен примарни кључ:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">TABLE</span> <span class="n">autori_knjige</span>
+<span class="p">(</span><span class="n">id_autora</span> <span class="n">INT</span> <span class="n">REFERENCES</span> <span class="n">autori</span><span class="p">(</span><span class="n">id_autora</span><span class="p">),</span>
+<span class="n">id_knjige</span> <span class="n">INT</span> <span class="n">REFERENCES</span> <span class="n">knjige</span><span class="p">(</span><span class="n">id_knjige</span><span class="p">),</span>
+<span class="n">PRIMARY</span> <span class="n">KEY</span> <span class="p">(</span><span class="n">id_autora</span><span class="p">,</span> <span class="n">id_knjige</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Када се ограничење, у овом случају примерни кључ, односи на комбинацију колона, оно мора да буде наведено након списка
+свих колона и да се тада наброје називи колона који у њему учествују.</p>
+<p>На следећој слици је приказано како би ове табеле, повезане кључевима, изгледале у бази података.</p>
+<a class="reference internal image-reference" href="../_images/slika_302g.png"><img alt="../_images/slika_302g.png" class="align-center" src="../_images/slika_302g.png" style="width: 780px;" /></a>
+<p><strong>Напомена</strong>: Овај модел је исправан уколико се узме у обзир претпоставка да библиотека чува уџбенике. Уколико се у
+библиотеци налазе само романи, онда је веза ентитета AUTOR и KNJIGA могла да буде 1:М (роман има једног аутора).</p>
+<p>На свим илустрацијама до сада се користе другачији скупови вредности за примарне кључеве у различитим табелама да би се
+илустрације лакше пратиле и разумеле. Међутим, чест је случај да се вредности у колонама које су примарни кључеви
+попуњавају бројевима редом 1, 2, 3, 4, и тако даље, па би приказана ситуација са претходне слике могла да изгледа и
+другачије а са истим значењем. Важно је и у том случају да посматрамо и повезујемо вредности одговарајућих колона.</p>
+<a class="reference internal image-reference" href="../_images/slika_302h.png"><img alt="../_images/slika_302h.png" class="align-center" src="../_images/slika_302h.png" style="width: 650px;" /></a>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="3_01_Komanda CREATE TABLE.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

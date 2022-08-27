@@ -1,0 +1,544 @@
+courseId: specit_baze3
+description:
+  externalLinks:
+  - href: https://www.sqlite.org/download.html
+    text: SQLLite
+  longDescription: '<div class="document">
+
+    <p>Шта је курс, коме је намењен</p>
+
+    </div>
+
+    '
+  requirements:
+  - SQLLite
+  shortDescription: Базе података за трећи разред специјализованих ИТ одељења
+  toc:
+  - Основно о базама података
+  - Пројектовање
+  - Задаци
+  - Нормализација
+  - Дизајн табела у бази података
+  - Пример моделовања - факултет
+  - Пример моделовања - продаја дигиталних композиција
+  - Креирање табела
+  - База података библиотеке
+  - Упит SELECT - пројекција и селекција
+  - Упит SELECT - функције и подупити
+  - Продаја дигиталних композиција - база
+  - Погледи
+  willLearn:
+  - Пројектовање база података
+  - Нешто
+  - '...'
+lang: sr-Cyrl
+lessons:
+- activities:
+  - description: ''
+    file: 1_01_Osnovno o bazama podataka_lekcija.html
+    guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
+    src: 1_01_Osnovno o bazama podataka_lekcija.rst
+    title: Основно о базама података - лекција
+    type: reading
+  - description: ''
+    file: 1_02_Osnovno o bazama podataka_kviz.html
+    guid: dd96bf63-e558-4540-95a6-00b96e45e3ef
+    src: 1_02_Osnovno o bazama podataka_kviz.rst
+    title: Основно о базама података - квиз
+    type: quiz
+  - description: ''
+    file: 1_03_SUBP_lekcija.html
+    guid: 9b4a5360-36a7-47c2-858a-a378ad29f0e2
+    src: 1_03_SUBP_lekcija.rst
+    title: Системи за управљање базом података
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 1_0_Osnovno o bazama podataka
+  guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
+  normalized_title: Основно о базама података
+  title: Основно о базама података
+- activities:
+  - description: ''
+    file: 2_01_Projektovanje_entiteti i instance.html
+    guid: af249ec5-2a13-4a0a-8eb3-5abadf28b50c
+    src: 2_01_Projektovanje_entiteti i instance.rst
+    title: Ентитети и инстанце
+    type: reading
+  - description: ''
+    file: 2_02_Projektovanje_atributi.html
+    guid: 3f0fab54-846b-4389-86c2-e2ec54517379
+    src: 2_02_Projektovanje_atributi.rst
+    title: Атрибути
+    type: reading
+  - description: ''
+    file: 2_03_Projektovanje_eia_kviz.html
+    guid: d99bec7e-9027-4240-a20c-d411bdf1486a
+    src: 2_03_Projektovanje_eia_kviz.rst
+    title: Ентитети, инстанце и атрибути - квиз
+    type: quiz
+  - description: ''
+    file: 2_04_Projektovanje_veze.html
+    guid: 1429e309-adf6-4fa8-a7e5-263928162049
+    src: 2_04_Projektovanje_veze.rst
+    title: Везе
+    type: reading
+  - description: ''
+    file: 2_05_Projektovanje_veze_kviz.html
+    guid: bf6b0308-92ba-49e6-9f91-db8b8586243f
+    src: 2_05_Projektovanje_veze_kviz.rst
+    title: Везе - квиз
+    type: quiz
+  - description: ''
+    file: 2_06_Projektovanje_posebne situacije.html
+    guid: d6b53964-f25d-46e0-aa00-9d543a2c250b
+    src: 2_06_Projektovanje_posebne situacije.rst
+    title: Посебне ситуације на моделу
+    type: reading
+  - description: ''
+    file: 2_07_Projektovanje_model i dodatna dokumentacija.html
+    guid: ce7b4ff1-49c3-498e-b308-9d1f5e5e8ace
+    src: 2_07_Projektovanje_model i dodatna dokumentacija.rst
+    title: Модел и додатна документација
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_0_Projektovanje
+  guid: 60fbd3d6-d1ae-454f-a2f6-63f9c9c8fc1f
+  normalized_title: Пројектовање
+  title: Пројектовање
+- activities:
+  - description: ''
+    file: 2_11_Zadaci_uputstvo.html
+    guid: 1a54effa-4327-45bb-86f2-7517fa5b5477
+    src: 2_11_Zadaci_uputstvo.rst
+    title: Задаци - упутство
+    type: reading
+  - description: ''
+    file: 2_12_Zadaci sa dva entiteta.html
+    guid: 74769860-46e5-4acf-872e-72d06c6f8783
+    src: 2_12_Zadaci sa dva entiteta.rst
+    title: Задаци са два ентитета
+    type: reading
+  - description: ''
+    file: 2_13_Zadaci 1-M.html
+    guid: 0e4789f8-7f55-4e13-a07f-d6267fa7f893
+    src: 2_13_Zadaci 1-M.rst
+    title: Задаци 1-М
+    type: reading
+  - description: ''
+    file: 2_14_Zadaci M-M.html
+    guid: efbfebfe-5aab-41b7-9234-c58479f59135
+    src: 2_14_Zadaci M-M.rst
+    title: Задаци M-М
+    type: reading
+  - description: ''
+    file: 2_15_Zadaci razni.html
+    guid: 8a2ddf2d-256f-44a6-96e6-f1f3f32ef8dc
+    src: 2_15_Zadaci razni.rst
+    title: Разни задаци
+    type: reading
+  - description: ''
+    file: 2_16_Zadaci nereseni.html
+    guid: ae91319d-45b8-4f02-9d14-ef4b686c3adb
+    src: 2_16_Zadaci nereseni.rst
+    title: Нерешени задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_1_Zadaci
+  guid: 0af9a981-7192-46c0-b77c-84ba8c5fdd01
+  normalized_title: Задаци
+  title: Задаци
+- activities:
+  - description: ''
+    file: 2_21_Normalizacija_lekcija.html
+    guid: 855f0a0d-b8be-4ff7-9065-4fc68ee2f4ef
+    src: 2_21_Normalizacija_lekcija.rst
+    title: Нормализација
+    type: reading
+  - description: ''
+    file: 2_21_Normalizacija_zadaci.html
+    guid: ab294619-9125-48d6-92e6-6d466d3cb1b7
+    src: 2_21_Normalizacija_zadaci.rst
+    title: Нормализација - задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_2_Normalizacija
+  guid: e3f281aa-f4a4-4bdc-b4e4-7c2484393845
+  normalized_title: Нормализација
+  title: Нормализација
+- activities:
+  - description: ''
+    file: 2_31_Dizajn tabela_entiteti i veza 1M.html
+    guid: 81551a17-7c0e-4607-b315-22dbd81e9a56
+    src: 2_31_Dizajn tabela_entiteti i veza 1M.rst
+    title: Дизајн табела у бази података - ентитети и веза 1:M
+    type: reading
+  - description: ''
+    file: 2_32_Dizajn tabela_veze 11 i MM.html
+    guid: 0d92e102-f57b-4274-a6e9-e94499cde935
+    src: 2_32_Dizajn tabela_veze 11 i MM.rst
+    title: Дизајн табела у бази података - везе 1:1 и M:M
+    type: reading
+  - description: ''
+    file: 2_33_Dizajn tabela_nadtip sa podtipovima.html
+    guid: 6f783303-da3b-4bcb-84b5-5f0988f20f22
+    src: 2_33_Dizajn tabela_nadtip sa podtipovima.rst
+    title: Дизајн табела у бази података - надтип са подтиповима
+    type: reading
+  - description: ''
+    file: 2_34_Dizajn tabela_zadaci.html
+    guid: 159e24af-a34f-4cbf-b59e-7ddea3161672
+    src: 2_34_Dizajn tabela_zadaci.rst
+    title: Дизајн табела у бази података - задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_3_Dizajn tabela
+  guid: 54ff11d4-13ba-4417-8c74-107cb22068a7
+  normalized_title: Дизајн табела у бази података
+  title: Дизајн табела у бази података
+- activities:
+  - description: ''
+    file: 2_41_Model baze za fakultet.html
+    guid: 8ec46790-d6fc-4e53-8b15-9eea01ef9b02
+    src: 2_41_Model baze za fakultet.rst
+    title: Пример моделовања - факултет
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_4_Model baze za fakultet
+  guid: 089ab44d-75bb-48ed-b252-b57a4b3cfa9f
+  normalized_title: Пример моделовања - факултет
+  title: Пример моделовања - факултет
+- activities:
+  - description: ''
+    file: 2_51_ Model baze za muziku.html
+    guid: bb4e905a-9a5f-4360-afc7-fd1448a87030
+    src: 2_51_ Model baze za muziku.rst
+    title: Пример моделовања - продаја дигиталних композиција
+    type: reading
+  - description: ''
+    file: 2_52_Projektni zadatak.html
+    guid: 44f23abc-fa33-4ffa-9e57-f562163973da
+    src: 2_52_Projektni zadatak.rst
+    title: Пројектни задатак
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_5_Model baze za pesme
+  guid: bec23ecd-314a-4ccc-ba65-78b94eb0570b
+  normalized_title: Пример моделовања - продаја дигиталних композиција
+  title: Пример моделовања - продаја дигиталних композиција
+- activities:
+  - description: ''
+    file: 3_01_Komanda CREATE TABLE.html
+    guid: ae3e3d8c-2f96-48df-a0a3-d0667ef585c5
+    src: 3_01_Komanda CREATE TABLE.rst
+    title: Команда CREATE TABLE
+    type: reading
+  - description: ''
+    file: 3_02_Komanda CREATE TABLE i veze 1M i MM.html
+    guid: acd12de1-bf51-45dc-b94d-b20b2a342549
+    src: 3_02_Komanda CREATE TABLE i veze 1M i MM.rst
+    title: Креирање табела - команда CREATE TABLE и везе 1:M и M:M
+    type: reading
+  - description: ''
+    file: 3_03_Komanda CREATE TABLE_primeri.html
+    guid: 53b74ea3-ef59-4226-a443-ffd268ea85a4
+    src: 3_03_Komanda CREATE TABLE_primeri.rst
+    title: Креирање табела - команда CREATE TABLE - примери
+    type: reading
+  - description: ''
+    file: 3_04_Komanda CREATE TABLE_kviz.html
+    guid: 8dd3abe4-297e-4b5f-9bdc-846b955bdfa7
+    src: 3_04_Komanda CREATE TABLE_kviz.rst
+    title: Креирање табела - команда CREATE TABLE - квиз
+    type: quiz
+  - description: ''
+    file: 3_05_Komanda CREATE TABLE_zadatak.html
+    guid: 71390859-703b-488a-8415-6c0f1aaf5180
+    src: 3_05_Komanda CREATE TABLE_zadatak.rst
+    title: Задатак
+    type: reading
+  - description: ''
+    file: 3_06_SQL Server Management Studio.html
+    guid: 070c8d20-cc1f-4c17-aede-a0b67e040419
+    src: 3_06_SQL Server Management Studio.rst
+    title: Креирање базе помоћу алата SQL Server Management Studio
+    type: reading
+  - description: ''
+    file: 3_07_CREATE ALTER TABLE i DROP TABLE.html
+    guid: 26692ab5-f29e-4507-8675-2d0011e57df0
+    src: 3_07_CREATE ALTER TABLE i DROP TABLE.rst
+    title: Креирање база - команде CREATE ALTER TABLE и DROP TABLE
+    type: reading
+  - description: ''
+    file: 3_08_Rad sa podacima.html
+    guid: a5068a93-b140-4582-9128-198039fb6f0a
+    src: 3_08_Rad sa podacima.rst
+    title: Рад са подацима
+    type: reading
+  - description: ''
+    file: 3_09_Rad sa podacima_kviz.html
+    guid: 21d64374-2987-4f93-9bd7-47268e57f065
+    src: 3_09_Rad sa podacima_kviz.rst
+    title: Рад са подацима - квиз
+    type: quiz
+  - description: ''
+    file: 3_010_Zadatak.html
+    guid: 3f549e29-f99d-4f35-94b8-024c04193b78
+    src: 3_010_Zadatak.rst
+    title: Задатак
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 3_0_Kreiranje tabela_CREATE TABLE
+  guid: 4ae36f28-6adb-4503-81d6-cbcc5ec439c2
+  normalized_title: Креирање табела
+  title: Креирање табела
+- activities:
+  - description: ''
+    file: 3_11_Pregled modela i baze.html
+    guid: 76f724a8-97a5-40a0-aaef-2cc557344f6a
+    src: 3_11_Pregled modela i baze.rst
+    title: База података библиотеке - преглед модела и базе
+    type: reading
+  - description: ''
+    file: 3_12_Kreiranje baze i tabela.html
+    guid: b2f70053-adaf-455a-8509-c00c52a4547f
+    src: 3_12_Kreiranje baze i tabela.rst
+    title: База података библиотеке - креирање базе и табела
+    type: reading
+  - description: ''
+    file: 3_13_Unos podataka.html
+    guid: 09c4ad56-5ee5-4aad-b14c-2552e9e8e1ed
+    src: 3_13_Unos podataka.rst
+    title: База података библиотеке - унос података
+    type: reading
+  - description: ''
+    file: 3_14_Dijagram.html
+    guid: e100e5da-6e6a-4294-9e28-acd955ede164
+    src: 3_14_Dijagram.rst
+    title: База података библиотеке - дијаграм
+    type: reading
+  - description: ''
+    file: 3_15_Drugi nacin za kreiranje baze.html
+    guid: 84135acb-cac9-4bee-893d-bcfec84b5ab7
+    src: 3_15_Drugi nacin za kreiranje baze.rst
+    title: База података библиотеке - други начин за креирање базе
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 3_1_Baza podataka biblioteke
+  guid: 2d7d53e4-bb76-462f-a602-d97da12e1891
+  normalized_title: База података библиотеке
+  title: База података библиотеке
+- activities:
+  - description: ''
+    file: 4_01_Upit iz jedne tabele_projekcija.html
+    guid: 18c26bf6-a30d-4dc4-80a8-23e454c6c79e
+    src: 4_01_Upit iz jedne tabele_projekcija.rst
+    title: Упит SELECT - упит из једне табеле - пројекција
+    type: reading
+  - description: ''
+    file: 4_02_Upit iz jedne tabele_projekcija_kviz.html
+    guid: 85ffe184-edc8-496b-8556-87c9bfd4919b
+    src: 4_02_Upit iz jedne tabele_projekcija_kviz.rst
+    title: Упит SELECT - упит из једне табеле - пројекција - квиз
+    type: quiz
+  - description: ''
+    file: 4_03_Upit iz jedne tabele_projekcija_zadaci.html
+    guid: 85d2a994-12e5-4452-8d94-4705caa4c373
+    src: 4_03_Upit iz jedne tabele_projekcija_zadaci.rst
+    title: Упит SELECT - упит из једне табеле - пројекција - задаци
+    type: reading
+  - description: ''
+    file: 4_04_Upit iz jedne tabele_selekcija.html
+    guid: 8bb3c29e-ed76-4ecf-b24b-5144f0b52612
+    src: 4_04_Upit iz jedne tabele_selekcija.rst
+    title: Упит SELECT - упит из једне табеле - селекција
+    type: reading
+  - description: ''
+    file: 4_05_Upit iz jedne tabele_selekcija_kviz.html
+    guid: 6c474399-a204-4a0a-bb13-08a7b2d3d474
+    src: 4_05_Upit iz jedne tabele_selekcija_kviz.rst
+    title: Упит SELECT - упит из једне табеле - селекција - квиз
+    type: quiz
+  - description: ''
+    file: 4_06_Upit iz jedne tabele_selekcija_zadaci.html
+    guid: 41d2b66e-ecad-411b-969b-3511de20f9ef
+    src: 4_06_Upit iz jedne tabele_selekcija_zadaci.rst
+    title: Упит SELECT - упит из једне табеле - селекција - задаци
+    type: reading
+  - description: ''
+    file: 4_07_Upit iz jedne tabele_projekcija_selekcija_zadaci.html
+    guid: adee1180-47ef-4f40-80c4-1e42ca6ae004
+    src: 4_07_Upit iz jedne tabele_projekcija_selekcija_zadaci.rst
+    title: Упит SELECT - упит из једне табеле - пројекција и селекција - задаци
+    type: reading
+  - description: ''
+    file: 4_08_Zadaci.html
+    guid: 2abd43cb-cf05-4204-8517-2517759d0a74
+    src: 4_08_Zadaci.rst
+    title: Задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 4_0_SELECT_projekcija i selekcija
+  guid: 09106b60-2443-4c59-bd10-d6070b16e2af
+  normalized_title: Упит SELECT - пројекција и селекција
+  title: Упит SELECT - пројекција и селекција
+- activities:
+  - description: ''
+    file: 4_11_Spajanje tabela.html
+    guid: d31daeb6-041b-4915-8aa9-d182be89a5ea
+    src: 4_11_Spajanje tabela.rst
+    title: Упит SELECT - спајање табела
+    type: reading
+  - description: ''
+    file: 4_12_Spajanje tabela_kviz.html
+    guid: 3702abaf-cdc5-4928-b56c-6df4677e5853
+    src: 4_12_Spajanje tabela_kviz.rst
+    title: Упит SELECT - спајање табела - квиз
+    type: quiz
+  - description: ''
+    file: 4_13_Spajanje tabela_zadaci.html
+    guid: 4880495a-7b84-4ed8-9793-b7bf31fca79c
+    src: 4_13_Spajanje tabela_zadaci.rst
+    title: Упит SELECT - спајање табела - задаци
+    type: reading
+  - description: ''
+    file: 4_14_Zadaci.html
+    guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb
+    src: 4_14_Zadaci.rst
+    title: Задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 4_1_SELECT_spajanje tabela
+  guid: b4338097-dd09-4d58-a355-38f30c386a64
+  normalized_title: Упит SELECT - спајање табела
+  title: Упит SELECT - спајање табела
+- activities:
+  - description: ''
+    file: 4_21_Upotreba funkcija.html
+    guid: ee2d46f5-52d4-41a9-a7d4-1f9f366d6189
+    src: 4_21_Upotreba funkcija.rst
+    title: Упит SELECT - употреба функција
+    type: reading
+  - description: ''
+    file: 4_22_Upotreba funkcija_zadaci.html
+    guid: ed21b380-c657-4cc6-bb28-c80760cd13f6
+    src: 4_22_Upotreba funkcija_zadaci.rst
+    title: Упит SELECT - употреба функција - задаци
+    type: reading
+  - description: ''
+    file: 4_23_Podupiti.html
+    guid: 1a9459b3-c618-4396-b178-e5cdf4906cdd
+    src: 4_23_Podupiti.rst
+    title: Упит SELECT - подупити
+    type: reading
+  - description: ''
+    file: 4_24_Podupiti_zadaci.html
+    guid: 81741a81-b06c-4f3a-b642-873d04fa2682
+    src: 4_24_Podupiti_zadaci.rst
+    title: Упит SELECT - подупити - задаци
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 4_2_SELECT_funkcije i podupiti
+  guid: 45c17dca-df4a-4fe7-bd87-9f539dbd799e
+  normalized_title: Упит SELECT - функције и подупити
+  title: Упит SELECT - функције и подупити
+- activities:
+  - description: ''
+    file: 4_31_Kreiranje baze pesme_1.html
+    guid: 7b2bd923-30a1-416d-af7f-b31d83f8ac31
+    src: 4_31_Kreiranje baze pesme_1.rst
+    title: База података за продају дигиталних композиција
+    type: reading
+  - description: ''
+    file: 4_32_Kreiranje baze pesme_2.html
+    guid: 8df796b0-3449-40a6-8514-f23ef1c5e9a3
+    src: 4_32_Kreiranje baze pesme_2.rst
+    title: База података за продају дигиталних композиција
+    type: reading
+  - description: ''
+    file: 4_33_Zadaci_ projekcija i selekcija.html
+    guid: f950ab15-0041-459b-9211-367843156e2c
+    src: 4_33_Zadaci_ projekcija i selekcija.rst
+    title: Задаци - пројекција и селекција
+    type: reading
+  - description: ''
+    file: 4_34_Zadaci_ spajanje tabela.html
+    guid: c413f14f-fae5-46a1-ac5d-87304065f08e
+    src: 4_34_Zadaci_ spajanje tabela.rst
+    title: Задаци - спајање табела
+    type: reading
+  - description: ''
+    file: 4_35_Zadaci_ grupne funkcije i jedna tabela.html
+    guid: afe3e450-43a5-4115-8152-73f22aa0213b
+    src: 4_35_Zadaci_ grupne funkcije i jedna tabela.rst
+    title: Задаци - групне функције и једна табела
+    type: reading
+  - description: ''
+    file: 4_36_Zadaci_ grupne funkcije i spajanje tabela.html
+    guid: f47d5ce0-b1f6-4d73-aa30-dbaa86dada6b
+    src: 4_36_Zadaci_ grupne funkcije i spajanje tabela.rst
+    title: Задаци - групне функције и спајање табела
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 4_3_Baza Pesme
+  guid: 93ef0f2d-d9c5-471e-8ddc-e992175faa1d
+  normalized_title: Продаја дигиталних композиција - база
+  title: Продаја дигиталних композиција - база
+- activities:
+  - description: ''
+    file: 4_41_Pogledi.html
+    guid: 7bd669aa-9ca7-4f04-88d2-404201cfea5b
+    src: 4_41_Pogledi.rst
+    title: Погледи
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 4_4_Pogledi
+  guid: def95e99-5549-4261-9e56-9b68f84c7bc9
+  normalized_title: Погледи
+  title: Погледи
+- activities:
+  - description: ''
+    file: 5_01_Projektni zadatak.html
+    guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
+    src: 5_01_Projektni zadatak.rst
+    title: Погледи
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 5_0_Projektni zadatak
+  guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
+  normalized_title: Пројектни задатак
+  title: Пројектни задатак
+- activities:
+  - description: ''
+    file: 6_01_DODATAK A_Оracle.html
+    guid: 3a1d6709-1b4c-4d64-a258-acca0455cbf7
+    src: 6_01_DODATAK A_Оracle.rst
+    title: База података библиотеке – ORACLE
+    type: reading
+  - description: ''
+    file: 6_02_DODATAK B_SQLLite.html
+    guid: 4acdd986-d508-477b-bb46-2b69dd16e512
+    src: 6_02_DODATAK B_SQLLite.rst
+    title: База података библиотеке – SQLLite
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 6_0 Dodaci
+  guid: d6871dd1-6ccd-4895-99d3-51d7a09d2072
+  normalized_title: Додаци
+  title: Додаци
+title: Petljadoc Course

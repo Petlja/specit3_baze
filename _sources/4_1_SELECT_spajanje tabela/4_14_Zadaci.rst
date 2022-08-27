@@ -29,59 +29,63 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
  Уредити резултат по називу произвођача, а уколико два модела имају истог произвођача, по
  називу модела. 
 
-.. reveal:: 4141
-   :showtitle: Прикажи решење   
-   :hidetitle: Сакриј
-   
-   ::
-   
-    SELECT naziv+' - '+oznaka "Model"  
-    FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
-    WHERE broj_vrata=5
-    ORDER BY naziv, oznaka
+.. reveal:: db_4141
+	:showtitle: Прикажи решење
+	:hidetitle: Сакриј
+	
+	.. code-block:: sql
+	
+		SELECT naziv+' - '+oznaka "Model"  
+		FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
+		WHERE broj_vrata=5
+		ORDER BY naziv, oznaka
+	
+	.. image:: ../../_images/slika_414b.png
+		:width: 450
+		:align: center
 
- .. image:: ../../_images/slika_414b.png
-   :width: 480
-   :align: center
+
 
 .. questionnote::
 
  2. Написати упит којим се приказују ознака модела, назив произвођача, назив и опис категорије за
  све моделе. Уредити приказ резултата по називу категорије. 
 
-.. reveal:: 4142
-   :showtitle: Прикажи решење 
-   :hidetitle: Сакриј
+.. reveal:: db_4142
+	:showtitle: Прикажи решење
+	:hidetitle: Сакриј
+	
+	.. code-block:: sql
+	
+		SELECT oznaka, proizvodjaci.naziv "proizvodjac", 
+		kategorije.naziv "kategorija", opis
+		FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
+		JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
+		ORDER BY kategorije.naziv
 
- ::
-
-    SELECT oznaka, proizvodjaci.naziv "proizvodjac", kategorije.naziv "kategorija", opis
-    FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
-    JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
-    ORDER BY kategorije.naziv
-
- .. image:: ../../_images/slika_414c.png
-   :width: 480
-   :align: center
-
+	.. image:: ../../_images/slika_414c.png
+		:width: 450
+		:align: center
+		
 .. questionnote::
 
  3. Написати упит којим се приказује ознака модела за све лимузине произвођача Mercedes-Benz.
 
-.. reveal:: 4143
-   :showtitle: Прикажи решење 
-   :hidetitle: Сакриј
+.. reveal:: db_4143
+	:showtitle: Прикажи решење
+	:hidetitle: Сакриј
+	
+	.. code-block:: sql
+	
+		SELECT oznaka
+		FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
+		JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
+		WHERE proizvodjaci.naziv='Mercedes-Benz' AND kategorije.naziv='limuzina'
 
- ::
 
-    SELECT oznaka
-    FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
-    JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
-    WHERE proizvodjaci.naziv='Mercedes-Benz' AND kategorije.naziv='limuzina'
-
- .. image:: ../../_images/slika_414d.png
-   :width: 480
-   :align: center
+	.. image:: ../../_images/slika_414d.png
+		:width: 450
+		:align: center
 
 .. questionnote::
 
@@ -89,29 +93,30 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
  Обратити пажњу да, ако један произвођач производи више модела који користе дизел, назив
  тог произвођача треба приказати само једном. 
 
-.. reveal:: 4144
-   :showtitle: Прикажи решење 
-   :hidetitle: Сакриј
+.. reveal:: db_4144
+	:showtitle: Прикажи решење
+	:hidetitle: Сакриј
+	
+	.. code-block:: sql
+	
+		SELECT DISTINCT proizvodjaci.naziv
+		FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
+		WHERE tip_goriva='dizel'
+		ORDER BY proizvodjaci.naziv
 
- ::
-
-    SELECT DISTINCT proizvodjaci.naziv
-    FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
-    WHERE tip_goriva='dizel'
-    ORDER BY proizvodjaci.naziv
 
 .. questionnote::
 
  5. Написати упит којим се абецедно уређено приказују произвођачи џипова.
 
-.. reveal:: 4145
-   :showtitle: Прикажи решење 
-   :hidetitle: Сакриј
-
- ::
-
-    SELECT DISTINCT proizvodjaci.naziv
-    FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
-    JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
-    WHERE kategorije.naziv='dzip'
-    ORDER BY proizvodjaci.naziv
+.. reveal:: db_4145
+	:showtitle: Прикажи решење
+	:hidetitle: Сакриј
+	
+	.. code-block:: sql
+	
+		SELECT DISTINCT proizvodjaci.naziv
+		FROM modeli JOIN proizvodjaci ON (modeli.pib=proizvodjaci.pib) 
+		JOIN kategorije ON (modeli.id_kategorije=kategorije.id_kategorije)
+		WHERE kategorije.naziv='dzip'
+		ORDER BY proizvodjaci.naziv
