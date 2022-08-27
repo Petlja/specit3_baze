@@ -282,11 +282,7 @@ lessons:
       - type: reading
         title: Задаци
         file: 4_14_Zadaci.rst
-        guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb  
-      - type: reading
-        title: Задаци
-        file: 4_14_Zadaci.rst
-        guid: 6f8d81bb-b856-4d9a-becb-40aaf88e24e2         
+        guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb        
   -  title: Упит SELECT - функције и подупити
      guid: 45c17dca-df4a-4fe7-bd87-9f539dbd799e
      folder: 4_2_SELECT_funkcije i podupiti

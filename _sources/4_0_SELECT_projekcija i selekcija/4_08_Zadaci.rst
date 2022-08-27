@@ -107,120 +107,122 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
 
  Написати упит којим се приказује адреса произвођача Dacia.
 
-.. reveal:: 4082
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
-
- ::
-
-   SELECT naziv, opis FROM proizvodjaci
-   WHERE naziv='Dacia'
-
- .. image:: ../../_images/slika_408k.png
-   :width: 400
-   :align: center
+.. reveal::  Задатак 4082
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT naziv, opis FROM proizvodjaci
+	WHERE naziv='Dacia'
+	
+   .. image:: ../../_images/slika_408k.png
+     :width: 500
+     :align: center
 
 .. questionnote::
 
  Написати упит којим се приказује назив категорије са идентификационим бројем 3.
 
-.. reveal:: 4083
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
-
- ::
-
-   SELECT naziv, opis FROM kategorije
-   WHERE id_kategorije=3
-
- .. image:: ../../_images/slika_408l.png
-   :width: 400
-   :align: center
+.. reveal::  Задатак 4083
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT naziv, opis FROM kategorije
+	WHERE id_kategorije=3
+	
+   .. image:: ../../_images/slika_408l.png
+     :width: 500
+     :align: center
 
 .. questionnote::
 
  Написати упит којим се приказују ознака модела и јачина мотора за све аутомобиле који користе дизел.
 
-.. reveal:: 4084
-	:showtitle: Прикажи решење 
-	:hidetitle: Сакриј
-
- ::
-
-	SELECT oznaka, jacina_motora FROM modeli
+.. reveal::  Задатак 4084
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT oznaka, jacina_motora FROM modeli
 	WHERE tip_goriva='dizel'
-
- .. image:: ../../_images/slika_408m.png
-		:width: 400
-		:align: center
+	
+   .. image:: ../../_images/slika_408m.png
+     :width: 500
+     :align: center
 
 .. questionnote::
 
  Написати упит којим се приказују ознака модела и ПИБ произвођача за све аутомобиле који припадају категоријама са идентификационим бројевима 1 и 3. Уредити списак по произвођачу.
 
-.. reveal:: 4085
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
-
- ::
-
-   SELECT oznaka, pib
-   FROM modeli
-   WHERE id_kategorije=1 OR id_kategorije=3
-   ORDER BY pib
-
- .. image:: ../../_images/slika_408n.png
-   :width: 400
-   :align: center
+.. reveal::  Задатак 4085
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT oznaka, pib
+	FROM modeli
+	WHERE id_kategorije=1 OR id_kategorije=3
+	ORDER BY pib
+		
+   .. image:: ../../_images/slika_408n.png
+     :width: 500
+     :align: center
 
 .. questionnote::
 
  Написати упит којим се приказују ознака модела и тип горива за све аутомобиле који имају петора врата и имају истог произвођача чији је ПИБ 12345678.
 
-.. reveal:: 4086
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
+.. reveal::  Задатак 4086
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT oznaka, tip_goriva FROM modeli
+	WHERE broj_vrata=5 AND pib=12345678
+	
+   .. image:: ../../_images/slika_408o.png
+     :width: 500
+     :align: center
 
- ::
-
-   SELECT oznaka, tip_goriva FROM modeli
-   WHERE broj_vrata=5 AND pib=12345678
-
- .. image:: ../../_images/slika_408o.png
-   :width: 400
-   :align: center
 
 .. questionnote::
 
  Написати упит којим се приказују ознака модела, јачина мотора и број врата за све аутомобиле који припадају категорији чији је идентификациони број 2. Ознаку и јачину модела приказати спојено са једним размаком између у једној колони. Изменити заглавља колона у приказу резултата тако да буду редом „Modeli automobila“  и „Broj vrata“.
 
-.. reveal:: 4087
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
-
- ::
-
-   SELECT oznaka+' '+jacina_motora "Model automobila", broj_vrata "Broj vrata" 
-   FROM modeli WHERE id_kategorije=2
-
- .. image:: ../../_images/slika_408p.png
-   :width: 650
-   :align: center
+.. reveal::  Задатак 4087
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT oznaka+' '+jacina_motora "Model automobila", broj_vrata "Broj vrata" 
+	FROM modeli WHERE id_kategorije=2
+		
+   .. image:: ../../_images/slika_408p.png
+     :width: 650
+     :align: center
 
 .. questionnote::
 
  Написати упит којим се приказују назив и опис за све категорије за које је унет опис.
 
-.. reveal:: 4088
-    :showtitle: Прикажи решење 
-    :hidetitle: Сакриј
+.. reveal::  Задатак 4088
+   :showtitle: Прикажи решење 
+   :hidetitle: Сакриј
+   
+   ::
+   
+    SELECT naziv, opis FROM kategorije
+	WHERE opis IS NOT NULL
+		
+   .. image:: ../../_images/slika_408q.png
+     :width: 400
+     :align: center
 
- ::
-
-   SELECT naziv, opis FROM kategorije
-   WHERE opis IS NOT NULL
-
- .. image:: ../../_images/slika_408q.png
-   :width: 400
-   :align: center
 
