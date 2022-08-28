@@ -469,7 +469,7 @@
     </p></div></div>
 
     <div id="db_4221" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime+' '+prezime+' je poceo da radi '+CONVERT(varchar,datum_zaposlenja) "Izvestaj"
-FROM zaposleni"    > 
+FROM zaposleni"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -480,7 +480,7 @@ FROM zaposleni"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -507,7 +507,7 @@ FROM zaposleni"    >
     </p></div></div>
 
     <div id="db_4222" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT LOWER(SUBSTRING(ime, 1, 2)+SUBSTRING(prezime, 1, 3))+'@biblioteka22.rs' "Mejl adrese"
-FROM zaposleni"    > 
+FROM zaposleni"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -518,7 +518,7 @@ FROM zaposleni"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -544,7 +544,7 @@ FROM zaposleni"    >
     </p></div></div>
 
     <div id="db_4223" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT broj_clanske_karte, prezime, ISNULL(mejl_adresa, 'Nema mejl adresu')
-FROM clanovi"    > 
+FROM clanovi"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -555,7 +555,7 @@ FROM clanovi"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -582,7 +582,7 @@ FROM clanovi"    >
     </p></div></div>
 
     <div id="db_4224" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT MIN(iznos), MAX(iznos)
-FROM kazne"    > 
+FROM kazne"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -593,7 +593,7 @@ FROM kazne"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -619,7 +619,7 @@ FROM kazne"    >
 
     </p></div></div>
 
-    <div id="db_4225" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT AVG(iznos) FROM clanarine"    > 
+    <div id="db_4225" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT AVG(iznos) FROM clanarine"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -630,7 +630,7 @@ FROM kazne"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -658,7 +658,7 @@ FROM kazne"    >
 
     <div id="db_4226" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT god, AVG(iznos)
 FROM clanarine
-GROUP BY god"    > 
+GROUP BY god"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -669,7 +669,7 @@ GROUP BY god"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -697,7 +697,7 @@ GROUP BY god"    >
 
     <div id="db_4227" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT COUNT(*)
 FROM clanarine
-WHERE broj_clanske_karte = 33"    > 
+WHERE broj_clanske_karte = 33"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -708,7 +708,7 @@ WHERE broj_clanske_karte = 33"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -735,7 +735,7 @@ WHERE broj_clanske_karte = 33"    >
     </p></div></div>
 
     <div id="db_4228" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT MIN(datum)
-FROM kazne"    > 
+FROM kazne"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -746,7 +746,7 @@ FROM kazne"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -773,7 +773,7 @@ FROM kazne"    >
     </p></div></div>
 
     <div id="db_4229" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT MAX(datum_uzimanja)
-FROM pozajmice"    > 
+FROM pozajmice"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -784,7 +784,7 @@ FROM pozajmice"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -811,7 +811,7 @@ FROM pozajmice"    >
 
     <div id="db_42210" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT AVG(iznos)
 FROM clanarine
-WHERE iznos >= 2500"    > 
+WHERE iznos >= 2500"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -822,7 +822,7 @@ WHERE iznos >= 2500"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -849,7 +849,7 @@ WHERE iznos >= 2500"    >
 
     <div id="db_42211" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT id_knjige, COUNT(inventarski_broj)
 FROM primerci
-GROUP BY id_knjige"    > 
+GROUP BY id_knjige"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -860,7 +860,7 @@ GROUP BY id_knjige"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -887,7 +887,7 @@ GROUP BY id_knjige"    >
 
     <div id="db_42212" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-GROUP BY knjige.id_knjige, naziv"    > 
+GROUP BY knjige.id_knjige, naziv"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -898,7 +898,7 @@ GROUP BY knjige.id_knjige, naziv"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -926,7 +926,7 @@ GROUP BY knjige.id_knjige, naziv"    >
     <div id="db_42213" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 GROUP BY knjige.id_knjige, naziv
-HAVING COUNT(inventarski_broj) > 1"    > 
+HAVING COUNT(inventarski_broj) > 1"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -937,7 +937,7 @@ HAVING COUNT(inventarski_broj) > 1"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -964,7 +964,7 @@ HAVING COUNT(inventarski_broj) > 1"    >
 
     <div id="db_42214" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT id_knjige, COUNT(id_autora)
 FROM autori_knjige
-GROUP BY id_knjige"    > 
+GROUP BY id_knjige"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -975,7 +975,7 @@ GROUP BY id_knjige"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -1003,7 +1003,7 @@ GROUP BY id_knjige"    >
 
     <div id="db_42215" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.id_knjige, naziv, COUNT(id_autora)
 FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
-GROUP BY knjige.id_knjige, naziv"    > 
+GROUP BY knjige.id_knjige, naziv"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -1014,7 +1014,7 @@ GROUP BY knjige.id_knjige, naziv"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -1042,7 +1042,7 @@ GROUP BY knjige.id_knjige, naziv"    >
     <div id="db_42216" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.id_knjige, naziv, COUNT(id_autora)
 FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
 GROUP BY knjige.id_knjige, naziv
-HAVING COUNT(id_autora) = 1"    > 
+HAVING COUNT(id_autora) = 1"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -1053,7 +1053,7 @@ HAVING COUNT(id_autora) = 1"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>

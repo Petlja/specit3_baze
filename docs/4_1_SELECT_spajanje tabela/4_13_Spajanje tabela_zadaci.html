@@ -462,14 +462,14 @@
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка. Уредити
+<p>1. Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка. Уредити
 резултат по називу књиге.</p>
 
     </p></div></div>
 
     <div id="db_4131" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-ORDER BY naziv"    > 
+ORDER BY naziv"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -480,7 +480,7 @@ ORDER BY naziv"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -500,7 +500,7 @@ ORDER BY naziv"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка и назив
+<p>2. Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка и назив
 издавача. Уредити резултат по називу издавача, а у случају да књиге имају истог издавача,
 по називу књиге.</p>
 
@@ -509,7 +509,7 @@ ORDER BY naziv"    >
     <div id="db_4132" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, knjige.naziv, izdavaci.naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
-ORDER BY izdavaci.naziv, knjige.naziv"    > 
+ORDER BY izdavaci.naziv, knjige.naziv"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -520,7 +520,7 @@ ORDER BY izdavaci.naziv, knjige.naziv"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -540,13 +540,15 @@ ORDER BY izdavaci.naziv, knjige.naziv"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују називи књига издавача чији је назив CET.</p>
+<ol class="arabic simple" start="3">
+<li><p>Написати упит којим се приказују називи књига издавача чији је назив CET.</p></li>
+</ol>
 
     </p></div></div>
 
     <div id="db_4133" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.naziv
 FROM knjige JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
-WHERE izdavaci.naziv='CET'"    > 
+WHERE izdavaci.naziv='CET'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -557,7 +559,7 @@ WHERE izdavaci.naziv='CET'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -577,14 +579,16 @@ WHERE izdavaci.naziv='CET'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују инвентарски бројеви примерака књига издавача чији је назив CET.</p>
+<ol class="arabic simple" start="4">
+<li><p>Написати упит којим се приказују инвентарски бројеви примерака књига издавача чији је назив CET.</p></li>
+</ol>
 
     </p></div></div>
 
     <div id="db_4134" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, knjige.naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
-WHERE izdavaci.naziv='CET'"    > 
+WHERE izdavaci.naziv='CET'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -595,7 +599,7 @@ WHERE izdavaci.naziv='CET'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -615,7 +619,7 @@ WHERE izdavaci.naziv='CET'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују имена и презимена аутора који су писали књиге за издавача
+<p>5. Написати упит којим се приказују имена и презимена аутора који су писали књиге за издавача
 чији је назив CET, без понављања.</p>
 
     </p></div></div>
@@ -624,7 +628,7 @@ WHERE izdavaci.naziv='CET'"    >
 FROM knjige JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
 JOIN autori_knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
 JOIN autori ON (autori_knjige.id_autora=autori.id_autora)
-WHERE izdavaci.naziv='CET'"    > 
+WHERE izdavaci.naziv='CET'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -635,7 +639,7 @@ WHERE izdavaci.naziv='CET'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -655,12 +659,14 @@ WHERE izdavaci.naziv='CET'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују имејл запосленог у библиотеци и имејл његовог менаџера.</p>
+<ol class="arabic simple" start="6">
+<li><p>Написати упит којим се приказују имејл запосленог у библиотеци и имејл његовог менаџера.</p></li>
+</ol>
 
     </p></div></div>
 
     <div id="db_4136" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT z.mejl "Mejl zaposlenog", m.mejl "Mejl menadzera"
-FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    > 
+FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -671,7 +677,7 @@ FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -691,7 +697,7 @@ FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују подаци о свим позајмицама: име, презиме и телефон члана,
+<p>7. Написати упит којим се приказују подаци о свим позајмицама: име, презиме и телефон члана,
 датум позајмице, датум враћања и инвентарски број узетог примерка. Резултат уредити тако
 да се прво приказују најновије позајмице по датуму узимања.</p>
 
@@ -701,7 +707,7 @@ FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    >
 FROM primerci JOIN pozajmice
 ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
-ORDER BY datum_uzimanja DESC"    > 
+ORDER BY datum_uzimanja DESC"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -712,7 +718,7 @@ ORDER BY datum_uzimanja DESC"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -732,7 +738,7 @@ ORDER BY datum_uzimanja DESC"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
+<p>8. Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
 адреса члана, датум позајмице и назив књиге.</p>
 
     </p></div></div>
@@ -742,7 +748,7 @@ FROM primerci JOIN pozajmice
 ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-WHERE datum_vracanja IS NULL"    > 
+WHERE datum_vracanja IS NULL"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -753,7 +759,7 @@ WHERE datum_vracanja IS NULL"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -773,7 +779,7 @@ WHERE datum_vracanja IS NULL"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
+<p>9. Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
 адреса члана, датум позајмице, назив књиге и назив издавача.</p>
 
     </p></div></div>
@@ -784,7 +790,7 @@ ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
-WHERE datum_vracanja IS NULL"    > 
+WHERE datum_vracanja IS NULL"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -795,7 +801,7 @@ WHERE datum_vracanja IS NULL"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -815,7 +821,7 @@ WHERE datum_vracanja IS NULL"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују датуми позајмица књига чији је аутор Марко Видојковић.</p>
+<p>10.Написати упит којим се приказују датуми позајмица књига чији је аутор Марко Видојковић.</p>
 
     </p></div></div>
 
@@ -824,7 +830,7 @@ FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN autori_knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
 JOIN autori ON (autori_knjige.id_autora=autori.id_autora)
-WHERE ime='Marko' AND prezime='Vidojkovic'"    > 
+WHERE ime='Marko' AND prezime='Vidojkovic'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -835,7 +841,7 @@ WHERE ime='Marko' AND prezime='Vidojkovic'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -855,7 +861,7 @@ WHERE ime='Marko' AND prezime='Vidojkovic'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују називи књигa које је из библиотеке узимао члан са бројем
+<p>11. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан са бројем
 чланске карте 33, али без понављања. Дакле, уколико је члан током година колико је члан
 библиотеке узимао исту књигу неколико пута, назив те књиге приказати само једном.</p>
 
@@ -864,7 +870,7 @@ WHERE ime='Marko' AND prezime='Vidojkovic'"    >
     <div id="db_41311" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT naziv
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-WHERE broj_clanske_karte=33"    > 
+WHERE broj_clanske_karte=33"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -875,7 +881,7 @@ WHERE broj_clanske_karte=33"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -895,7 +901,7 @@ WHERE broj_clanske_karte=33"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују називи књигa које је из библиотеке узимао члан „Милица
+<p>12. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан „Милица
 Зорановић“, али без понављања.</p>
 
     </p></div></div>
@@ -904,7 +910,7 @@ WHERE broj_clanske_karte=33"    >
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
-WHERE ime='Milica' AND prezime='Zoranovic'"    > 
+WHERE ime='Milica' AND prezime='Zoranovic'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -915,7 +921,7 @@ WHERE ime='Milica' AND prezime='Zoranovic'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -935,7 +941,7 @@ WHERE ime='Milica' AND prezime='Zoranovic'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују имена чланова библиотеке и називи издавача чије су књиге
+<p>13. Написати упит којим се приказују имена чланова библиотеке и називи издавача чије су књиге
 читали, без понављања (исти члан је могао да чита више књига истог издавача). Резултат уредити
 по називу издавача.</p>
 
@@ -946,7 +952,7 @@ FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
-ORDER BY izdavaci.naziv"    > 
+ORDER BY izdavaci.naziv"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -957,7 +963,7 @@ ORDER BY izdavaci.naziv"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -977,7 +983,7 @@ ORDER BY izdavaci.naziv"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују имејл адресе чланова који су узимали из библиотеке књиге у
+<p>14. Написати упит којим се приказују имејл адресе чланова који су узимали из библиотеке књиге у
 издању издавача са називом СЕТ, без понављања.</p>
 
     </p></div></div>
@@ -987,7 +993,7 @@ FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
 JOIN clanovi ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
-WHERE izdavaci.naziv='CET'"    > 
+WHERE izdavaci.naziv='CET'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -998,7 +1004,7 @@ WHERE izdavaci.naziv='CET'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -1018,12 +1024,14 @@ WHERE izdavaci.naziv='CET'"    >
                 <img class="corner-image float-right" src="../_static/img/question-mark.png" />
             </h4>
             <p>
-<p>Написати упит којим се приказују бројеви телефона чланова којима је издата казна за неку позајмицу.</p>
+<ol class="arabic simple" start="15">
+<li><p>Написати упит којим се приказују бројеви телефона чланова којима је издата казна за неку позајмицу.</p></li>
+</ol>
 
     </p></div></div>
 
     <div id="db_41315" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT telefon
-FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)"    > 
+FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -1034,7 +1042,7 @@ FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>

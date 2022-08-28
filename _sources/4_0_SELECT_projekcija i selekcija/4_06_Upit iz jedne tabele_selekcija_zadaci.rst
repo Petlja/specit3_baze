@@ -15,6 +15,7 @@
 
 .. dbpetlja:: db_4061
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM clanovi
                    WHERE broj_clanske_karte=11
 
@@ -24,6 +25,7 @@
 
 .. dbpetlja:: db_4062
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM kazne
                    WHERE iznos>450
 
@@ -33,6 +35,7 @@
 
 .. dbpetlja:: db_4063
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * 
                    FROM zaposleni
                    WHERE plata<50000 AND prezime LIKE 'K%'
@@ -43,6 +46,7 @@
 
 .. dbpetlja:: db_4064
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM zaposleni
                    WHERE prezime LIKE 'J%' OR prezime LIKE 'K%'
 
@@ -52,6 +56,7 @@
 
 .. dbpetlja:: db_4065
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM zaposleni
                    WHERE prezime LIKE 'K____'
 
@@ -61,6 +66,7 @@
 
 .. dbpetlja:: db_4066
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM zaposleni
                    WHERE id_menadzera = 3 AND plata BETWEEN 45000 AND 50000
 
@@ -70,6 +76,7 @@
 
 .. dbpetlja:: db_4067
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT *
                    FROM pozajmice
                    WHERE datum_uzimanja<'2019-03-01'
@@ -80,6 +87,7 @@
 
 .. dbpetlja:: db_4068
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT *
                    FROM clanarine
                    WHERE god IN (2017,2018)
@@ -90,6 +98,7 @@
 
 .. dbpetlja:: db_4069
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT *
                    FROM clanarine
                    WHERE opis IS NOT NULL

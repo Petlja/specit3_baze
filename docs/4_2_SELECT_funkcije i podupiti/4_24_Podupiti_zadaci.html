@@ -468,7 +468,7 @@
 
     <div id="db_4241" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT prezime
 FROM zaposleni
-WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')"    > 
+WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -479,7 +479,7 @@ WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -508,7 +508,7 @@ WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')"    >
 
     <div id="db_4242" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT prezime
 FROM zaposleni
-WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    > 
+WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -519,7 +519,7 @@ WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -546,7 +546,7 @@ WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    >
 
     <div id="db_4243" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT clanovi.broj_clanske_karte, prezime
 FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)
-WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)"    > 
+WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -557,7 +557,7 @@ WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -585,7 +585,7 @@ WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)"    >
     <div id="db_4244" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj
 FROM primerci
 WHERE id_knjige = (SELECT id_knjige FROM primerci WHERE inventarski_broj=13003)
-AND inventarski_broj <> 13003"    > 
+AND inventarski_broj <> 13003"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -596,7 +596,7 @@ AND inventarski_broj <> 13003"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -625,7 +625,7 @@ AND inventarski_broj <> 13003"    >
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
 WHERE id_izdavaca = (SELECT id_izdavaca FROM primerci JOIN knjige
                      ON (primerci.id_knjige=knjige.id_knjige)
-                     WHERE inventarski_broj=14001)"    > 
+                     WHERE inventarski_broj=14001)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -636,7 +636,7 @@ WHERE id_izdavaca = (SELECT id_izdavaca FROM primerci JOIN knjige
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -666,7 +666,7 @@ FROM autori JOIN autori_knjige ON (autori_knjige.id_autora=autori.id_autora)
 WHERE id_knjige IN (SELECT id_knjige FROM autori JOIN autori_knjige
                      ON (autori_knjige.id_autora=autori.id_autora)
                      WHERE ime='Stanka' AND prezime='Matkovic')
-AND NOT(ime='Stanka' AND prezime='Matkovic')"    > 
+AND NOT(ime='Stanka' AND prezime='Matkovic')"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -677,7 +677,7 @@ AND NOT(ime='Stanka' AND prezime='Matkovic')"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -704,7 +704,7 @@ AND NOT(ime='Stanka' AND prezime='Matkovic')"    >
     </p></div></div>
 
     <div id="db_4247" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT * FROM zaposleni
-WHERE plata = (SELECT MAX(plata) FROM zaposleni)"    > 
+WHERE plata = (SELECT MAX(plata) FROM zaposleni)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -715,7 +715,7 @@ WHERE plata = (SELECT MAX(plata) FROM zaposleni)"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -742,7 +742,7 @@ WHERE plata = (SELECT MAX(plata) FROM zaposleni)"    >
     </p></div></div>
 
     <div id="db_4248" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT * FROM zaposleni
-WHERE plata < (SELECT AVG(plata) FROM zaposleni)"    > 
+WHERE plata < (SELECT AVG(plata) FROM zaposleni)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -753,7 +753,7 @@ WHERE plata < (SELECT AVG(plata) FROM zaposleni)"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -782,7 +782,7 @@ WHERE plata < (SELECT AVG(plata) FROM zaposleni)"    >
     <div id="db_4249" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT naziv
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
 JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-WHERE datum_uzimanja = (SELECT MAX(datum_uzimanja) FROM pozajmice)"    > 
+WHERE datum_uzimanja = (SELECT MAX(datum_uzimanja) FROM pozajmice)"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -793,7 +793,7 @@ WHERE datum_uzimanja = (SELECT MAX(datum_uzimanja) FROM pozajmice)"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>

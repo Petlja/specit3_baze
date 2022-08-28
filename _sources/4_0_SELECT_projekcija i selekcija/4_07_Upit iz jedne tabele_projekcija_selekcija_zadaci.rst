@@ -70,6 +70,7 @@
 
 .. dbpetlja:: db_4071
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT datum_uzimanja, inventarski_broj
                    FROM pozajmice
                    WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL
@@ -84,6 +85,7 @@
 
 .. dbpetlja:: db_4072
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT inventarski_broj, datum_uzimanja
                    FROM pozajmice
                    WHERE datum_vracanja IS NULL
@@ -100,6 +102,7 @@
 
 .. dbpetlja:: db_4073
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT inventarski_broj, datum_uzimanja, datum_vracanja
                    FROM pozajmice
                    WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'
@@ -113,6 +116,7 @@
 
 .. dbpetlja:: db_4074
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT adresa, veb_sajt
                    FROM izdavaci
 
@@ -128,6 +132,7 @@
 
 .. dbpetlja:: db_4075
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT naziv
                    FROM knjige 
                    WHERE naziv LIKE '%Programiranje%' OR naziv LIKE '%programiranje%' OR naziv LIKE '%PROGRAMIRANJE%'

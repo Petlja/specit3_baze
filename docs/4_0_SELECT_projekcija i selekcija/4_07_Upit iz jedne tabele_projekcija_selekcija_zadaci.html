@@ -504,7 +504,7 @@
 
     <div id="db_4071" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT datum_uzimanja, inventarski_broj
 FROM pozajmice
-WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL"    > 
+WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -515,7 +515,7 @@ WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -545,7 +545,7 @@ WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL"    >
     <div id="db_4072" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, datum_uzimanja
 FROM pozajmice
 WHERE datum_vracanja IS NULL
-ORDER BY datum_uzimanja"    > 
+ORDER BY datum_uzimanja"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -556,7 +556,7 @@ ORDER BY datum_uzimanja"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -586,7 +586,7 @@ ORDER BY datum_uzimanja"    >
 
     <div id="db_4073" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, datum_uzimanja, datum_vracanja
 FROM pozajmice
-WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'"    > 
+WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -597,7 +597,7 @@ WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -624,7 +624,7 @@ WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'"    >
     </p></div></div>
 
     <div id="db_4074" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT adresa, veb_sajt
-FROM izdavaci"    > 
+FROM izdavaci"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -635,7 +635,7 @@ FROM izdavaci"    >
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>
@@ -666,7 +666,7 @@ FROM izdavaci"    >
 
     <div id="db_4075" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT naziv
 FROM knjige
-WHERE naziv LIKE '%Programiranje%' OR naziv LIKE '%programiranje%' OR naziv LIKE '%PROGRAMIRANJE%'"    > 
+WHERE naziv LIKE '%Programiranje%' OR naziv LIKE '%programiranje%' OR naziv LIKE '%PROGRAMIRANJE%'"    db-show-result> 
         <div class="row">
         <div class="db-input"> 
             <div class= "editor-div-db"> 
@@ -677,7 +677,7 @@ WHERE naziv LIKE '%Programiranje%' OR naziv LIKE '%programiranje%' OR naziv LIKE
                 <button class='runQuery btn-db btn-success'>Тестирај упит</button>
                 <button class='test-q btn-db btn-success'>Изврши упит</button>
                 
-                
+                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
             </div>
             <br>
             <div class='result'  disabled>

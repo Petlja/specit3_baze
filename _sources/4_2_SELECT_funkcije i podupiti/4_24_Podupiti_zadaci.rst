@@ -15,6 +15,7 @@
 
 .. dbpetlja:: db_4241
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT prezime
                    FROM zaposleni
                    WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')
@@ -29,6 +30,7 @@
 
 .. dbpetlja:: db_4242
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT prezime
                    FROM zaposleni
                    WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')
@@ -40,6 +42,7 @@
 
 .. dbpetlja:: db_4243
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT clanovi.broj_clanske_karte, prezime
                    FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)
                    WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)
@@ -51,6 +54,7 @@
 
 .. dbpetlja:: db_4244
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT inventarski_broj
                    FROM primerci
                    WHERE id_knjige = (SELECT id_knjige FROM primerci WHERE inventarski_broj=13003)
@@ -63,6 +67,7 @@
 
 .. dbpetlja:: db_4245
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT inventarski_broj, knjige.naziv
                    FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
                    WHERE id_izdavaca = (SELECT id_izdavaca FROM primerci JOIN knjige 
@@ -76,6 +81,7 @@
 
 .. dbpetlja:: db_4246
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT DISTINCT prezime+' '+ime "Autor"
                    FROM autori JOIN autori_knjige ON (autori_knjige.id_autora=autori.id_autora)
                    WHERE id_knjige IN (SELECT id_knjige FROM autori JOIN autori_knjige 
@@ -89,6 +95,7 @@
 
 .. dbpetlja:: db_4247
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM zaposleni
                    WHERE plata = (SELECT MAX(plata) FROM zaposleni)
 
@@ -98,6 +105,7 @@
 
 .. dbpetlja:: db_4248
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT * FROM zaposleni
                    WHERE plata < (SELECT AVG(plata) FROM zaposleni)
 
@@ -107,6 +115,7 @@
 
 .. dbpetlja:: db_4249
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT naziv 
                    FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
                    JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)

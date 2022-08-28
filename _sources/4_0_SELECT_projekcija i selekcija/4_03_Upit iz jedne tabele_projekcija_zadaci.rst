@@ -15,6 +15,7 @@
 
 .. dbpetlja:: db_4031
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT *
                    FROM zaposleni
 
@@ -25,6 +26,7 @@
 
 .. dbpetlja:: db_4032
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT *
                    FROM izdavaci
                    ORDER BY naziv
@@ -37,8 +39,10 @@
 
 .. dbpetlja:: db_4033
    :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT ime+' '+prezime "Clan biblioteke", telefon "Telefon clana"
-                   FROM clanovi
+   :showresult:
+   :solutionquery:  SELECT ime+' '+prezime "Clan biblioteke", telefon "Telefon clana" 
+					FROM clanovi
+
 
 .. questionnote::
 
@@ -48,6 +52,7 @@
 
 .. dbpetlja:: db_4034
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT broj_clanske_karte, datum, iznos, iznos*0.85
                    FROM kazne
 
@@ -59,6 +64,7 @@
 
 .. dbpetlja:: db_4035
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT broj_clanske_karte, inventarski_broj, datum_uzimanja
                    FROM pozajmice
                    ORDER BY broj_clanske_karte, datum_uzimanja DESC

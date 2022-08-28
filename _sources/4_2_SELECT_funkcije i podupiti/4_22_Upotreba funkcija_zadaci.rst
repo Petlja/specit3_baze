@@ -17,9 +17,10 @@
  Aleksandar Jovic je poceo da radi 2014-05-25
 
 .. dbpetlja:: db_4221
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT ime+' '+prezime+' je poceo da radi '+CONVERT(varchar,datum_zaposlenja) "Izvestaj"
-                   FROM zaposleni
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT ime+' '+prezime+' je poceo da radi '+CONVERT(varchar,datum_zaposlenja) "Izvestaj"
+					FROM zaposleni
 
 .. questionnote::
 
@@ -28,9 +29,10 @@
  Цела имејл адреса је исписана малим словима. 
 
 .. dbpetlja:: db_4222
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT LOWER(SUBSTRING(ime, 1, 2)+SUBSTRING(prezime, 1, 3))+'@biblioteka22.rs' "Mejl adrese"
-                   FROM zaposleni
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT LOWER(SUBSTRING(ime, 1, 2)+SUBSTRING(prezime, 1, 3))+'@biblioteka22.rs' "Mejl adrese"
+					FROM zaposleni
 
 .. questionnote::
 
@@ -38,55 +40,62 @@
  Уколико члан нема унету имејл адресу, приказати „Nema mejl adresu“.  
 
 .. dbpetlja:: db_4223
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT broj_clanske_karte, prezime, ISNULL(mejl_adresa, 'Nema mejl adresu')
-                   FROM clanovi
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT broj_clanske_karte, prezime, ISNULL(mejl_adresa, 'Nema mejl adresu')
+					FROM clanovi
+
 
 .. questionnote::
 
  4. Написати упит којим се приказују најмања и највећа плаћена казна. 
 
 .. dbpetlja:: db_4224
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT MIN(iznos), MAX(iznos)
-                   FROM kazne
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT MIN(iznos), MAX(iznos)
+					FROM kazne
 
 .. questionnote::
 
  5. Написати упит којим се приказује просечна висина чланарине. 
 
 .. dbpetlja:: db_4225
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT AVG(iznos) FROM clanarine
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT AVG(iznos) FROM clanarine
 
 .. questionnote::
 
  6. Написати упит којим се приказује просечна висина чланарине за сваку годину. 
 
 .. dbpetlja:: db_4226
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT god, AVG(iznos)
-                   FROM clanarine
-                   GROUP BY god
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT god, AVG(iznos)
+					FROM clanarine
+					GROUP BY god
 
 .. questionnote::
 
  7. Написати упит којим се приказује број година чланства члана са бројем чланске карте 33. 
 
 .. dbpetlja:: db_4227
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT COUNT(*)
-                   FROM clanarine
-                   WHERE broj_clanske_karte = 33
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT COUNT(*)
+					FROM clanarine
+					WHERE broj_clanske_karte = 33
 
 .. questionnote::
 
  8. Написати упит којим се приказује датум када је плаћена прва казна. 
 
 .. dbpetlja:: db_4228
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT MIN(datum)
-                   FROM kazne
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT MIN(datum)
+					FROM kazne
 
 .. questionnote::
 
@@ -94,6 +103,7 @@
 
 .. dbpetlja:: db_4229
    :dbfile: it3_biblioteka.sql
+   :showresult:
    :solutionquery: SELECT MAX(datum_uzimanja)
                    FROM pozajmice
 
@@ -103,10 +113,11 @@
  су бар 2500 динара.  
 
 .. dbpetlja:: db_42210
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT AVG(iznos)
-                   FROM clanarine
-                   WHERE iznos >= 2500
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT AVG(iznos)
+					FROM clanarine
+					WHERE iznos >= 2500
 
 .. questionnote::
 
@@ -114,10 +125,11 @@
  је приказати идентификациони број књиге. 
 
 .. dbpetlja:: db_42211
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT id_knjige, COUNT(inventarski_broj)
-                   FROM primerci
-                   GROUP BY id_knjige
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT id_knjige, COUNT(inventarski_broj)
+					FROM primerci
+					GROUP BY id_knjige
 
 .. questionnote::
 
@@ -125,10 +137,11 @@
  Приказати назив књиге.  
 
 .. dbpetlja:: db_42212
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
-                   FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-                   GROUP BY knjige.id_knjige, naziv
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
+					FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
+					GROUP BY knjige.id_knjige, naziv
 
 .. questionnote::
 
@@ -136,11 +149,12 @@
  назив књиге. Приказати само оне књиге са више од једног примерка.  
 
 .. dbpetlja:: db_42213
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
-                   FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
-                   GROUP BY knjige.id_knjige, naziv
-                   HAVING COUNT(inventarski_broj) > 1
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT knjige.id_knjige, naziv, COUNT(inventarski_broj)
+					FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
+					GROUP BY knjige.id_knjige, naziv
+					HAVING COUNT(inventarski_broj) > 1
 
 .. questionnote::
 
@@ -148,20 +162,22 @@
  идентификациони број књиге.  
 
 .. dbpetlja:: db_42214
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT id_knjige, COUNT(id_autora)
-                   FROM autori_knjige
-                   GROUP BY id_knjige
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT id_knjige, COUNT(id_autora)
+					FROM autori_knjige
+					GROUP BY id_knjige
 
 .. questionnote::
 
  15. Написати упит којим се за сваку књигу приказује број аутора. Приказати назив књиге. 
 
 .. dbpetlja:: db_42215
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT knjige.id_knjige, naziv, COUNT(id_autora)
-                   FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
-                   GROUP BY knjige.id_knjige, naziv
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT knjige.id_knjige, naziv, COUNT(id_autora)
+					FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
+					GROUP BY knjige.id_knjige, naziv
 
 .. questionnote::
 
@@ -169,8 +185,9 @@
  Приказати само оне књиге које имају тачно једног аутора.  
 
 .. dbpetlja:: db_42216
-   :dbfile: it3_biblioteka.sql
-   :solutionquery: SELECT knjige.id_knjige, naziv, COUNT(id_autora)
-                   FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
-                   GROUP BY knjige.id_knjige, naziv
-                   HAVING COUNT(id_autora) = 1
+	:dbfile: it3_biblioteka.sql
+	:showresult:
+	:solutionquery: SELECT knjige.id_knjige, naziv, COUNT(id_autora)
+					FROM autori_knjige JOIN knjige ON (autori_knjige.id_knjige=knjige.id_knjige)
+					GROUP BY knjige.id_knjige, naziv
+					HAVING COUNT(id_autora) = 1
