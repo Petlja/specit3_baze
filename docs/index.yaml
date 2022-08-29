@@ -5,20 +5,43 @@ description:
     text: SQLLite
   longDescription: '<div class="document">
 
-    <p>Шта је курс, коме је намењен</p>
+    <p>Овај курс је намењен за предмет Базе података у трећем разреду гимназија за
+    ученике са посебним
+
+    способностима за рачунарство и информатику. Курс прати одговарајући програм наставе
+    и учења.
+
+    Поред рада у школи, курс може да се пролази и самостално.</p>
 
     </div>
 
     '
   requirements:
-  - SQLLite
-  shortDescription: Базе података за трећи разред специјализованих ИТ одељења
+  - Инсталиран алат за пројектовање база података Oracle SQL Developer Data Modeler
+    (упутство за инсталацију је дато у склопу курса)
+  - Инсталиран систем за управљање базама података Microsoft SQL Server Management
+    Studio (упутство за инсталацију је дато у склопу курса)
+  shortDescription: Базе података за трећи разред гимназија за ученике са посебним
+    способностима за рачунарство и информатику
   toc:
   - Intro to Petljadoc INDEX.yaml
   willLearn:
-  - Пројектовање база података
-  - Нешто
-  - '...'
+  - Шта су и чему служе базе података
+  - Како се развија логички модел и дијаграм ентитета и веза, као пројекат за креирање
+    базе података
+  - Које елементе има дијаграм ентитета и веза
+  - Правила нормализације
+  - Како се модели података конвертују у релациону базу података
+  - Како се подаци чувају у табелама у релационој бази података
+  - Како су подаци који се чувају у различитим табелама повезани употребом примарног
+    и страног кључа
+  - Шта је и како се користи упитни језик SQL
+  - Како се креирају табеле и како се изводе операције уношења, измене и брисања података
+    у табелама
+  - Како се врше основне анализе и обрада података употребом различитих могућности
+    упита SELECT
+  - Као пројекат, израдићеш један дијаграм ентитета и веза, на основу којег ћеш затим
+    да креираш и саму базу података
 lang: sr-Cyrl
 lessons:
 - activities:
@@ -112,13 +135,13 @@ lessons:
     file: 2_13_Zadaci 1-M.html
     guid: 0e4789f8-7f55-4e13-a07f-d6267fa7f893
     src: 2_13_Zadaci 1-M.rst
-    title: Задаци 1-М
+    title: Задаци 1-M
     type: reading
   - description: ''
     file: 2_14_Zadaci M-M.html
     guid: efbfebfe-5aab-41b7-9234-c58479f59135
     src: 2_14_Zadaci M-M.rst
-    title: Задаци M-М
+    title: Задаци M-M
     type: reading
   - description: ''
     file: 2_15_Zadaci razni.html
@@ -212,7 +235,7 @@ lessons:
     file: 2_52_Projektni zadatak.html
     guid: 44f23abc-fa33-4ffa-9e57-f562163973da
     src: 2_52_Projektni zadatak.rst
-    title: Пројектни задатак
+    title: Пројектни задатак - први део
     type: reading
   archived-activities: []
   description: ''
@@ -249,7 +272,7 @@ lessons:
     file: 3_05_Komanda CREATE TABLE_zadatak.html
     guid: 71390859-703b-488a-8415-6c0f1aaf5180
     src: 3_05_Komanda CREATE TABLE_zadatak.rst
-    title: Задатак
+    title: Задатак - салон аутомобила
     type: reading
   - description: ''
     file: 3_06_SQL Server Management Studio.html
@@ -279,7 +302,7 @@ lessons:
     file: 3_010_Zadatak.html
     guid: 3f549e29-f99d-4f35-94b8-024c04193b78
     src: 3_010_Zadatak.rst
-    title: Задатак
+    title: Задатак - салон аутомобила
     type: reading
   archived-activities: []
   description: ''
@@ -371,7 +394,7 @@ lessons:
     file: 4_08_Zadaci.html
     guid: 2abd43cb-cf05-4204-8517-2517759d0a74
     src: 4_08_Zadaci.rst
-    title: Задаци
+    title: Задаци - салон аутомобила
     type: reading
   archived-activities: []
   description: ''
@@ -402,7 +425,7 @@ lessons:
     file: 4_14_Zadaci.html
     guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb
     src: 4_14_Zadaci.rst
-    title: Задаци
+    title: Задаци - салон аутомобила
     type: reading
   archived-activities: []
   description: ''
@@ -502,14 +525,14 @@ lessons:
     file: 5_01_Projektni zadatak.html
     guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
     src: 5_01_Projektni zadatak.rst
-    title: Погледи
+    title: Пројектни задатак - други део
     type: reading
   archived-activities: []
   description: ''
   folder: 5_0_Projektni zadatak
   guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
-  normalized_title: Пројектни задатак
-  title: Пројектни задатак
+  normalized_title: Пројектни задатак - други део
+  title: Пројектни задатак - други део
 - activities:
   - description: ''
     file: 6_01_DODATAK A_Оracle.html
