@@ -28,7 +28,8 @@
 ::
 
  INSERT INTO izdavaci(id, naziv, adresa, veb_sajt)
- VALUES (2, 'CET', 'Knez Mihailova 6, Beograd', 'http://www.knjizara.zavod.co.rs/')
+ VALUES (2, 'CET', 'Knez Mihailova 6, Beograd', 
+ 'http://www.knjizara.zavod.co.rs/')
 
 Подаци који се уносе су наведени у редоследу који одговара редоследу колона. 
 Табела има четири колоне и четири податка се уносе у ред. Из тог разлога списак колона може да се изостави и 
@@ -37,7 +38,8 @@
 ::
 
  INSERT INTO izdavaci
- VALUES (2, 'CET', 'Knez Mihailova 6, Beograd', 'http://www.knjizara.zavod.co.rs/')
+ VALUES (2, 'CET', 'Knez Mihailova 6, Beograd', 
+ 'http://www.knjizara.zavod.co.rs/')
 
 Уколико, међутим, хоћемо да унесемо податке у другачијем редоследу или хоћемо да изоставимо податак који можемо да 
 изоставимо (колона нема NOT NULL ограничење), морамо да наведемо одговарајући списак колона. Следе примери.
@@ -45,7 +47,8 @@
 ::
 
  INSERT INTO izdavaci(id, naziv, veb_sajt, adresa)
- VALUES (2, 'CET', 'http://www.knjizara.zavod.co.rs/', 'Knez Mihailova 6, Beograd')
+ VALUES (2, 'CET', 'http://www.knjizara.zavod.co.rs/', 
+ 'Knez Mihailova 6, Beograd')
 
  INSERT INTO izdavaci(id, naziv, adresa)
  VALUES (2, 'CET', 'Knez Mihailova 6, Beograd')
@@ -62,13 +65,18 @@
 
 1) Већ постоји издавачка кућа са идентификационим бројем 2 (вредности примарног кључа морају да буду јединствене).
 
-INSERT INTO izdavaci
-VALUES (2, 'Vintage', 'Random House 20, London', 'www.vintage-books.co.uk')
+::
+
+ INSERT INTO izdavaci
+ VALUES (2, 'Vintage', 'Random House 20, London', 
+ 'www.vintage-books.co.uk')
 
 2) Вредности морају да се унесу у колоне које су примарни кључ или имају NOT NULL ограничење.  
 
-INSERT INTO izdavaci
-VALUES (null, null, 'Random House 20, London', 'www.vintage-books.co.uk')
+::
+
+ INSERT INTO izdavaci
+ VALUES (null, null, 'Random House 20, London', 'www.vintage-books.co.uk')
 
 Важан је редослед уноса података у базу података. На пример, прво морамо да унесемо податке о издавачкој кући, а затим 
 податке о књигама које су њена издања. 

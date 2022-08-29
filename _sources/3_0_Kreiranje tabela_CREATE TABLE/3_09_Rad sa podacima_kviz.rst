@@ -33,7 +33,7 @@
     :answer_d: INSERT INTO autori_knjige VALUES ('Stanka','Programiranje')
     :correct: a
 
-    Табела AUTORI_KNJIGE представља везу више-према-више и има колоне (*id_autora*,*id_knjige*). Која команда уноса је исправна?  
+    Табела AUTORI_KNJIGE представља везу више-према-више и има колоне (*id_autora*, *id_knjige*). Која команда уноса је исправна?  
 
 .. mchoice:: 3095
     :answer_a: UPDATE clanovi SET telefon='011222333' WHERE broj_clanske_karte=11

@@ -1,5 +1,5 @@
-Задатак
-=======
+Задатак - салон аутомобила
+==========================
 
 .. questionnote::
 
@@ -26,10 +26,14 @@
    :align: center
 
 .. reveal:: 310
-	:showtitle: Прикажи решење
-	:hidetitle: Сакриј
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј
 	
-	::
+    |
+    
+    **Решење:**
+
+    ::
 	
 	 INSERT INTO kategorije
 	 VALUES(1, 'dzip', 'terensko vozilo')
@@ -63,6 +67,6 @@
 	 VALUES(5, 'C300', '214hp', 3, 'dizel', 12345678, 3)
 	
 
-.. image:: ../../_images/slika_310a.png
-   :width: 780
-   :align: center
+    .. image:: ../../_images/slika_310a.png
+        :width: 780
+        :align: center

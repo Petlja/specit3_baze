@@ -3,11 +3,20 @@ lang: sr-Cyrl
 title: Petljadoc Course
 description:
   willLearn: 
-    - Пројектовање база података
-    - Нешто
-    - ...
+    - Шта су и чему служе базе података 
+    - Како се развија логички модел и дијаграм ентитета и веза, као пројекат за креирање базе података 
+    - Које елементе има дијаграм ентитета и веза 
+    - Правила нормализације 
+    - Како се модели података конвертују у релациону базу података 
+    - Како се подаци чувају у табелама у релационој бази података 
+    - Како су подаци који се чувају у различитим табелама повезани употребом примарног и страног кључа 
+    - Шта је и како се користи упитни језик SQL 
+    - Како се креирају табеле и како се изводе операције уношења, измене и брисања података у табелама 
+    - Како се врше основне анализе и обрада података употребом различитих могућности упита SELECT 
+    - Као пројекат, израдићеш један дијаграм ентитета и веза, на основу којег ћеш затим да креираш и саму базу података 
   requirements:
-    - SQLLite
+    - Инсталиран алат за пројектовање база података Oracle SQL Developer Data Modeler (упутство за инсталацију је дато у склопу курса) 
+    - Инсталиран систем за управљање базама података Microsoft SQL Server Management Studio (упутство за инсталацију је дато у склопу курса)
   toc:
     - Intro to Petljadoc INDEX.yaml
 
@@ -15,8 +24,11 @@ description:
     - text: SQLLite
       href: https://www.sqlite.org/download.html
   longDescription: |
-    Шта је курс, коме је намењен
-  shortDescription: Базе података за трећи разред специјализованих ИТ одељења
+    Овај курс је намењен за предмет Базе података у трећем разреду гимназија за ученике са посебним 
+    способностима за рачунарство и информатику. Курс прати одговарајући програм наставе и учења. 
+    Поред рада у школи, курс може да се пролази и самостално. 
+  # shortDescription: Базе података за трећи разред специјализованих ИТ одељења
+  shortDescription: Базе података за трећи разред гимназија за ученике са посебним способностима за рачунарство и информатику 
 
 lessons:
   - title: Основно о базама података
@@ -80,11 +92,11 @@ lessons:
         file: 2_12_Zadaci sa dva entiteta.rst
         guid: 74769860-46e5-4acf-872e-72d06c6f8783
       - type: reading
-        title: Задаци 1-М
+        title: Задаци 1-M
         file: 2_13_Zadaci 1-M.rst
         guid: 0e4789f8-7f55-4e13-a07f-d6267fa7f893
       - type: reading
-        title: Задаци M-М
+        title: Задаци M-M
         file: 2_14_Zadaci M-M.rst
         guid: efbfebfe-5aab-41b7-9234-c58479f59135
       - type: reading
@@ -144,7 +156,7 @@ lessons:
         file: 2_51_ Model baze za muziku.rst
         guid: bb4e905a-9a5f-4360-afc7-fd1448a87030    
       - type: reading
-        title: Пројектни задатак
+        title: Пројектни задатак - први део
         file: 2_52_Projektni zadatak.rst
         guid: 44f23abc-fa33-4ffa-9e57-f562163973da       
   -  title: Креирање табела
@@ -168,7 +180,7 @@ lessons:
         file: 3_04_Komanda CREATE TABLE_kviz.rst
         guid: 8dd3abe4-297e-4b5f-9bdc-846b955bdfa7  
       - type: reading
-        title: Задатак
+        title: Задатак - салон аутомобила
         file: 3_05_Komanda CREATE TABLE_zadatak.rst
         guid: 71390859-703b-488a-8415-6c0f1aaf5180  
       - type: reading
@@ -188,7 +200,7 @@ lessons:
         file: 3_09_Rad sa podacima_kviz.rst
         guid: 21d64374-2987-4f93-9bd7-47268e57f065         
       - type: reading
-        title: Задатак
+        title: Задатак - салон аутомобила
         file: 3_010_Zadatak.rst
         guid: 3f549e29-f99d-4f35-94b8-024c04193b78
   -  title: База података библиотеке
@@ -248,7 +260,7 @@ lessons:
         file: 4_07_Upit iz jedne tabele_projekcija_selekcija_zadaci.rst
         guid: adee1180-47ef-4f40-80c4-1e42ca6ae004  
       - type: reading
-        title: Задаци
+        title: Задаци - салон аутомобила
         file: 4_08_Zadaci.rst
         guid: 2abd43cb-cf05-4204-8517-2517759d0a74         
   -  title: Упит SELECT - спајање табела
@@ -268,7 +280,7 @@ lessons:
         file: 4_13_Spajanje tabela_zadaci.rst
         guid: 4880495a-7b84-4ed8-9793-b7bf31fca79c  
       - type: reading
-        title: Задаци
+        title: Задаци - салон аутомобила
         file: 4_14_Zadaci.rst
         guid: 0aa0f64f-5e8c-4683-8f5b-e756ea7f13fb        
   -  title: Упит SELECT - функције и подупити
@@ -327,12 +339,12 @@ lessons:
         title: Погледи
         file: 4_41_Pogledi.rst
         guid: 7bd669aa-9ca7-4f04-88d2-404201cfea5b
-  -  title: Пројектни задатак
+  -  title: Пројектни задатак - други део
      guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
      folder: 5_0_Projektni zadatak
      activities:  
       - type: reading
-        title: Погледи
+        title: Пројектни задатак - други део
         file: 5_01_Projektni zadatak.rst
         guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
   -  title: Додаци
