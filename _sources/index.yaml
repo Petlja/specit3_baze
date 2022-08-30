@@ -155,8 +155,12 @@ lessons:
         title: Пример моделовања - продаја дигиталних композиција
         file: 2_51_ Model baze za muziku.rst
         guid: bb4e905a-9a5f-4360-afc7-fd1448a87030    
+  -  title: Пројектни задатак - моделовање
+     guid: fdf75229-909d-4a8e-b613-84089b68d90d
+     folder: 2_5_Model baze za pesme
+     activities:
       - type: reading
-        title: Пројектни задатак - први део
+        title: Пројектни задатак - моделовање
         file: 2_52_Projektni zadatak.rst
         guid: 44f23abc-fa33-4ffa-9e57-f562163973da       
   -  title: Креирање табела
@@ -188,7 +192,7 @@ lessons:
         file: 3_06_SQL Server Management Studio.rst
         guid: 070c8d20-cc1f-4c17-aede-a0b67e040419 
       - type: reading
-        title: Креирање база - команде CREATE ALTER TABLE и DROP TABLE
+        title: Рад са табелама - команде ALTER TABLE и DROP TABLE
         file: 3_07_CREATE ALTER TABLE i DROP TABLE.rst
         guid: 26692ab5-f29e-4507-8675-2d0011e57df0
       - type: reading
@@ -339,12 +343,12 @@ lessons:
         title: Погледи
         file: 4_41_Pogledi.rst
         guid: 7bd669aa-9ca7-4f04-88d2-404201cfea5b
-  -  title: Пројектни задатак - други део
+  -  title: Пројектни задатак
      guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
      folder: 5_0_Projektni zadatak
      activities:  
       - type: reading
-        title: Пројектни задатак - други део
+        title: Пројектни задатак
         file: 5_01_Projektni zadatak.rst
         guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
   -  title: Додаци

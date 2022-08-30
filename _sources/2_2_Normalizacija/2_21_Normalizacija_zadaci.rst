@@ -13,12 +13,14 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
 	
-   **1NF – један уметник је насликао више слика**
+   **Решење:** 1NF – један уметник је насликао више слика
 
-   UMETNIK: #id, ime, prezime, biografija
+
+   |
+   | UMETNIK: #id, ime, prezime, biografija
+   | SLIKA: #id, naziv_slike.
    
-   SLIKA: #id, naziv_slike.
-   
+  
 .. questionnote::
 
  2.
@@ -29,11 +31,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
 	
-   **3NF – група атрибута naziv_održane_izložbe, datum_otvaranja_izložbe, naziv_izložbenog_prostora чини засебну целину која описује одржану изложбу.**
+   **Решење:** 3NF – група атрибута *naziv_održane_izložbe*, *datum_otvaranja_izložbe*, *naziv_izložbenog_prostora* чини засебну целину која описује одржану изложбу.
 
-   UMETNIK: #id, ime, prezime
-   
-   IZLOŽBA: #id, naziv, datum_otvaranja_izložbe, naziv_izložbenog_prostora
+   |
+   | UMETNIK: #id, ime, prezime
+   | IZLOŽBA: #id, naziv, datum_otvaranja_izložbe, naziv_izložbenog_prostora
 
 .. questionnote::
 
@@ -45,11 +47,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **1NF – један уметник је одржао више изложби.**
+   **Решење:** 1NF – један уметник је одржао више изложби.
 
-   UMETNIK: #id, ime, prezime
-   
-   IZLOŽBA: #id, naziv
+   |
+   | UMETNIK: #id, ime, prezime
+   | IZLOŽBA: #id, naziv
 
 .. questionnote::
 
@@ -62,15 +64,16 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **2NF – атрибут datum_rođenja_umetnika није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од id_umetnika.**
+   **Решење:** 
+   
+   2NF – атрибут *datum_rođenja_umetnika* није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од *id_umetnika*.
  
-   **2NF – атрибут adresa_izložbenog_prostora није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од id_izložbenog_prostora.**
+   2NF – атрибут *adresa_izložbenog_prostora* није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од *id_izložbenog_prostora*.
 
-   ODRŽANA IZLOŽBA: #id_umetnika, #id_izložbenog_prostora, #datum, dužina_trajanja, komentar
-   
-   UMETNIK: #id_umetnika, ime, prezime, datum_rođenja
-   
-   IZLOŽBENI_PROSTOR: #id_izložbenog_prostora, naziv, adresa_izložbenog_prostora
+   |
+   | ODRŽANA IZLOŽBA: #id_umetnika, #id_izložbenog_prostora, #datum, dužina_trajanja, komentar
+   | UMETNIK: #id_umetnika, ime, prezime, datum_rođenja
+   | IZLOŽBENI_PROSTOR: #id_izložbenog_prostora, naziv, adresa_izložbenog_prostora
    
    .. image:: ../../_images/slika_221c.png
       :width: 400
@@ -86,11 +89,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **3NF – група атрибута kategorija, opis_kategorije чини засебну целину која описује категорију (атрибут kategorija је заправо назив категорије, на пример: прехрамбени производи, кућна хемија, бела техника...).**
+   **Решење:** 3NF – група атрибута *kategorija*, *opis_kategorije* чини засебну целину која описује категорију (атрибут *kategorija* је заправо назив категорије, на пример: прехрамбени производи, кућна хемија, бела техника...).
 
-   PROIZVOD: #id, naziv, cena
-   
-   KATEGORIJA: #id_kategorije, naziv, opis
+   |
+   | PROIZVOD: #id, naziv, cena
+   | KATEGORIJA: #id_kategorije, naziv, opis
 
 .. questionnote::
  
@@ -102,11 +105,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **1NF – један произвођач производи више производа.**
+   **Решење:** 1NF – један произвођач производи више производа.
 
-   PROIZVOĐAČ: #id, naziv, adresa, PIB
-   
-   PROIZVOD: #id_proizvoda, naziv
+   |
+   | PROIZVOĐAČ: #id, naziv, adresa, PIB
+   | PROIZVOD: #id_proizvoda, naziv
 
 .. questionnote::
 
@@ -121,11 +124,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **3NF – група атрибута oblast_rada, opis_oblasti_rada чини засебну целину која описује област рада (атрибут oblast_rada је заправо назив, на пример: прехрамбена индустрија, производња беле технике...).**
+   **Решење:** 3NF – група атрибута *oblast_rada*, *opis_oblasti_rada* чини засебну целину која описује област рада (атрибут *oblast_rada* је заправо назив, на пример: прехрамбена индустрија, производња беле технике...).
 
-   PROIZVOĐAČ: #id, naziv, adresa, PIB
-   
-   OBLAST_RADA: #id, naziv, opis
+   |
+   | PROIZVOĐAČ: #id, naziv, adresa, PIB
+   | OBLAST_RADA: #id, naziv, opis
    
    .. image:: ../../_images/slika_221d.png
       :width: 400
@@ -141,11 +144,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **2NF – атрибут naziv_proizvoda није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од id_proizvoda.**
+   **Решење:** 2NF – атрибут *naziv_proizvoda* није у директној функционалној зависности од целог примарног јединственог идентификатора, већ само од *id_proizvoda*.
 
-   MAGACIN: #id_proizvoda, #id_prodavnice, količina, poslednji_datum_nabavke
-   
-   PROIZVOD: #id, naziv
+   |
+   | MAGACIN: #id_proizvoda, #id_prodavnice, količina, poslednji_datum_nabavke
+   | PROIZVOD: #id, naziv
 
 .. questionnote::
  
@@ -157,11 +160,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **3NF – група атрибута ime_vlasnika, adresa_vlasnika, broj_lične_karte_vlasnika чини засебну целину која описује власника.**
+   **Решење:** 3NF – група атрибута *ime_vlasnika*, *adresa_vlasnika*, *broj_lične_karte_vlasnika* чини засебну целину која описује власника.
 
-   AUTOMOBIL: #registarski_broj, datum_registracije, proizvođač, model
-   
-   VLASNIK: #id, ime, adresa, broj_lične_karte
+   |
+   | AUTOMOBIL: #registarski_broj, datum_registracije, proizvođač, model
+   | VLASNIK: #id, ime, adresa, broj_lične_karte
 
 .. questionnote::
  
@@ -173,11 +176,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **1NF – један произвођач аутомобила производи више модела**
+   **Решење:** 1NF – један произвођач аутомобила производи више модела
 
-   PROZIVOĐAČ_AUTOMOBILA: #PIB, naziv, adresa_sedista, veb_sajt
-   
-   MODEL: #id, naziv
+   |
+   | PROZIVOĐAČ_AUTOMOBILA: #PIB, naziv, adresa_sedista, veb_sajt
+   | MODEL: #id, naziv
    
 .. questionnote::
  
@@ -189,11 +192,11 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **3NF – група атрибута ime_vlasnika, adresa_vlasnika, broj_vozačke_dozvole_vlasnika чини засебну целину која описује власника.**
+   **Решење:** 3NF – група атрибута *ime_vlasnika*, *adresa_vlasnika*, *broj_vozačke_dozvole_vlasnika* чини засебну целину која описује власника.
 
-   REGISTRACIJA: #broj_sasije, #registarski_broj, datum.
-   
-   VLASNIK: #id, ime, adresa, broj_vozačke_dozvole
+   |
+   | REGISTRACIJA: #broj_sasije, #registarski_broj, datum.
+   | VLASNIK: #id, ime, adresa, broj_vozačke_dozvole
    
 .. questionnote::
  
@@ -205,10 +208,8 @@
    :showtitle: Прикажи решење 
    :hidetitle: Сакриј
    
-   **1NF – једно  одељење има више ученика.**
+   **Решење:** 1NF – једно  одељење има више ученика.
 
-   ODELJENJE: #razred, #indeks_odeljenja
-   
-   UČENIK: #id, ime
-
-
+   |
+   | ODELJENJE: #razred, #indeks_odeljenja
+   | UČENIK: #id, ime
