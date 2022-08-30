@@ -231,18 +231,25 @@ lessons:
     src: 2_51_ Model baze za muziku.rst
     title: Пример моделовања - продаја дигиталних композиција
     type: reading
-  - description: ''
-    file: 2_52_Projektni zadatak.html
-    guid: 44f23abc-fa33-4ffa-9e57-f562163973da
-    src: 2_52_Projektni zadatak.rst
-    title: Пројектни задатак - први део
-    type: reading
   archived-activities: []
   description: ''
   folder: 2_5_Model baze za pesme
   guid: bec23ecd-314a-4ccc-ba65-78b94eb0570b
   normalized_title: Пример моделовања - продаја дигиталних композиција
   title: Пример моделовања - продаја дигиталних композиција
+- activities:
+  - description: ''
+    file: 2_52_Projektni zadatak.html
+    guid: 44f23abc-fa33-4ffa-9e57-f562163973da
+    src: 2_52_Projektni zadatak.rst
+    title: Пројектни задатак - моделовање
+    type: reading
+  archived-activities: []
+  description: ''
+  folder: 2_5_Model baze za pesme
+  guid: fdf75229-909d-4a8e-b613-84089b68d90d
+  normalized_title: Пројектни задатак - моделовање
+  title: Пројектни задатак - моделовање
 - activities:
   - description: ''
     file: 3_01_Komanda CREATE TABLE.html
@@ -284,7 +291,7 @@ lessons:
     file: 3_07_CREATE ALTER TABLE i DROP TABLE.html
     guid: 26692ab5-f29e-4507-8675-2d0011e57df0
     src: 3_07_CREATE ALTER TABLE i DROP TABLE.rst
-    title: Креирање база - команде CREATE ALTER TABLE и DROP TABLE
+    title: Рад са табелама - команде ALTER TABLE и DROP TABLE
     type: reading
   - description: ''
     file: 3_08_Rad sa podacima.html
@@ -525,14 +532,14 @@ lessons:
     file: 5_01_Projektni zadatak.html
     guid: ae63a32a-0d8b-4847-97af-64bcb0ede38f
     src: 5_01_Projektni zadatak.rst
-    title: Пројектни задатак - други део
+    title: Пројектни задатак
     type: reading
   archived-activities: []
   description: ''
   folder: 5_0_Projektni zadatak
   guid: 76f2862a-0f44-4c64-8b93-d344e71f9882
-  normalized_title: Пројектни задатак - други део
-  title: Пројектни задатак - други део
+  normalized_title: Пројектни задатак
+  title: Пројектни задатак
 - activities:
   - description: ''
     file: 6_01_DODATAK A_Оracle.html

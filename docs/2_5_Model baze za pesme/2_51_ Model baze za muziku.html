@@ -308,7 +308,16 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
-                <a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - први део</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                    <h5>Пројектни задатак - моделовање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -324,7 +333,7 @@
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_04_Komanda%20CREATE%20TABLE_kviz.html><div class="studioLecture" id=activity-3_04_Komanda%20CREATE%20TABLE_kviz><i class="far fa-question-circle activity-icon"></i>Креирање табела - команда CREATE TABLE - квиз</div></a>
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_05_Komanda%20CREATE%20TABLE_zadatak.html><div class="studioLecture" id=activity-3_05_Komanda%20CREATE%20TABLE_zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак - салон аутомобила</div></a>
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_06_SQL%20Server%20Management%20Studio.html><div class="studioLecture" id=activity-3_06_SQL%20Server%20Management%20Studio><i class="fas fa-file-alt activity-icon"></i>Креирање базе помоћу алата SQL Server Management Studio</div></a>
-                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE.html><div class="studioLecture" id=activity-3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE><i class="fas fa-file-alt activity-icon"></i>Креирање база - команде CREATE ALTER TABLE и DROP TABLE</div></a>
+                <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE.html><div class="studioLecture" id=activity-3_07_CREATE%20ALTER%20TABLE%20i%20DROP%20TABLE><i class="fas fa-file-alt activity-icon"></i>Рад са табелама - команде ALTER TABLE и DROP TABLE</div></a>
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_08_Rad%20sa%20podacima.html><div class="studioLecture" id=activity-3_08_Rad%20sa%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са подацима</div></a>
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_09_Rad%20sa%20podacima_kviz.html><div class="studioLecture" id=activity-3_09_Rad%20sa%20podacima_kviz><i class="far fa-question-circle activity-icon"></i>Рад са подацима - квиз</div></a>
                 <a href=../3_0_Kreiranje%20tabela_CREATE%20TABLE/3_010_Zadatak.html><div class="studioLecture" id=activity-3_010_Zadatak><i class="fas fa-file-alt activity-icon"></i>Задатак - салон аутомобила</div></a>
@@ -415,11 +424,11 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_0_Projektni%20zadatak>
-                    <h5>Пројектни задатак - други део</h5>
+                    <h5>Пројектни задатак</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../5_0_Projektni%20zadatak/5_01_Projektni%20zadatak.html><div class="studioLecture" id=activity-5_01_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - други део</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../5_0_Projektni%20zadatak/5_01_Projektni%20zadatak.html><div class="studioLecture" id=activity-5_01_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак</div></a>
                 </div>
             </div>
                 
@@ -466,13 +475,15 @@
     </p></div></div>
 <p>Креираћемо модел за базу података фиктивне компаније за продају музичких композиција (углавном песама).</p>
 <p>Цео посао ћемо поделити у две велике целине које ћемо на крају повезати. Први део би подразумевао да у бази чувамо све податке о композицијама, укључујући и жанрове, албуме, извођаче и листе композиција. Други део подразумева информације релевантне за продају композиција.</p>
-<p>За сваку композицију чувамо неке основне податке:
-•       назив
-•       трајање (у милисекундама)
-•       дигитални формат (mp3, AAC…)
-•       величина (у бајтовима)
-•       жанр
-•       цена</p>
+<p>За сваку композицију чувамо неке основне податке:</p>
+<ul class="simple">
+<li><p>назив</p></li>
+<li><p>трајање (у милисекундама)</p></li>
+<li><p>дигитални формат (mp3, AAC…)</p></li>
+<li><p>величина (у бајтовима)</p></li>
+<li><p>жанр</p></li>
+<li><p>цена</p></li>
+</ul>
 <p>Подразумеваћемо да је број жанрова ограничен и да жанр може да буде само неки од унапред дефинисаних жанрова или да
 је композиција евентуално неког непознатог жанра. Слично, подразумеваћемо и да је дигитални формат неки са листе
 подржаних формата (на пример, mp3 или AAC), при чему је формат сваке композиције обавезно неки са те листе
@@ -516,16 +527,18 @@
 <li><p>имејл</p></li>
 </ul>
 <p>Запослени имају свог надређеног и на тај начин су организовани у хијерархијску, дрволику структуру.</p>
-<p>Чува се листа свих купаца. За сваког купца су познати следећи подаци:
-- име, презиме
-- компанија у чије име купује (ако не купује сам за себе)
-- адреса
-- град
-- држава/покрајина
-- поштански кôд
-- телефон
-- факс
-- имејл</p>
+<p>Чува се листа свих купаца. За сваког купца су познати следећи подаци:</p>
+<ul class="simple">
+<li><p>име, презиме</p></li>
+<li><p>компанија у чије име купује (ако не купује сам за себе)</p></li>
+<li><p>адреса</p></li>
+<li><p>град</p></li>
+<li><p>држава/покрајина</p></li>
+<li><p>поштански кôд</p></li>
+<li><p>телефон</p></li>
+<li><p>факс</p></li>
+<li><p>имејл</p></li>
+</ul>
 <p>За купца може бити задужен неко од запослених (он му пружа комплетну корисничку подршку).</p>
 <p>Корисници врше наруџбине и у склопу сваке наруџбине могу да наруче и више композиција. За сваку наруџбину познати су следећи подаци:
 - датум наруџбине
@@ -555,7 +568,7 @@
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  <a  href="2_52_Projektni zadatak.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>
