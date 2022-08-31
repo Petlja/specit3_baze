@@ -83,7 +83,9 @@
     :answer_b: Не
     :correct: b
 
-    Следећа команда ће обрисати више редова:
+    Следећа команда ће обрисати више редова (*id* је примарни кључ):
     ::
 
-        DELETE FROM zaposleni WHERE id=1 (*id* је примарни кључ).
+        DELETE FROM zaposleni WHERE id=1 
+        
+    

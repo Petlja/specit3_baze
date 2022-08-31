@@ -360,6 +360,6 @@ lessons:
         file: 6_01_DODATAK A_Оracle.rst
         guid: 3a1d6709-1b4c-4d64-a258-acca0455cbf7
       - type: reading
-        title: База података библиотеке – SQLLite
+        title: База за продају дигиталних композиција – SQLite
         file: 6_02_DODATAK B_SQLLite.rst
         guid: 4acdd986-d508-477b-bb46-2b69dd16e512

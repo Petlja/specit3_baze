@@ -14,7 +14,7 @@
  „Izvestaj“ у виду реченице која садржи, име, презиме и датум запослења, као у примеру
  који следи:
 
- Aleksandar Jovic je poceo da radi 2014-05-25
+ ``Aleksandar Jovic je poceo da radi 2014-05-25``
 
 .. dbpetlja:: db_4221
 	:dbfile: it3_biblioteka.sql

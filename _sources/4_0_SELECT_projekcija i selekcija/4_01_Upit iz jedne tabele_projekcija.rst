@@ -161,8 +161,9 @@
 анализирамо имена, а одвојено презимена. Уколико бисмо име и презиме чували заједно као
 један податак, било би немогуће у неким ситуацијама да издвојимо шта је име, а шта презиме.
 
-.. image:: ../../_images/tabela_401a.png
-   :width: 450
+
+.. image:: ../../_images/slika_202d.png
+   :scale: 80 %
    :align: center
 
 .. questionnote::
@@ -170,7 +171,7 @@
  3. Написати упит којим се приказујe извештај о запосленима у једној колони са новим заглављем
  „Izvestaj“ у виду реченице која садржи: име, презиме и имејл адресу, као у примеру који следи: 
  
- Ana Milosavljevic koristi imejl amilosavljevic@biblioteka.rs
+ ``Ana Milosavljevic koristi imejl amilosavljevic@biblioteka.rs``
 
 ::
 
@@ -209,7 +210,7 @@
 
 ::
 
- SELECT prezime, ime, mejl, plata FROM zaposleni
+ SELECT ime, prezime, mejl FROM zaposleni
  ORDER BY prezime, ime
 
 Уколико не наведемо да се подаци уреде по неком критеријуму, они ће бити приказани редом којим
@@ -219,8 +220,8 @@
 На следећој слици се види резултат упита без дела са сортирањем, и резултат упита након што се
 дода део ORDER BY.
 
-.. image:: ../../_images/slika_401i.png
-   :width: 450
+.. image:: ../../_images/tabela_401i.png
+   :scale: 70 %
    :align: center
 
 .. questionnote::

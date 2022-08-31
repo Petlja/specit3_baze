@@ -45,7 +45,8 @@
 	 VALUES(3, 'kabriolet', 'mobilni krov')
 	 
 	 INSERT INTO proizvodjaci
-	 VALUES(12345678, 12121212, 'Mercedes-Benz', 'Daimler AG 70546, Stuttgart, Germany')
+	 VALUES(12345678, 12121212, 'Mercedes-Benz', 
+	 'Daimler AG 70546, Stuttgart, Germany')
 	 
 	 INSERT INTO proizvodjaci
 	 VALUES(87654321, 34343434, 'Dacia', 

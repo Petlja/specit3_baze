@@ -31,7 +31,7 @@
 	CREATE TABLE proizvodjaci
 	(
 		pib INT PRIMARY KEY,
-			maticni_broj INT UNIQUE,
+		maticni_broj INT UNIQUE,
 		naziv VARCHAR(100) NOT NULL UNIQUE,
 		adresa VARCHAR(150) NOT NULL 
 	)
