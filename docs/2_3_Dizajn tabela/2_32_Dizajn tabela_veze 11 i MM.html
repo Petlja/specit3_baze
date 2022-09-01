@@ -6,6 +6,7 @@
     <title>Дизајн табела у бази података - везе 1:1 и M:M</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -463,30 +465,30 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>У релационим базама податка, веза 1:М је веома честа и изузетно важна. Све појединости око реализације ове везе смо
 описали у претходној лекцији. Поред везе 1:М, потребно је разумети и везу М:М и њену имплементацију помоћу додатне
 табеле. Иако ретка, веза 1:1 је понекад неопходна и треба видети како се и она реализује у бази.</p>
 
-    </p></div></div>
+    </div></div>
 <p><strong>Веза 1:1</strong> је веома ретка. Следи пример у којем издвајамо податке о личности члана библиотеке у један ентитет, а
 податке о његовом чланству у други (особа и улога).</p>
 <p>Као и у случају других веза, у случају везе 1:1 додатна колона која ће бити страни кључ иде у једну од две повезане
 табеле. Уколико је веза обавезна на једном крају, колона иде у ту табелу чији је ентитет на обавезном крају везе.
 Уколико је веза цела обавезна или цела опциона, та се колона може наћи у било којој од две табеле, али обавезно само
 у једној од њих.</p>
-<a class="reference internal image-reference" href="../_images/slika_232a.png"><img alt="../_images/slika_232a.png" class="align-center" src="../_images/slika_232a.png" style="width: 450px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232a.png"><img alt="../_images/slika_232a.png" class="align-center" src="../_images/slika_232a.png" style="width: 597.0999999999999px; height: 177.1px;" /></a>
 <p>Следи мапирање. Осим што је одговарајућа колона страни кључ, вредности у њој морају да буду јединствене и тиме се
 гарантује веза један-према-један. Дакле, једно чланство мора да буде везано само за једну особу, односно не могу
 два различита чланства да указују на исту особу.</p>
-<a class="reference internal image-reference" href="../_images/tabela_232a.png"><img alt="../_images/tabela_232a.png" class="align-center" src="../_images/tabela_232a.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232b.png"><img alt="../_images/tabela_232b.png" class="align-center" src="../_images/tabela_232b.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232a.png"><img alt="../_images/tabela_232a.png" class="align-center" src="../_images/tabela_232a.png" style="width: 788.0px; height: 190.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232b.png"><img alt="../_images/tabela_232b.png" class="align-center" src="../_images/tabela_232b.png" style="width: 800.8000000000001px; height: 191.20000000000002px;" /></a>
 <p><strong>Веза више-према-више</strong> се веома често среће и одговара многим ситуацијама у оквиру разних пословања. Ако школске
 уџбенике посматрамо као књиге, приметићемо да свака књига има више аутора, а аутори најчешће током свог рада напишу
 више књига. Овакву везу је немогуће реализовати у релационој бази података, па се на моделу уклања и уместо ње се
 поставља нови ентитет. Уколико нема бољег решења, назив новог ентитета може да буде комбинација назива почетна два
 ентитета повезана везом М:М.</p>
-<a class="reference internal image-reference" href="../_images/slika_232b.png"><img alt="../_images/slika_232b.png" class="align-center" src="../_images/slika_232b.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232b.png"><img alt="../_images/slika_232b.png" class="align-center" src="../_images/slika_232b.png" style="width: 751.2px; height: 252.0px;" /></a>
 <p>Кратке цртице којима су везе прецртане значе да везе учествују у примарном јединственом идентификатору новог ентитета.
 Тако је примарни јединствени идентификатор новог ентитета који је дошао на место везе типа М:М, ентитета <em>АUTOR-KNJIGA</em>,
 заправо сложен и представља комбинацију примарних јединствених идентификатора ентитета <em>АUTOR</em> и <em>KNJIGA</em>:
@@ -495,32 +497,32 @@
 Зато код примарног кључа никад нема нумерације. Табела може да има више страних кључева, па уводимо нумерацију да би се
 они разликовали.</p>
 <p>Следи мапирање, тј. дизајн табела које ће бити креиране у бази података.</p>
-<a class="reference internal image-reference" href="../_images/tabela_232c.png"><img alt="../_images/tabela_232c.png" class="align-center" src="../_images/tabela_232c.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232d.png"><img alt="../_images/tabela_232d.png" class="align-center" src="../_images/tabela_232d.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232e.png"><img alt="../_images/tabela_232e.png" class="align-center" src="../_images/tabela_232e.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232c.png"><img alt="../_images/tabela_232c.png" class="align-center" src="../_images/tabela_232c.png" style="width: 848.8000000000001px; height: 118.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232d.png"><img alt="../_images/tabela_232d.png" class="align-center" src="../_images/tabela_232d.png" style="width: 845.6px; height: 149.6px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232e.png"><img alt="../_images/tabela_232e.png" class="align-center" src="../_images/tabela_232e.png" style="width: 845.6px; height: 119.2px;" /></a>
 <p>У релационој бази се ове три табеле приказују како је илустровано на следећој слици.</p>
-<a class="reference internal image-reference" href="../_images/slika_232c.png"><img alt="../_images/slika_232c.png" class="align-center" src="../_images/slika_232c.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232c.png"><img alt="../_images/slika_232c.png" class="align-center" src="../_images/slika_232c.png" style="width: 895.2px; height: 184.0px;" /></a>
 <p>На следећој слици је приказано како би ове табеле, повезане кључевима и попуњене подацима, изгледале у бази података.</p>
-<a class="reference internal image-reference" href="../_images/slika_232d.png"><img alt="../_images/slika_232d.png" class="align-center" src="../_images/slika_232d.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232d.png"><img alt="../_images/slika_232d.png" class="align-center" src="../_images/slika_232d.png" style="width: 977.6px; height: 420.8px;" /></a>
 <p><strong>Напомена</strong>: Овај модел је исправан уколико се узме у обзир претпоставка да библиотека чува уџбенике. Уколико се у
 библиотеци налазе само романи, онда је веза ентитета <em>AUTOR</em> и <em>KNJIGA</em> могла да буде 1:М (роман има једног аутора).</p>
 <p>Погледајмо још и мапирање примера са позајмљивањем књига.</p>
 <p>На следећој слици је приказан само део модела. За комплетан модел и базу података је неопходно да ентитет <em>PRIMERAK</em>
 буде повезан са ентитетом <em>KNJIGA</em>, па ће и сама табела <em>primerci</em> изгледати нешто другачије. То је изостављено да се
 не би компликовао цео пример.</p>
-<a class="reference internal image-reference" href="../_images/slika_232e.png"><img alt="../_images/slika_232e.png" class="align-center" src="../_images/slika_232e.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232e.png"><img alt="../_images/slika_232e.png" class="align-center" src="../_images/slika_232e.png" style="width: 828.8000000000001px; height: 264.8px;" /></a>
 <p>Следи мапирање, тј. дизајн табела које ће бити креиране у бази података.</p>
-<a class="reference internal image-reference" href="../_images/tabela_232f.png"><img alt="../_images/tabela_232f.png" class="align-center" src="../_images/tabela_232f.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232g.png"><img alt="../_images/tabela_232g.png" class="align-center" src="../_images/tabela_232g.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232h.png"><img alt="../_images/tabela_232h.png" class="align-center" src="../_images/tabela_232h.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232f.png"><img alt="../_images/tabela_232f.png" class="align-center" src="../_images/tabela_232f.png" style="width: 847.2px; height: 93.60000000000001px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232g.png"><img alt="../_images/tabela_232g.png" class="align-center" src="../_images/tabela_232g.png" style="width: 848.8000000000001px; height: 152.8px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232h.png"><img alt="../_images/tabela_232h.png" class="align-center" src="../_images/tabela_232h.png" style="width: 841.6px; height: 177.60000000000002px;" /></a>
 <p><strong>Веза којa је део идентификатора</strong> не мора да се појави само код везе више-према-више. Погледајмо пример са рачуном у
 банци. Број рачуна банке је комбинација броја банке и броја рачуна у оквиру те банке.</p>
 <p>Пример података:</p>
 <p>Имамо банку са бројем 256, и у њој рачуне: 1234554321, 7778887771, 1290909090. Имамо другу банку са бројем 555, и у њој рачуне: 1234554321, 7778887771, 999933339, 1111133444. Иако у различитим банкама могу да постоје рачуни са истим бројем, рачун заправо има и број банке и свој број, и комбинација та два броја је јединствена: 256-1234554321, 256-7778887771, 256-1290909090, 555-1234554321, 555-7778887771, 555-999933339, 555-1111133444.</p>
-<a class="reference internal image-reference" href="../_images/slika_232f.png"><img alt="../_images/slika_232f.png" class="align-center" src="../_images/slika_232f.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_232f.png"><img alt="../_images/slika_232f.png" class="align-center" src="../_images/slika_232f.png" style="width: 528.8000000000001px; height: 171.20000000000002px;" /></a>
 <p>Следи мапирање.</p>
-<a class="reference internal image-reference" href="../_images/tabela_232i.png"><img alt="../_images/tabela_232i.png" class="align-center" src="../_images/tabela_232i.png" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_232j.png"><img alt="../_images/tabela_232j.png" class="align-center" src="../_images/tabela_232j.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232i.png"><img alt="../_images/tabela_232i.png" class="align-center" src="../_images/tabela_232i.png" style="width: 845.6px; height: 120.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_232j.png"><img alt="../_images/tabela_232j.png" class="align-center" src="../_images/tabela_232j.png" style="width: 846.4000000000001px; height: 174.4px;" /></a>
 </div>
 
 

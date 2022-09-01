@@ -6,6 +6,7 @@
     <title>Рад са табелама - команде ALTER TABLE и DROP TABLE</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -463,14 +465,14 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Замисли да си провео баш доста времена у креирању табела и већ си унео много податка, а онда си приметио грешку и да
 ти, на пример, недостаје једна колона у већ креираној табели. Та табела је вероватно повезана са другим табелама и
 било би незгодно да је обришемо, па да све до тада урађено радимо поново. За овакве ситуације постоји решење, а то
 је команда за измену структуре табеле. Наравно, појавиће се и ситуације када заиста желимо да уклонимо целу табелу
 из базе и онда ћемо употребити одговарајућу команду.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Када су табеле креиране, командом ALTER TABLE могуће је извршити одређене измене у структури уколико је то потребно.
 Ако смо, на пример, приметили да смо креирали табелу, али је тип података једне колоне погрешан, табелу можемо да
 изменимо наводећи нови тип поред имена колоне која већ постоји.</p>

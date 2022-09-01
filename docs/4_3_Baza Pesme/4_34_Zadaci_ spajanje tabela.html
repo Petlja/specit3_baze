@@ -6,6 +6,7 @@
     <title>Задаци - спајање табела</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -467,19 +469,17 @@
 <a class="reference internal image-reference" href="../_images/slika_433a.png"><img alt="../_images/slika_433a.png" class="align-center" src="../_images/slika_433a.png" style="width: 400px;" /></a>
 <p>Сви наредни SELECT упити обрађују податке из базе података фиктивне компаније за продају музичких композиција
 (углавном песама). Следи списак свих табела са колонама. Примарни кључеви су истакнути болдом, а страни италиком.</p>
-<a class="reference internal image-reference" href="../_images/slika_434b.png"><img alt="../_images/slika_434b.png" class="align-center" src="../_images/slika_434b.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_433b.png"><img alt="../_images/slika_433b.png" class="align-center" src="../_images/slika_433b.png" style="width: 780px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple">
 <li><p>Прикажи називе свих песама и њихове жанрове.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4341"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">,</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">zanr</span><span class="w"></span>
@@ -491,17 +491,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="2">
 <li><p>Прикажи називе свих џез композиција (жанр је Jazz).</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4342"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
@@ -514,17 +512,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Прикажи називе свих поп композиција (жанр је Pop) које су снимљене у формату AAC.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4343"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
@@ -538,17 +534,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="4">
 <li><p>Прикажи називе свих песама групе <em>Queen</em>.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4344"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
@@ -562,17 +556,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="5">
 <li><p>Приказати називе свих различитих жанрова композиција групе <em>Iron Maiden</em>.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4345"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
@@ -587,17 +579,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="6">
 <li><p>Приказати списак композиција који садржи назив извођача и назив композиције.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="4346" class="db" data-db-name="music.sql" db-check = "SELECT izvodjac.naziv AS izvodjac, kompozicija.naziv AS kompozicija
 FROM kompozicija JOIN
@@ -627,18 +617,16 @@ FROM kompozicija JOIN
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>7. Приказати податке о томе који запослени подноси извештај ком
 запосленом у читљивом формату (у свакој врсти приказати
 идентификатор, име и презиме шефа, а затим идентификатор, име и
 презиме оног коме је та особа шеф).</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="4347" class="db" data-db-name="music.sql" db-check = "SELECT z1.id_zaposleni, z1.ime, z1.prezime,
        z2.id_zaposleni, z2.ime, z2.prezime
@@ -668,17 +656,15 @@ FROM zaposleni z1 JOIN
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>8. Приказати имена купаца уз имена запослених који су задужени за
 њихову техничку подршку (сортирати списак по именима запослених, а
 за сваког запосленог по именима купаца).</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="4348" class="db" data-db-name="music.sql" db-check = "SELECT k.ime, k.prezime, z.ime, z.prezime
 FROM kupac k JOIN

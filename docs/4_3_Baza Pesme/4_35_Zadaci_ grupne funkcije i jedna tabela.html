@@ -6,6 +6,7 @@
     <title>Задаци - групне функције и једна табела</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -467,19 +469,17 @@
 <a class="reference internal image-reference" href="../_images/slika_433a.png"><img alt="../_images/slika_433a.png" class="align-center" src="../_images/slika_433a.png" style="width: 400px;" /></a>
 <p>Сви наредни SELECT упити обрађују податке из базе података фиктивне компаније за продају музичких композиција
 (углавном песама). Следи списак свих табела са колонама. Примарни кључеви су истакнути болдом, а страни италиком.</p>
-<a class="reference internal image-reference" href="../_images/slika_434b.png"><img alt="../_images/slika_434b.png" class="align-center" src="../_images/slika_434b.png" style="width: 780px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_433b.png"><img alt="../_images/slika_433b.png" class="align-center" src="../_images/slika_433b.png" style="width: 780px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple">
 <li><p>Израчунати колико укупно гигабајта заузимају све композиције.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4351"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">velicina</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">GB</span><span class="w"></span>
@@ -490,17 +490,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="2">
 <li><p>Одредити колико милисекунди траје најкраћа, а колико најдужа композиција.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4352"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">Min</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">najkraca</span><span class="p">,</span><span class="w"> </span><span class="k">Max</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">najduza</span><span class="w"></span>
@@ -511,17 +509,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Одредити укупан број жанрова.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4353"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
@@ -532,17 +528,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="4">
 <li><p>Одредити број различитих албума који садрже песме.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4354"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
@@ -553,17 +547,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="5">
 <li><p>Одредити број албума у табели албума.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4355"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
@@ -574,17 +566,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="6">
 <li><p>Одредити број композиција сваког жанра.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4356"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">id_zanr</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
@@ -596,17 +586,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="7">
 <li><p>Одредити укупну дужину свих песама на сваком албуму. Списак уредити по укупној дужини, од најкраћих до најдужих албума.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4357"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">id_album</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">trajanje_albuma</span><span class="w"></span>
@@ -619,17 +607,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="8">
 <li><p>Одредити највећи број песама на некој листи.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4358"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">broj</span><span class="w"></span>
@@ -643,17 +629,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="9">
 <li><p>На основу свих наруџбеница одредити укупан промет компаније.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4359" class="db" data-db-name="music.sql" db-check = "SELECT SUM(ukupan_iznos)
 FROM narudzbenica"    db-show-result> 
@@ -681,17 +665,15 @@ FROM narudzbenica"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="10">
 <li><p>Одредити просечни износ наруџбенице током 2010. године.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43510" class="db" data-db-name="music.sql" db-check = "SELECT AVG(ukupan_iznos)
 FROM narudzbenica
@@ -720,17 +702,15 @@ WHERE datum LIKE '2010-%'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>11. За сваког купца који је извршио неку наруџбину током 2011. године приказати укупан износ наруџбина које је
 извршио током те године. Резултате приказати заокружене на најближи цео број у нерастућем редоследу укупног износа
 наруџбина.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43511" class="db" data-db-name="music.sql" db-check = "SELECT id_kupac, ROUND(SUM(ukupan_iznos)) AS ukupno
 FROM narudzbenica
@@ -760,17 +740,15 @@ GROUP BY id_kupac ORDER BY ukupno DESC"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="12">
 <li><p>За сваку годину приказати укупан број наруџбина. Резултат сортирати на основу године.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43512" class="db" data-db-name="music.sql" db-check = "SELECT strftime('%Y', datum) AS godina, COUNT(*) AS ukupno
 FROM narudzbenica
@@ -800,17 +778,15 @@ ORDER BY godina"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>13. На табеле ставки наруџбина <em>stavka_narudzbenice</em> приказати укупан износ наруџбина на свакој наруџбеници
 (износ сваке ставке се добија множењем количине <em>kolicina</em> и јединичне цене <em>cena</em>, а укупан износ наруџбине се
 добија сабирањем свих овако израчунатих износа ставки са те наруџбине). Сваки износ заокружити на две децимале.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43513" class="db" data-db-name="music.sql" db-check = "SELECT id_narudzbenica, ROUND(SUM(kolicina * cena), 2) AS Ukupno
 FROM stavka_narudzbenice
@@ -839,17 +815,15 @@ GROUP BY id_narudzbenica"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="14">
 <li><p>За сваку државу из које постоји неки купац приказати укупан број купаца.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43514" class="db" data-db-name="music.sql" db-check = "SELECT drzava, COUNT(*) AS broj_kupaca
 FROM kupac
@@ -878,16 +852,14 @@ GROUP BY drzava"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>15. За сваку земљу из које постоји бар 5 купаца приказати укупан број
 купаца (резултат сортирати по броју купаца, нерастући).</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43515" class="db" data-db-name="music.sql" db-check = "SELECT drzava, COUNT(*) AS broj_kupaca
 FROM kupac
@@ -918,16 +890,14 @@ ORDER BY broj_kupaca DESC"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>16. Приказати идентификаторе жанрова за које је у понуди више од 10
 сати музике.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="43516" class="db" data-db-name="music.sql" db-check = "SELECT id_zanr
 FROM kompozicija
@@ -957,17 +927,15 @@ HAVING SUM(trajanje) >= 10 * 60 * 60 * 1000"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>17. За сваки жанр приказати број различитих типова медија на којима су
 снимане песме тог жанра (приказати идентификатор жанра и број
 типова медија).</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_43517" class="db" data-db-name="music.sql" db-check = "SELECT id_zanr, COUNT (DISTINCT id_format)
 FROM kompozicija

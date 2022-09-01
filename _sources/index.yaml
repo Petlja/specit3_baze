@@ -27,6 +27,12 @@ description:
     Овај курс је намењен за предмет Базе података у трећем разреду гимназија за ученике са посебним 
     способностима за рачунарство и информатику. Курс прати одговарајући програм наставе и учења. 
     Поред рада у школи, курс може да се пролази и самостално. 
+
+    <p>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+    </p>  
   # shortDescription: Базе података за трећи разред специјализованих ИТ одељења
   shortDescription: Базе података за трећи разред гимназија за ученике са посебним способностима за рачунарство и информатику 
 
@@ -153,15 +159,15 @@ lessons:
      activities:
       - type: reading
         title: Пример моделовања - продаја дигиталних композиција
-        file: 2_51_ Model baze za muziku.rst
+        file: 2_51_Model baze za muziku.rst
         guid: bb4e905a-9a5f-4360-afc7-fd1448a87030    
   -  title: Пројектни задатак - моделовање
      guid: fdf75229-909d-4a8e-b613-84089b68d90d
-     folder: 2_5_Model baze za pesme
+     folder: 2_6_Projektni zadatak
      activities:
       - type: reading
         title: Пројектни задатак - моделовање
-        file: 2_52_Projektni zadatak.rst
+        file: 2_61_Projektni zadatak.rst
         guid: 44f23abc-fa33-4ffa-9e57-f562163973da       
   -  title: Креирање табела
      guid: 4ae36f28-6adb-4503-81d6-cbcc5ec439c2

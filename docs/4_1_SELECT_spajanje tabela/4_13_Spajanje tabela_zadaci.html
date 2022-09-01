@@ -6,6 +6,7 @@
     <title>Упит SELECT - спајање табела - задаци</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -463,16 +465,14 @@
 а страни италиком.</p>
 <a class="reference internal image-reference" href="../_images/slika_4011.png"><img alt="../_images/slika_4011.png" class="align-center" src="../_images/slika_4011.png" style="width: 780px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>1. Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка. Уредити
 резултат по називу књиге.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4131" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
@@ -501,17 +501,15 @@ ORDER BY naziv"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>2. Написати упит којим се, уз инвентарски број, приказује и назив књиге тог примерка и назив
 издавача. Уредити резултат по називу издавача, а у случају да књиге имају истог издавача,
 по називу књиге.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4132" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, knjige.naziv, izdavaci.naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
@@ -541,17 +539,15 @@ ORDER BY izdavaci.naziv, knjige.naziv"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Написати упит којим се приказују називи књига издавача чији је назив CET.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4133" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT knjige.naziv
 FROM knjige JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
@@ -580,17 +576,15 @@ WHERE izdavaci.naziv='CET'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="4">
 <li><p>Написати упит којим се приказују инвентарски бројеви примерака књига издавача чији је назив CET.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4134" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, knjige.naziv
 FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
@@ -620,16 +614,14 @@ WHERE izdavaci.naziv='CET'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>5. Написати упит којим се приказују имена и презимена аутора који су писали књиге за издавача
 чији је назив CET, без понављања.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4135" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT ime, prezime
 FROM knjige JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
@@ -660,17 +652,15 @@ WHERE izdavaci.naziv='CET'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="6">
 <li><p>Написати упит којим се приказују имејл запосленог у библиотеци и имејл његовог менаџера.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4136" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT z.mejl "Mejl zaposlenog", m.mejl "Mejl menadzera"
 FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    db-show-result> 
@@ -698,17 +688,15 @@ FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>7. Написати упит којим се приказују подаци о свим позајмицама: име, презиме и телефон члана,
 датум позајмице, датум враћања и инвентарски број узетог примерка. Резултат уредити тако
 да се прво приказују најновије позајмице по датуму узимања.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4137" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime, prezime, telefon, datum_uzimanja, datum_vracanja, pozajmice.inventarski_broj
 FROM primerci JOIN pozajmice
@@ -739,16 +727,14 @@ ORDER BY datum_uzimanja DESC"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>8. Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
 адреса члана, датум позајмице и назив књиге.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4138" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime, prezime, mejl_adresa, datum_uzimanja, naziv
 FROM primerci JOIN pozajmice
@@ -780,16 +766,14 @@ WHERE datum_vracanja IS NULL"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>9. Написати упит којим се приказују подаци о свим тренутним позајмицама: име, презиме и имејл
 адреса члана, датум позајмице, назив књиге и назив издавача.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4139" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime, prezime, mejl_adresa, datum_uzimanja, knjige.naziv, izdavaci.naziv
 FROM primerci JOIN pozajmice
@@ -822,15 +806,13 @@ WHERE datum_vracanja IS NULL"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>10.Написати упит којим се приказују датуми позајмица књига чији је аутор Марко Видојковић.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41310" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT datum_uzimanja
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -862,17 +844,15 @@ WHERE ime='Marko' AND prezime='Vidojkovic'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>11. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан са бројем
 чланске карте 33, али без понављања. Дакле, уколико је члан током година колико је члан
 библиотеке узимао исту књигу неколико пута, назив те књиге приказати само једном.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41311" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT naziv
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -902,16 +882,14 @@ WHERE broj_clanske_karte=33"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>12. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан „Милица
 Зорановић“, али без понављања.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41312" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT naziv
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -942,17 +920,15 @@ WHERE ime='Milica' AND prezime='Zoranovic'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>13. Написати упит којим се приказују имена чланова библиотеке и називи издавача чије су књиге
 читали, без понављања (исти члан је могао да чита више књига истог издавача). Резултат уредити
 по називу издавача.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41313" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT ime, prezime, izdavaci.naziv
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -984,16 +960,14 @@ ORDER BY izdavaci.naziv"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>14. Написати упит којим се приказују имејл адресе чланова који су узимали из библиотеке књиге у
 издању издавача са називом СЕТ, без понављања.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41314" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT mejl_adresa
 FROM pozajmice JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -1025,17 +999,15 @@ WHERE izdavaci.naziv='CET'"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="15">
 <li><p>Написати упит којим се приказују бројеви телефона чланова којима је издата казна за неку позајмицу.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_41315" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT telefon
 FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)"    db-show-result> 

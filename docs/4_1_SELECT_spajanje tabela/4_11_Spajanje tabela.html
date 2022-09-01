@@ -6,6 +6,7 @@
     <title>Упит SELECT - спајање табела</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -463,11 +465,11 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Подаци који се иначе виде заједно на једном месту, у бази података се чувају у различитим
 табелама. Већ смо анализирали, на пример, корице једног примерка књиге. На тим корицама је
 назив књиге, као и основни подаци о ауторима и издавачу. Сви ови подаци се у бази података,
-што смо већ научили, чувају у четири табеле: knjige, autori, izdavaci и primerci. Ово је
+што смо већ научили, чувају у четири табеле: <em>knjige</em>, <em>autori</em>, <em>izdavaci</em> и <em>primerci</em>. Ово је
 веома важно и максимално спречава непотребно понављање података и смањује могућност за
 настајање разних грешака.</p>
 <p>Међутим, када претражујемо базу, нама су за исти извештај најчешће потребни подаци из
@@ -476,7 +478,7 @@
 издавачем који је није објавио. Важно је да се добро савлада правилно упаривање података
 из различитих табела које су повезане системом страних и одговарајућих примарних кључева.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Увек прво треба проверити да ли се сви подаци који су нам неопходни да изградимо упит налазе
 у једној табели. Ако је то случај, спајање табела нам није потребно. Међутим, најчешће за
 исти упит тражимо податке који се налазе у различитим табелама, тако да је спајање табела
@@ -495,17 +497,15 @@
 желите да вршите упите.</p>
 <a class="reference internal image-reference" href="../_images/slika_401b1.png"><img alt="../_images/slika_401b1.png" class="align-center" src="../_images/slika_401b1.png" style="width: 390px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple">
 <li><p>Написати упит којим се, уз презиме члана, приказују износ и година плаћене чланарине.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <p>Ова два података се налазе у различитим табелама које су повезане. Потребно је спојити те
 табеле и то тако што се упореде по једнакости вредности страног кључа и одговарајућег
 примарног кључа. У овом случају стани кључ је колона <em>broj_clanske_karte</em>, која се налази у
@@ -528,27 +528,24 @@
 </pre></div>
 </div>
 <p>Имајте на уму да је у делу упита где наводимо услов спајања након кључне речи ON прво
-наведена колона која је страни кључ clanarine.broj_clanske_karte, а затим колона која
+наведена колона која је страни кључ <em>clanarine.broj_clanske_karte</em>, а затим колона која
 је одговарајући примарни кључ. Неће бити никакве разлике и ако променимо редослед, па
 и следећи упит има исти резултат.</p>
-<dl class="simple">
-<dt>::</dt><dd><p>SELECT prezime, god, iznos
-FROM clanarine JOIN clanovi
-ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
-</dd>
-</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">god</span><span class="p">,</span> <span class="n">iznos</span>
+<span class="n">FROM</span> <span class="n">clanarine</span> <span class="n">JOIN</span> <span class="n">clanovi</span>
+<span class="n">ON</span> <span class="p">(</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanarine</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+</pre></div>
+</div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>2. Написати упит којим се, уз презиме и имејл адресу члана, приказују износ и година плаћене
 чланарине, али само за чланове који имају имејл адресу. Податке приказати уређене абецедно
 по презимену.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Овај упит је проширење претходног и садржи селекцију којом бирамо само неке редове, као и
 сортирање резултата.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">god</span><span class="p">,</span> <span class="n">iznos</span>
@@ -560,17 +557,15 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_411c.png"><img alt="../_images/slika_411c.png" class="align-center" src="../_images/slika_411c.png" style="width: 390px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Написати упит којим се приказују назив књиге и назив њеног издавача.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <p>Ова два података се налазе у различитим табелама које су повезане. Потребно је спојити те табеле.</p>
 <a class="reference internal image-reference" href="../_images/slika_411d.png"><img alt="../_images/slika_411d.png" class="align-center" src="../_images/slika_411d.png" style="width: 780px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Knjiga&quot;</span><span class="p">,</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span> <span class="s2">&quot;Izdavac&quot;</span>
@@ -594,17 +589,15 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="4">
 <li><p>Написати упит којим се приказују презиме запосленог и презиме његовог менаџера.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <p>Ови подаци, и презиме менаџера и презиме запосленог, налазе се у истој табели која има страни
 кључ <em>id_manadzera</em> који показује на примарни кључ исте табеле <em>id</em>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zaposleni</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">mejl</span><span class="p">,</span> <span class="n">datum_zaposlenja</span><span class="p">,</span> <span class="n">plata</span><span class="p">,</span> <span class="n">id_menadzera</span><span class="p">)</span>
@@ -618,16 +611,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>5. Написати упит којим се приказују име и презиме члана, датум позајмице, инвентарски број
 примерка и идентификациони број књиге за све позајмице током месеца маја 2019. године.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_411f.png"><img alt="../_images/slika_411f.png" class="align-center" src="../_images/slika_411f.png" style="width: 620px;" /></a>
 <p>Подаци које тражимо налазе се у три повезане табеле, па је потребно да их све три повежемо,
 тако што прво спојимо две, па онда урадимо и спајање са трећом.</p>
@@ -668,16 +659,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 за прве две табеле које спајамо да изаберемо табеле <em>clanovi</em> и <em>primerci</em> зато што оне нису
 директно повезане системом страних и примарних кључева.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>6. Написати упит којим се приказују подаци о тренутно издатим књигама (текуће позајмице): име
 и презиме члана, датум позајмице, инвентарски број примерка и идентификациони број књиге.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">datum_uzimanja</span>
 <span class="n">FROM</span> <span class="n">primerci</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
 <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
@@ -688,16 +677,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 <p>Упит је сличан претходном, потребно је спојити три табеле, само што треба да се уради селекција
 оних редова код којих још нема датума враћања.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>7. Написати упит којим се приказују подаци о свим позајмицама: име и презиме члана, датум позајмице,
 инвентарски број узетог примерка и назив књиге.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_411h.png"><img alt="../_images/slika_411h.png" class="align-center" src="../_images/slika_411h.png" style="width: 620px;" /></a>
 <p>Овај упит узима податке из четири повезане табеле па је потребно да спојимо две, које ћемо потом
 спојити са трећом, и на крају са четвртом.</p>
@@ -709,17 +696,15 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="8">
 <li><p>Написати упит којим се приказују назив књиге и име аутора. Резултат уредити по називу књиге.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_411i.png"><img alt="../_images/slika_411i.png" class="align-center" src="../_images/slika_411i.png" style="width: 780px;" /></a>
 <p>Иако су нам потребна два податка који се налазе у две различите табеле, назив књиге из табеле
 <em>knjige</em> и име аутора из табеле <em>autori</em>, ове табеле нису директно повезане па, да бисмо добили
@@ -731,17 +716,15 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="9">
 <li><p>Написати упит којим се приказују називи књигa чији је један од аутора Мијодраг Ђуришић.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">naziv</span>
 <span class="n">FROM</span> <span class="n">autori</span> <span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
 <span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_knjige</span><span class="p">)</span>
@@ -749,17 +732,15 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>10. Написати упит којим се приказују називи књига које је из библиотеке узимао члан са бројем
 чланске карте 22, али без понављања. Дакле, уколико је члан током година колико је члан
 библиотеке узимао исту књигу неколико пута, назив те књиге треба да се прикаже само једном.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">naziv</span>
 <span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">primerci</span>
 <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
@@ -768,16 +749,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>11. Написати упит којим се приказују имена чланова и имена аутора чије су књиге читали, без
 понављања (исти члан је могао да чита неколико књига истог аутора).</p>
 
-    </p></div></div>
+    </div></div>
 <p>У овом упиту је важно обратити пажњу на то да се у две различите табеле налазе колоне са
 истим називима и да је обавезно да се наведу називи табела из којих се узимају. Овај упит
 захтева и велики број спајања табела.</p>
@@ -807,16 +786,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 <p>Ако желимо да за сваког аутора видимо који чланови су читали његове књиге, уредићемо резултат
 по аутору.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>12. Написати упит којим се приказују називи издавача и називи њихових књига. Приказати и издаваче
 чијих књига нема у библиотеци.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Подразумевано спајање је унутрашње спајање, тј. приказаће се само подаци који су повезани са
 подацима у другој табели. Уколико покренемо следећи упит, приказаће се само издавачи чије књиге
 имамо у библиотеци.</p>
@@ -836,16 +813,14 @@ ON (clanovi.broj_clanske_karte=clanarine.broj_clanske_karte)</p>
 </pre></div>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>13. Написати упит којим се приказују називи издавача и називи њихових књига. Приказати и издаваче
 чијих књига нема у библиотеци. Уредити списак абецедно по називу издавача.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span><span class="p">,</span> <span class="n">knjige</span><span class="o">.</span><span class="n">naziv</span>
 <span class="n">FROM</span> <span class="n">izdavaci</span> <span class="n">FULL</span> <span class="n">OUTER</span> <span class="n">JOIN</span> <span class="n">knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">izdavaci</span><span class="o">.</span><span class="n">id</span><span class="o">=</span><span class="n">knjige</span><span class="o">.</span><span class="n">id_izdavaca</span><span class="p">)</span>
 <span class="n">ORDER</span> <span class="n">BY</span> <span class="n">izdavaci</span><span class="o">.</span><span class="n">naziv</span>

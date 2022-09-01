@@ -6,6 +6,7 @@
     <title>Задаци M-M</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -460,12 +462,10 @@
 <h1>Задаци M-M<a class="headerlink" href="#m-m" title="Permalink to this headline">¶</a></h1>
 <p><strong>Нацртати модел за базу података – примери везе M:М</strong></p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>1. У школи постоји неколико секција, као што су, на пример: ликовна секција, драмска секција, музичка секција и сл.
 Један ученик може да упише и више различитих секција уколико то жели, а у исту секцију иде обично више ученика.
 Приказати и како би изгледале табеле у релационој бази података попуњене следећим подацима. Лена Кулић, Оливера
@@ -473,80 +473,80 @@
 Зорановић и Милица Зорановић. Милица иде и на ликовну секцију са Марјаном Мајсторовић, Павлом Милошевићем и Савом
 Јовићем.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_214a.png"><img alt="../_images/slika_214a.png" class="align-center" src="../_images/slika_214a.png" style="width: 500px;" /></a>
 <p>Веза М:М се брише и додаје се нови ентитет</p>
 <a class="reference internal image-reference" href="../_images/slika_214b.png"><img alt="../_images/slika_214b.png" class="align-center" src="../_images/slika_214b.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>Назив секције је јединствен. Не постоје две секције са истим називом.</p>
+<ul class="simple">
+<li><p>Назив секције је јединствен. Не постоје две секције са истим називом.</p></li>
+</ul>
 <a class="reference internal image-reference" href="../_images/tabela_214a.png"><img alt="../_images/tabela_214a.png" class="align-center" src="../_images/tabela_214a.png" style="width: 300px;" /></a>
 <a class="reference internal image-reference" href="../_images/tabela_214b.png"><img alt="../_images/tabela_214b.png" class="align-center" src="../_images/tabela_214b.png" style="width: 300px;" /></a>
 <a class="reference internal image-reference" href="../_images/tabela_214c.png"><img alt="../_images/tabela_214c.png" class="align-center" src="../_images/tabela_214c.png" style="width: 200px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>2. Возачка дозвола има број, име и презиме носиоца, датум издавања и датум важења. Возачка дозвола може да обухвата
 неколико категорија. За сваку категорију су познати ознака (A, B, C и сл.) и опис. За сваку возачку дозволу и сваку
 категорију коју садржи познат је и датум када је носилац возачке дозволе стекао ту категорију.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_214c.png"><img alt="../_images/slika_214c.png" class="align-center" src="../_images/slika_214c.png" style="width: 500px;" /></a>
 <p>Веза М:М се брише и додаје се нови ентитет. Ова веза има и свој податак, а то је датум када је носилац возачке дозволе стекао ту
 категорију.</p>
 <a class="reference internal image-reference" href="../_images/slika_214d.png"><img alt="../_images/slika_214d.png" class="align-center" src="../_images/slika_214d.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>Ознака категорије је јединствена. Не постоје две категорије са истом ознаком.
-Скуп вредности за ознаку категорије је коначан и могуће ознаке су: AM, A1, A2, A, B1, B, BE, C1, C1E, C, CE, D1, D1E,
-D, DE, F, M.</p>
+<ul class="simple">
+<li><p>Ознака категорије је јединствена. Не постоје две категорије са истом ознаком.</p></li>
+<li><p>Скуп вредности за ознаку категорије је коначан и могуће ознаке су: AM, A1, A2, A, B1, B, BE, C1, C1E, C, CE, D1, D1E, D, DE, F, M.</p></li>
+</ul>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>3. Школа страних језика организује онлајн курсеве. Сваки курс има свој назив, укупан број часова, план и програм,
 предавача. Чувају се контакт информације о свим полазницима школе, као и број њихових платних картица. Један полазник
 може да прати више курсева и исти курс може да прати више полазника. За свако учешће полазника на курсу памтимо датум
 када је почео да прати курс и када га је успешно завршио.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="Задатак 214.3"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <a class="reference internal image-reference" href="../_images/slika_214e.png"><img alt="../_images/slika_214e.png" class="align-center" src="../_images/slika_214e.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>Број платне картице је јединствен. Не постоје два полазника који имају исти број платне картице.
-Датум почетка курса је пре датума завршетка.</p>
+<ul class="simple">
+<li><p>Број платне картице је јединствен. Не постоје два полазника који имају исти број платне картице.</p></li>
+<li><p>Датум почетка курса је пре датума завршетка.</p></li>
+</ul>
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>4. Фудбалски клуб има неколико различитих група. За сваку групу су познати најмлађе и најстарије годиште чланова.
 Kлуб има неколико тренера. Тренер је запослен у клубу и познатe су његовe контакт информације, као и број текућег
 рачуна и број тренерске лиценце. Један тренер може да води и неколико група, а исту групу може да води и неколико
 тренера. Сваки тренер додељен некој групи има одређену улогу (главни тренер, помоћни тренер, кондициони тренер и сл.),
 а познати су и датуми од када и до када тренер ради са неком групом.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="Задатак 214.4"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <a class="reference internal image-reference" href="../_images/slika_214f.png"><img alt="../_images/slika_214f.png" class="align-center" src="../_images/slika_214f.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>Најмлађе годиште означава број који је већи од броја који означава најстарије годиште. Ови бројеви представљају године
-рођења чланова групе, на пример 2001, 2005. и сл.
-Скуп вредности за улогу је коначан, на пример: главни тренер, помоћни тренер и кондициони тренер.
-Број текућег рачуна је јединствен. Не постоје два тренера који имају исти број текућег рачуна.
-Број лиценце је јединствен. Не постоје два тренера који имају исти број лиценце.
-Датум од када тренер ради са неком групом је пре датума до ког ради са истом групом.</p>
+<ul class="simple">
+<li><p>Најмлађе годиште означава број који је већи од броја који означава најстарије годиште. Ови бројеви представљају године рођења чланова групе, на пример 2001, 2005. и сл.</p></li>
+<li><p>Скуп вредности за улогу је коначан, на пример: главни тренер, помоћни тренер и кондициони тренер.</p></li>
+<li><p>Број текућег рачуна је јединствен. Не постоје два тренера који имају исти број текућег рачуна.</p></li>
+<li><p>Број лиценце је јединствен. Не постоје два тренера који имају исти број лиценце.</p></li>
+<li><p>Датум од када тренер ради са неком групом је пре датума до ког ради са истом групом.</p></li>
+</ul>
 
     </div>
     </div>

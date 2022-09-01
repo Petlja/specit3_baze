@@ -6,6 +6,7 @@
     <title>Разни задаци</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -461,70 +463,68 @@
 <p><strong>Нацртати модел за базу података</strong></p>
 <p><strong>Напомена</strong>: Везе могу бити – 1:1, 1:М и М:М.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>1. Ученик приликом уписа у школу доставља следеће податке: име, презиме, ЈМБГ, датум рођења, место рођења.
 Ученику се приликом уписа додељује број у матичној књизи. Ученици се распоређују у одељења. За свако одељење су
 познати редни број разреда, индекс одељења и име разредног старешине.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_215a.png"><img alt="../_images/slika_215a.png" class="align-center" src="../_images/slika_215a.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>ЈМБГ је кандидат за примарни јединствени идентификатор.
-Одељење има сложени примарни јединствени идентификатор. Уколико би увели вештачки, морало би да се допише у
-документацији да је комбинација редног броја разреда и индекса одељења јединствена.</p>
+<ul class="simple">
+<li><p>ЈМБГ је кандидат за примарни јединствени идентификатор.</p></li>
+<li><p>Одељење има сложени примарни јединствени идентификатор. Уколико би увели вештачки, морало би да се допише у</p></li>
+<li><p>документацији да је комбинација редног броја разреда и индекса одељења јединствена.</p></li>
+</ul>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>2. Ученик приликом уписа у школу доставља следеће податке: име, презиме, адреса, имејл, број телефона. Ученику се
 приликом уписа додељује број у матичној књизи. Ученици се распоређују у одељења. За свако одељење су познати  редни
 број разреда, индекс одељења и разредни старешина. Разредни старешина је професор за којег су приликом запошљавања
 узети следећи подаци: име, презиме, адреса, имејл, број телефона.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_215b.png"><img alt="../_images/slika_215b.png" class="align-center" src="../_images/slika_215b.png" style="width: 600px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Ученик има два родитеља. За сваког родитеља су познати следећи подаци: име, презиме, ЈМБГ, датум рођења, место рођења.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_215c.png"><img alt="../_images/slika_215c.png" class="align-center" src="../_images/slika_215c.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>Један ученик може да има највише два родитеља.</p>
+<ul class="simple">
+<li><p>Један ученик може да има највише два родитеља.</p></li>
+</ul>
 <p>Следи друго решење са уведеним вештачким примарним јединственим идентификаторима. Ова измена ће утицати и на пратећу
 документацију.</p>
 <a class="reference internal image-reference" href="../_images/slika_215d.png"><img alt="../_images/slika_215d.png" class="align-center" src="../_images/slika_215d.png" style="width: 500px;" /></a>
 <p><strong>ДОКУМЕНТАЦИЈА</strong></p>
-<p>ЈМБГ је јединствен за сваког ученика.
-Један ученик може да има највише два родитеља.</p>
+<ul class="simple">
+<li><p>ЈМБГ је јединствен за сваког ученика.</p></li>
+<li><p>Један ученик може да има највише два родитеља.</p></li>
+</ul>
 <p>Како ученик може да има највише два родитеља, могуће је и треће решење.</p>
 <a class="reference internal image-reference" href="../_images/slika_215e.png"><img alt="../_images/slika_215e.png" class="align-center" src="../_images/slika_215e.png" style="width: 500px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>4. За сваки уџбеник знамо назив, предмет за који је написан и годину првог објављивања. Уџбеник може да има неколико
 аутора. За сваког аутора знамо име, презиме, годину рођења и место рођења.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/slika_215f.png"><img alt="../_images/slika_215f.png" class="align-center" src="../_images/slika_215f.png" style="width: 500px;" /></a>
 <a class="reference internal image-reference" href="../_images/slika_215g.png"><img alt="../_images/slika_215g.png" class="align-center" src="../_images/slika_215g.png" style="width: 780px;" /></a>
 <div class="section" id="id2">

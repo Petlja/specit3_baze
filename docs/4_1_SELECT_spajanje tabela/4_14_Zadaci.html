@@ -6,6 +6,7 @@
     <title>Задаци - салон аутомобила</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -471,18 +473,16 @@
 <p>kategorije(<strong>id_kategorije</strong>, naziv, opis)</p>
 <p>modeli(<strong>id_modela</strong>, oznaka, jacina_motora, broj_vrata, tip_goriva, <em>pib</em>, <em>id_kategorije</em>)</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>1. Написати упит којим се приказују ознака модела и назив произвођача возила која имају петора
 врата. Назив произвођача и ознаку модела приказати спојено са цртицом између у једној колони.
 Уредити резултат по називу произвођача, а уколико два модела имају истог произвођача, по
 називу модела.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4141"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">naziv</span><span class="o">+</span><span class="s1">&#39; - &#39;</span><span class="o">+</span><span class="n">oznaka</span><span class="w"> </span><span class="ss">&quot;Model&quot;</span><span class="w"></span>
@@ -495,16 +495,14 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>2. Написати упит којим се приказују ознака модела, назив произвођача, назив и опис категорије за
 све моделе. Уредити приказ резултата по називу категорије.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4142"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">oznaka</span><span class="p">,</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="ss">&quot;proizvodjac&quot;</span><span class="p">,</span><span class="w"></span>
@@ -518,17 +516,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="3">
 <li><p>Написати упит којим се приказује ознака модела за све лимузине произвођача Mercedes-Benz.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4143"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">oznaka</span><span class="w"></span>
@@ -541,17 +537,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>4. Написати упит којим се абецедно уређено приказују произвођачи модела који користе дизел.
 Обратити пажњу да, ако један произвођач производи више модела који користе дизел, назив
 тог произвођача треба приказати само једном.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4144"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
@@ -563,17 +557,15 @@
 
     </div>
     
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <ol class="arabic simple" start="5">
 <li><p>Написати упит којим се абецедно уређено приказују произвођачи џипова.</p></li>
 </ol>
 
-    </p></div></div>
+    </div></div>
 
     <div data-component="reveal" id="db_4145"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
     <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>

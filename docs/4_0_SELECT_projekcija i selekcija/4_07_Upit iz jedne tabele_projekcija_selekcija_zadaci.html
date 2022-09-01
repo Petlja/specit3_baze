@@ -6,6 +6,7 @@
     <title>Упит SELECT - упит из једне табеле - пројекција и селекција - задаци</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -110,6 +111,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -307,17 +309,17 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_%20Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_%20Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_51_Model%20baze%20za%20muziku.html><div class="studioLecture" id=activity-2_51_Model%20baze%20za%20muziku><i class="fas fa-file-alt activity-icon"></i>Пример моделовања - продаја дигиталних композиција</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_5_Model%20baze%20za%20pesme>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_6_Projektni%20zadatak>
                     <h5>Пројектни задатак - моделовање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../2_5_Model%20baze%20za%20pesme/2_52_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_52_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../2_6_Projektni%20zadatak/2_61_Projektni%20zadatak.html><div class="studioLecture" id=activity-2_61_Projektni%20zadatak><i class="fas fa-file-alt activity-icon"></i>Пројектни задатак - моделовање</div></a>
                 </div>
             </div>
                 
@@ -439,7 +441,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../6_0%20Dodaci/6_01_DODATAK%20A_Оracle.html><div class="studioLecture" id=activity-6_01_DODATAK%20A_Оracle><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – ORACLE</div></a>
-                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База података библиотеке – SQLLite</div></a>
+                <a href=../6_0%20Dodaci/6_02_DODATAK%20B_SQLLite.html><div class="studioLecture" id=activity-6_02_DODATAK%20B_SQLLite><i class="fas fa-file-alt activity-icon"></i>База за продају дигиталних композиција – SQLite</div></a>
                 </div>
             </div>
                 </div>
@@ -495,19 +497,17 @@
 а страни италиком.</p>
 <a class="reference internal image-reference" href="../_images/slika_401.png"><img alt="../_images/slika_401.png" class="align-center" src="../_images/slika_401.png" style="width: 780px;" /></a>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Члан библиотеке са својом чланском картом чији је број 33 дошао је да позајми неколико књига.
+<p>1. Члан библиотеке са својом чланском картом чији је број 33 дошао је да позајми неколико књига.
 Пре него што му библиотека изда нове, потребно је да се провери да ли члан тренутно држи неке
 књиге код себе.</p>
 <p><strong>Задатак:</strong> Написати упит којим се приказују датуми узимања и инвентарски бројеви књига које се
 тренутно налазе код члана са бројем чланске карте 33.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4071" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT datum_uzimanja, inventarski_broj
 FROM pozajmice
@@ -536,18 +536,16 @@ WHERE broj_clanske_karte=33 AND datum_vracanja IS NULL"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Библиотеци је потребан извештај о свим примерцима књига који су тренутно издати. На почетку
+<p>2. Библиотеци је потребан извештај о свим примерцима књига који су тренутно издати. На почетку
 извештаја је важно да се прикажу књиге које су дуже време код чланова библиотеке.</p>
 <p><strong>Задатак:</strong> Написати упит којим се приказују инвентарски бројеви примерака књига који су тренутно
 издати и датуми када су позајмљене из библиотеке. Списак уредити по датуму позајмице.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4072" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, datum_uzimanja
 FROM pozajmice
@@ -577,19 +575,17 @@ ORDER BY datum_uzimanja"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Библиотека прати и анализира понашање чланова и као један од извештаја проучава све позајмице
+<p>3. Библиотека прати и анализира понашање чланова и као један од извештаја проучава све позајмице
 по месецима. За то ће бити потребни извештаји за сваки месец. На пример, извештај о свим
 позајмицама током априла 2019. године.</p>
 <p><strong>Задатак:</strong> Написати упит којим се приказују инвентарски бројеви примерака књига, датум узимања
 и датум враћања за све позајмице током априла 2019. године.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4073" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT inventarski_broj, datum_uzimanja, datum_vracanja
 FROM pozajmice
@@ -618,17 +614,15 @@ WHERE datum_uzimanja>='2019-04-01' AND datum_uzimanja<='2019-04-30'"    db-show-
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Библиотека планира да набави још књига издавача са називом СЕТ и због тога су јој потребне
+<p>4. Библиотека планира да набави још књига издавача са називом СЕТ и због тога су јој потребне
 контакт информације овог издавача.</p>
 <p><strong>Задатак:</strong> Написати упит којим се приказују адреса и адреса веб-сајта издавача чији је назив СЕТ.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4074" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT adresa, veb_sajt
 FROM izdavaci"    db-show-result> 
@@ -656,20 +650,18 @@ FROM izdavaci"    db-show-result>
             
     </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Члана библиотеке занима које све књиге библиотека има на тему програмирања да би неку изабрао
+<p>5. Члана библиотеке занима које све књиге библиотека има на тему програмирања да би неку изабрао
 за читање.</p>
 <p><strong>Задатак:</strong> Написати упит којим се приказују називи књига који у себи садрже реч „programiranje“.
 Реч „programiranje“ може да буде на почетку, у средини или на крају, и може да буде написана
 великим словима, малим словима или да је прво слово велико, а остала мала уколико је на почетку
 назива књиге.</p>
 
-    </p></div></div>
+    </div></div>
 
     <div id="db_4075" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT naziv
 FROM knjige
