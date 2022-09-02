@@ -204,17 +204,19 @@
 .. questionnote::
 
     15. Написати упит којим се приказују имејл запосленог у библиотеци и имејл његовог менаџера.
-    
+
+.. dbpetlja:: db_41316
+   :dbfile: it3_biblioteka.sql
+   :showresult:
+   :solutionquery: SELECT z.mejl 'Mejl zaposlenog', m.mejl 'Mejl menadzera0'
+                   FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)
+
+
+
+.. comment
+
     Треба да се добије резултат као на следећој слици:
     
     .. image:: ../../_images/slika_413a.png
         :scale: 80%
-        :align: center
-
-.. comment
-
-    SELECT z.mejl "Mejl zaposlenog", m.mejl "Mejl menadzera"
-    FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)
-    
-    SELECT z.mejl "Mejl zaposlenog", m.mejl "Mejl menadzera"
-    FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)
+        :align: center)
