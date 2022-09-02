@@ -33,7 +33,7 @@
         Да ли следећи упит враћа више редова (*id* је примарни кључ)? 
         ::
 
-            FROM clanovi SELECT ime, prezime ORDER BY ime
+            SELECT * FROM izdavaci WHERE id=3
 
 .. quizq::
 
@@ -94,13 +94,14 @@
         Уколико треба да издвојимо запослене којима је плата мања од 60.000 динара, а почели су да раде пре јуна 2018. године, потребно је да упиту додамо:
 
 .. quizq::
-        
+
     .. mchoice:: 4059
         :answer_a: Да
         :answer_b: Не
         :correct: a
 
         Следећи упит може да врати више редова (*id_izdavaca* је страни кључ)? 
+
         ::
 
             SELECT * FROM knjige WHERE id_izdavaca=3

@@ -13,6 +13,15 @@
     1. Написати упит којим се приказујe извештај о запосленима у једној колони са новим заглављем
     "Izvestaj" у виду реченице која садржи, име, презиме и датум запослења. 
     
+.. reveal:: upit_422a
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+    
+    ..  code::
+
+        SELECT ime+' '+prezime+' je poceo da radi '+CONVERT(varchar,datum_zaposlenja) "Izvestaj"
+        FROM zaposleni
+
     Резултат упита треба да буде као на следећој слици:
     
     .. image:: ../../_images/slika_422a.png
@@ -37,6 +46,15 @@
     од прва два слова имена, прва три слова презимена и наставка @biblioteka22.rs за све чланове.
     Цела имејл адреса је исписана малим словима. 
     
+.. reveal:: upit_422b
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+    
+    ..  code::
+
+        SELECT LOWER(SUBSTRING(ime, 1, 2)+SUBSTRING(prezime, 1, 3))+'@biblioteka22.rs' "Mejl adrese"
+        FROM zaposleni
+
     Резултат упита треба да буде као на следећој слици:
     
     .. image:: ../../_images/slika_422b.png
@@ -56,6 +74,16 @@
 
     3. Написати упит којим се приказују подаци о члановима: број чланске карте, презиме и имејл адреса.
     Уколико члан нема унету имејл адресу, приказати "Nema mejl adresu".  
+
+    
+.. reveal:: upit_422c
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+    
+    ..  code::
+
+        SELECT broj_clanske_karte, prezime, ISNULL(mejl_adresa, 'Nema mejl adresu')
+        FROM clanovi
 
     Резултат упита треба да буде као на следећој слици:
     

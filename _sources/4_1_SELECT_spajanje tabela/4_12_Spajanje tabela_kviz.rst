@@ -4,8 +4,8 @@
 .. quizq::
 
     .. mchoice:: 4121
-        :answer_a: ORDER BY,SELECT, FROM, WHERE
-        :answer_b: FROM, SELECT,WHERE, ORDER BY
+        :answer_a: ORDER BY, SELECT, FROM, WHERE
+        :answer_b: FROM, SELECT, WHERE, ORDER BY
         :answer_c: SELECT, WHERE, FROM, ORDER BY 
         :answer_d: SELECT, FROM, WHERE, ORDER BY 
         :feedback_a: Нетачан одговор!

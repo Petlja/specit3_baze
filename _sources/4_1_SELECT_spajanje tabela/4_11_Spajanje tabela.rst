@@ -158,9 +158,10 @@
 Ови подаци, и презиме менаџера и презиме запосленог, налазе се у истој табели која има страни
 кључ *id_manadzera* који показује на примарни кључ исте табеле *id*. 
 
-::
- 
- zaposleni(id, ime, prezime, mejl, datum_zaposlenja, plata, id_menadzera)
+.. image:: ../../_images/slika_401m.png
+   :scale: 60 %
+   :align: center
+
 
 У овој ситуацији је обавезна употреба кратких назива табела који се користе само у упиту.
 У упиту ћемо симулирати ситуацију као да имамо две табеле: једну из које читамо податке о
@@ -326,7 +327,8 @@
 
 ::
 
- SELECT DISTINCT clanovi.ime+'  '+clanovi.prezime "Clan", autori.ime+' '+autori.prezime "Autor"
+ SELECT DISTINCT clanovi.ime+'  '+clanovi.prezime "Clan", 
+    autori.ime+' '+autori.prezime "Autor"
  FROM clanovi JOIN pozajmice
  ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
  JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
@@ -340,7 +342,8 @@
 
 ::
 
- SELECT DISTINCT clanovi.ime+'  '+clanovi.prezime "Clan", autori.ime+' '+autori.prezime "Autor"
+ SELECT DISTINCT clanovi.ime+'  '+clanovi.prezime "Clan", 
+    autori.ime+' '+autori.prezime "Autor"
  FROM clanovi JOIN pozajmice
  ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
  JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)

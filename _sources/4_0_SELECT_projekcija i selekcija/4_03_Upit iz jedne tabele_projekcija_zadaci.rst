@@ -62,8 +62,17 @@
     презиме приказати спојено са једним размаком између у једној колони. Измени заглавља колона
     у приказу резултата тако да буду редом "Clan biblioteke" и "Telefon clana".
     
-    Треба да се добије резултат као на следећој слици:
+.. reveal:: upit_403a
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
     
+    ..  code::
+
+        SELECT ime+' '+prezime "Clan biblioteke", telefon "Telefon clana" 
+        FROM clanovi
+
+    Треба да се добије резултат као на следећој слици:
+
     .. image:: ../../_images/slika_403a.png
         :scale: 80%
         :align: center

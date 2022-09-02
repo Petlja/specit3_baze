@@ -40,7 +40,7 @@
 .. questionnote::
 
  1. Написати упит којим се приказују запослени који зарађују исто као запослена са презименом
- „Лазовић“.
+ Лазовић.
 
 ::
 
@@ -169,10 +169,12 @@
 ::
 
  SELECT DISTINCT clanovi.broj_clanske_karte, prezime
- FROM clanovi JOIN pozajmice ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
+ FROM clanovi JOIN pozajmice 
+    ON (pozajmice.broj_clanske_karte=clanovi.broj_clanske_karte)
  JOIN primerci ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
- WHERE id_knjige = ANY(SELECT id_knjige 
-                       FROM pozajmice JOIN primerci 
-                       ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
-                       WHERE broj_clanske_karte = 33)
+ WHERE id_knjige = ANY(
+        SELECT id_knjige 
+        FROM pozajmice JOIN primerci 
+        ON (pozajmice.inventarski_broj=primerci.inventarski_broj)
+        WHERE broj_clanske_karte = 33)
  AND clanovi.broj_clanske_karte <> 33

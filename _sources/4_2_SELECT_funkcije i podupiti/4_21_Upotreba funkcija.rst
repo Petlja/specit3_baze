@@ -59,7 +59,7 @@
 
  2. Библиотека је одлучила да свим члановима додели посебне имејл адресе, које се формирају
  од првог слова имена, целог презимена и наставка @clanovi.rs. Написати упит којим се
- приказује имејл адреса члана који се презива „Зорановић“.
+ приказује имејл адреса члана који се презива Зорановић.
 
 **Функције могу да се користе у SELECT делу и у WHERE делу упита.**
 
@@ -149,8 +149,9 @@
 
 ::
 
- SELECT MIN(plata) "Najmanja plata", MAX(plata) "Najveca plata", AVG(plata) "Prosecna plata"
- FROM zaposleni
+    SELECT MIN(plata) "Najmanja plata", MAX(plata) "Najveca plata", 
+        AVG(plata) "Prosecna plata"
+    FROM zaposleni
 
 .. image:: ../../_images/slika_421e.png
    :width: 390
