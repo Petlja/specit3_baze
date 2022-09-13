@@ -119,6 +119,7 @@
    :showresult:
    :solutionquery: SELECT adresa, veb_sajt
                    FROM izdavaci
+                   WHERE naziv='CET'
 
 .. questionnote::
 

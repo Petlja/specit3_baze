@@ -48,7 +48,7 @@
      :width: 780
      :align: center
 
-   Све команде са слике налазе се и у фајлу  `salon_automobila.sql <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/specit_baze3/salon_automobila.sql>`_ 
+   Све команде са слике налазе се и у фајлу  `salon_automobila.sql <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/OnlineNastava/specit_baze3/_static/db/it3_Biblioteka.db>`_ 
    из којег могу да се прекопирају.
     
 

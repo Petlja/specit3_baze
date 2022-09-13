@@ -201,20 +201,24 @@ https://apex.oracle.com/en/
 
 ::
 
- INSERT INTO clanovi
- VALUES (11, 'Milica', 'Zoranovic', 'Dunavska 22, Beograd', '061-111-111', null)
- 
- INSERT INTO clanovi
- VALUES (22, 'Slavica', 'Mastilovic', 'Borska 1, Beograd', '062-222-332', 'slavica@gmail.com')
- 
- INSERT INTO clanovi
- VALUES (33, 'Olivera', 'Stosic', 'Kneza 121, Beograd', '062-987-432', 'olja@gmail.com')
- 
- INSERT INTO clanovi
- VALUES (44, 'Vukman', 'Mastilovic', 'Beogradska 8, Beograd', '061-323-656', 'vukman@gmail.com')
- 
- INSERT INTO clanovi
- VALUES (55, 'Marko', 'Markovic', 'Krunska 9, Beograd', '065-221-221', 
+   INSERT INTO clanovi
+   VALUES (11, 'Milica', 'Zoranovic', 'Dunavska 22, Beograd', '061-111-111', null)
+
+   INSERT INTO clanovi
+   VALUES (22, 'Slavica', 'Mastilovic', 'Borska 1, Beograd', '062-222-332',
+   'slavica@gmail.com')
+
+   INSERT INTO clanovi
+   VALUES (33, 'Olivera', 'Stosic', 'Kneza 121, Beograd', '062-987-432',
+   'olja@gmail.com')
+
+   INSERT INTO clanovi
+   VALUES (44, 'Vukman', 'Mastilovic', 'Beogradska 8, Beograd', '061-323-656',
+   'vukman@gmail.com')
+
+   INSERT INTO clanovi
+   VALUES (55, 'Marko', 'Markovic', 'Krunska 9, Beograd', '065-221-221',
+   'marko@gmail.com')
  
 |
 
@@ -508,13 +512,16 @@ https://apex.oracle.com/en/
 ::
 
  INSERT INTO kazne
- VALUES (1, 500, TO_DATE('18.02.2019.', 'dd.mm.yyyy.'), 13001, 22, TO_DATE('10.10.2018.', 'dd.mm.yyyy.'))
+ VALUES (1, 500, 
+ TO_DATE('18.02.2019.', 'dd.mm.yyyy.'), 13001, 22, TO_DATE('10.10.2018.', 'dd.mm.yyyy.'))
 
  INSERT INTO kazne
- VALUES (2, 500, TO_DATE('21.05.2019.', 'dd.mm.yyyy.'), 16001, 22, TO_DATE('07.03.2019.', 'dd.mm.yyyy.'))
+ VALUES (2, 500, 
+ TO_DATE('21.05.2019.', 'dd.mm.yyyy.'), 16001, 22, TO_DATE('07.03.2019.', 'dd.mm.yyyy.'))
  
  INSERT INTO kazne
- VALUES (3, 400, TO_DATE('15.04.2019.', 'dd.mm.yyyy.'), 17003, 55, TO_DATE('15.01.2019.', 'dd.mm.yyyy.'))
+ VALUES (3, 400, 
+ TO_DATE('15.04.2019.', 'dd.mm.yyyy.'), 17003, 55, TO_DATE('15.01.2019.', 'dd.mm.yyyy.'))
 
 |
 
