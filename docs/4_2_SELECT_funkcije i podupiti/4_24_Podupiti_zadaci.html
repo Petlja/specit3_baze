@@ -469,7 +469,7 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>1. Написати упит којим се приказују запослени који зарађују мање од запосленог са
-презименом „Јовић“.</p>
+презименом Јовић.</p>
 
     </div></div>
 
@@ -505,38 +505,25 @@ WHERE plata < (SELECT plata FROM zaposleni WHERE prezime='Jovic')"    db-show-re
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>2. Написати упит којим се приказују запослени који зарађују више од запосленог са
-презименом „Петровић“.</p>
+презименом Петровић.</p>
 
     </div></div>
 <p>Имајте на уму да у бази података постоје два запослена са презименом „Петровић“, па
 ће подупит вратити две вредности и цео упит мора да се прилагоди томе додавањем речи ALL.</p>
 
-    <div id="db_4242" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT prezime
-FROM zaposleni
-WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_424a"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span>
+<span class="n">FROM</span> <span class="n">zaposleni</span>
+<span class="n">WHERE</span> <span class="n">plata</span> <span class="o">&gt;</span> <span class="n">ALL</span><span class="p">(</span><span class="n">SELECT</span> <span class="n">plata</span> <span class="n">FROM</span> <span class="n">zaposleni</span> <span class="n">WHERE</span> <span class="n">prezime</span><span class="o">=</span><span class="s1">&#39;Petrovic&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_424a.png"><img alt="../_images/slika_424a.png" class="align-center" src="../_images/slika_424a.png" style="width: 610.4px; height: 200.0px;" /></a>
 
-
-            
     </div>
+    <div class="line-block">
+<div class="line"><br /></div>
+</div>
 
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
@@ -547,32 +534,19 @@ WHERE plata > ALL(SELECT plata FROM zaposleni WHERE prezime='Petrovic')"    db-s
 
     </div></div>
 
-    <div id="db_4243" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT clanovi.broj_clanske_karte, prezime
-FROM clanovi JOIN kazne ON (kazne.broj_clanske_karte=clanovi.broj_clanske_karte)
-WHERE iznos < ALL(SELECT iznos FROM kazne WHERE broj_clanske_karte=22)"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_424b"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">prezime</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">kazne</span> <span class="n">ON</span> <span class="p">(</span><span class="n">kazne</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">iznos</span> <span class="o">&lt;</span> <span class="n">ALL</span><span class="p">(</span><span class="n">SELECT</span> <span class="n">iznos</span> <span class="n">FROM</span> <span class="n">kazne</span> <span class="n">WHERE</span> <span class="n">broj_clanske_karte</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_424b.png"><img alt="../_images/slika_424b.png" class="align-center" src="../_images/slika_424b.png" style="width: 620.1999999999999px; height: 65.8px;" /></a>
 
-
-            
     </div>
+    <div class="line-block">
+<div class="line"><br /></div>
+</div>
 
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
@@ -654,39 +628,26 @@ WHERE id_izdavaca = (SELECT id_izdavaca FROM primerci JOIN knjige
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>6. Написати упит којим се приказују имена и презимена аутора који су радили на истим
-књигама као аутор са именом „Станка Матковић“.</p>
+књигама као аутор са именом Станка Матковић.</p>
 
     </div></div>
 
-    <div id="db_4246" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT DISTINCT prezime+' '+ime "Autor"
-FROM autori JOIN autori_knjige ON (autori_knjige.id_autora=autori.id_autora)
-WHERE id_knjige IN (SELECT id_knjige FROM autori JOIN autori_knjige
-                     ON (autori_knjige.id_autora=autori.id_autora)
-                     WHERE ime='Stanka' AND prezime='Matkovic')
-AND NOT(ime='Stanka' AND prezime='Matkovic')"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_424c"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">prezime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">ime</span> <span class="s2">&quot;Autor&quot;</span>
+<span class="n">FROM</span> <span class="n">autori</span> <span class="n">JOIN</span> <span class="n">autori_knjige</span> <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">id_knjige</span> <span class="n">IN</span> <span class="p">(</span><span class="n">SELECT</span> <span class="n">id_knjige</span> <span class="n">FROM</span> <span class="n">autori</span> <span class="n">JOIN</span> <span class="n">autori_knjige</span>
+    <span class="n">ON</span> <span class="p">(</span><span class="n">autori_knjige</span><span class="o">.</span><span class="n">id_autora</span><span class="o">=</span><span class="n">autori</span><span class="o">.</span><span class="n">id_autora</span><span class="p">)</span>
+    <span class="n">WHERE</span> <span class="n">ime</span><span class="o">=</span><span class="s1">&#39;Stanka&#39;</span> <span class="n">AND</span> <span class="n">prezime</span><span class="o">=</span><span class="s1">&#39;Matkovic&#39;</span><span class="p">)</span>
+<span class="n">AND</span> <span class="n">NOT</span><span class="p">(</span><span class="n">ime</span><span class="o">=</span><span class="s1">&#39;Stanka&#39;</span> <span class="n">AND</span> <span class="n">prezime</span><span class="o">=</span><span class="s1">&#39;Matkovic&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_424c.png"><img alt="../_images/slika_424c.png" class="align-center" src="../_images/slika_424c.png" style="width: 620.1999999999999px; height: 93.8px;" /></a>
 
-
-            
     </div>
+    <div class="line-block">
+<div class="line"><br /></div>
+</div>
 
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>

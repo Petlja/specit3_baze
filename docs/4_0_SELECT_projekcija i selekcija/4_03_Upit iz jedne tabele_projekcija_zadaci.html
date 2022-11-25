@@ -469,7 +469,9 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>Написати упит којим се приказују сви подаци о запосленим особама у библиотеци.</p>
+<ol class="arabic simple">
+<li><p>Написати упит којим се приказују сви подаци о запосленим особама у библиотеци.</p></li>
+</ol>
 
     </div></div>
 
@@ -503,12 +505,12 @@ FROM zaposleni"    db-show-result>
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>Написати упит којим се приказују називи и адресе веб-сајтова свих издавача. Уреди приказ
+<p>2. Написати упит којим се приказују називи и адресе веб-сајтова свих издавача. Уреди приказ
 по називу.</p>
 
     </div></div>
 
-    <div id="db_4032" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT *
+    <div id="db_4032" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT naziv, vebsajt
 FROM izdavaci
 ORDER BY naziv"    db-show-result> 
         <div class="row">
@@ -539,43 +541,7 @@ ORDER BY naziv"    db-show-result>
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>Написати упит којим се приказују имена, презимена и телефони чланова библиотеке. Име и
-презиме приказати спојено са једним размаком између у једној колони. Измени заглавља колона
-у приказу резултата тако да буду редом ”Clan biblioteke“ и ”Telefon clana“.</p>
-
-    </div></div>
-
-    <div id="db_4033" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime+' '+prezime "Clan biblioteke", telefon "Telefon clana"
-FROM clanovi"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
-
-
-            
-    </div>
-
-    <div class="note-wrapper questionnote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
-        <div class="course-content">
-<p>Написати упит којим се приказују број чланске карте члана коме је издата казна, датум плаћања
+<p>3. Написати упит којим се приказују број чланске карте члана коме је издата казна, датум плаћања
 казне, износ казне и како би изгледао износ казне умањен за 15% за оне који плате казну у
 најкраћем року.</p>
 
@@ -611,7 +577,7 @@ FROM kazne"    db-show-result>
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>Написати упит којим се приказују број чланске карте, инвентарски број и датум узимања свих
+<p>4. Написати упит којим се приказују број чланске карте, инвентарски број и датум узимања свих
 позајмица сортиран према броју чланске карте. Уколико исти члан има више позајмица, сортирати
 их опадајуће по датуму издавања књиге.</p>
 
@@ -643,7 +609,27 @@ ORDER BY broj_clanske_karte, datum_uzimanja DESC"    db-show-result>
 
             
     </div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>5. Написати упит којим се приказују имена, презимена и телефони чланова библиотеке. Име и
+презиме приказати спојено са једним размаком између у једној колони. Измени заглавља колона
+у приказу резултата тако да буду редом „Clan biblioteke” и „Telefon clana”.</p>
+
+    </div></div>
+
+    <div data-component="reveal" id="upit_403a"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">prezime</span> <span class="s2">&quot;Clan biblioteke&quot;</span><span class="p">,</span> <span class="n">telefon</span> <span class="s2">&quot;Telefon clana&quot;</span>
+<span class="n">FROM</span> <span class="n">clanovi</span>
+</pre></div>
 </div>
+<p>Треба да се добије резултат као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_403a.png"><img alt="../_images/slika_403a.png" class="align-center" src="../_images/slika_403a.png" style="width: 608.0px; height: 173.60000000000002px;" /></a>
+
+    </div>
+    </div>
 
 
     </div>

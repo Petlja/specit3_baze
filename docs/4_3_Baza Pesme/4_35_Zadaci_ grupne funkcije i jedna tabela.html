@@ -482,8 +482,8 @@
     </div></div>
 
     <div data-component="reveal" id="db_4351"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">velicina</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">GB</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">velicina</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1024</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">.</span><span class="mi">0</span><span class="p">)</span> <span class="k">AS</span> <span class="n">GB</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span><span class="p">;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p1.png"><img alt="../_images/slika_435p1.png" class="align-center" src="../_images/slika_435p1.png" style="width: 450px;" /></a>
@@ -501,8 +501,8 @@
     </div></div>
 
     <div data-component="reveal" id="db_4352"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">Min</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">najkraca</span><span class="p">,</span><span class="w"> </span><span class="k">Max</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">najduza</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">Min</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span> <span class="k">AS</span> <span class="n">najkraca</span><span class="p">,</span> <span class="k">Max</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span> <span class="k">AS</span> <span class="n">najduza</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span><span class="p">;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p2.png"><img alt="../_images/slika_435p2.png" class="align-center" src="../_images/slika_435p2.png" style="width: 450px;" /></a>
@@ -520,8 +520,8 @@
     </div></div>
 
     <div data-component="reveal" id="db_4353"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">zanr</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">zanr</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p3.png"><img alt="../_images/slika_435p3.png" class="align-center" src="../_images/slika_435p3.png" style="width: 450px;" /></a>
@@ -539,8 +539,8 @@
     </div></div>
 
     <div data-component="reveal" id="db_4354"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">zanr</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">zanr</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p4.png"><img alt="../_images/slika_435p4.png" class="align-center" src="../_images/slika_435p4.png" style="width: 450px;" /></a>
@@ -558,8 +558,8 @@
     </div></div>
 
     <div data-component="reveal" id="db_4355"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">album</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">album</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p5.png"><img alt="../_images/slika_435p5.png" class="align-center" src="../_images/slika_435p5.png" style="width: 450px;" /></a>
@@ -577,9 +577,9 @@
     </div></div>
 
     <div data-component="reveal" id="db_4356"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">id_zanr</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"></span>
-<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id_zanr</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">id_zanr</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">id_zanr</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p6.png"><img alt="../_images/slika_435p6.png" class="align-center" src="../_images/slika_435p6.png" style="width: 450px;" /></a>
@@ -597,10 +597,10 @@
     </div></div>
 
     <div data-component="reveal" id="db_4357"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">id_album</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">trajanje_albuma</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"></span>
-<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id_album</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">trajanje_albuma</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">id_album</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">trajanje</span><span class="p">)</span> <span class="k">AS</span> <span class="n">trajanje_albuma</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">id_album</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">trajanje_albuma</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p7.png"><img alt="../_images/slika_435p7.png" class="align-center" src="../_images/slika_435p7.png" style="width: 450px;" /></a>
@@ -618,11 +618,11 @@
     </div></div>
 
     <div data-component="reveal" id="db_4358"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">broj</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">plejlista_kompozicija</span><span class="w"></span>
-<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id_plejlista</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">broj</span><span class="w"> </span><span class="k">DESC</span><span class="w"></span>
-<span class="k">LIMIT</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">broj</span>
+<span class="k">FROM</span> <span class="n">plejlista_kompozicija</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">id_plejlista</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">broj</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_435p8.png"><img alt="../_images/slika_435p8.png" class="align-center" src="../_images/slika_435p8.png" style="width: 450px;" /></a>

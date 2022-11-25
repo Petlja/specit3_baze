@@ -501,7 +501,7 @@ Ana, Milica, Petar… Међутим, вредност атрибута може
 <ul class="simple">
 <li><p><em>broj indeksa</em> – обележен тарабицом, примарни јединствени идентификатор,</p></li>
 <li><p><em>JMBG</em> – два члана не могу да имају исти ЈМБГ, али овај атрибут нећемо изабрати као примарни јединствени идентификатор зато што његов опсег вредности далеко премашује број студената једног факултета,</p></li>
-<li><p><em>broj lične karte i pasoš</em> – два студента не могу да имају исте бројеве пасоша и личне карте, али ни један од ова два податка никад нећемо узети као примарни јединствени идентификатор зато што се мењају једном у десет година. Може се десити и да неки студенти немају пасош, а вредност примарног јединственог идентификатора мора да постоји за сваку инстанцу.</p></li>
+<li><p><em>broj lične karte</em> и <em>pasoš</em> – два студента не могу да имају исте бројеве пасоша и личне карте, али ни један од ова два податка никад нећемо узети као примарни јединствени идентификатор зато што се мењају једном у десет година. Може се десити и да неки студенти немају пасош, а вредност примарног јединственог идентификатора мора да постоји за сваку инстанцу.</p></li>
 </ul>
 <p>Иако, на пример, два предмета не могу да имају исти назив, тај атрибут нећемо изабрати као примарни јединствени
 идентификатор јер је то текстуални податак различите дужине за различите инстанце. Примарни јединствени идентификатор
@@ -609,18 +609,18 @@ Ana, Milica, Petar… Међутим, вредност атрибута може
 свих табела које ће база података имати. Опис сваке табеле мора да садржи списак колона, њихових типова података и
 списак свих ограничења, као што су примарни и страни кључеви, ограничење јединствености и ограничење <em>not null</em>.</p>
 <p>Прво се мапирају ентитети који као табеле неће имати стране кључеве.</p>
-<a class="reference internal image-reference" href="../_images/tabela_241b.png"><img alt="../_images/tabela_241b.png" class="align-center" src="../_images/tabela_241b.png" style="width: 304.8px; height: 144.8px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241c.png"><img alt="../_images/tabela_241c.png" class="align-center" src="../_images/tabela_241c.png" style="width: 316.8px; height: 316.8px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241d.png"><img alt="../_images/tabela_241d.png" class="align-center" src="../_images/tabela_241d.png" style="width: 318.40000000000003px; height: 343.20000000000005px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241e.png"><img alt="../_images/tabela_241e.png" class="align-center" src="../_images/tabela_241e.png" style="width: 304.8px; height: 174.4px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241f.png"><img alt="../_images/tabela_241f.png" class="align-center" src="../_images/tabela_241f.png" style="width: 316.8px; height: 232.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241b.png"><img alt="../_images/tabela_241b.png" class="align-center" src="../_images/tabela_241b.png" style="width: 228.6px; height: 108.6px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241c.png"><img alt="../_images/tabela_241c.png" class="align-center" src="../_images/tabela_241c.png" style="width: 237.6px; height: 237.6px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241d.png"><img alt="../_images/tabela_241d.png" class="align-center" src="../_images/tabela_241d.png" style="width: 238.79999999999998px; height: 257.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241e.png"><img alt="../_images/tabela_241e.png" class="align-center" src="../_images/tabela_241e.png" style="width: 228.6px; height: 130.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241f.png"><img alt="../_images/tabela_241f.png" class="align-center" src="../_images/tabela_241f.png" style="width: 237.6px; height: 174.0px;" /></a>
 <p>Следи пример како ће изгледати попуњене табеле у бази података.</p>
-<a class="reference internal image-reference" href="../_images/tabela_241g.png"><img alt="../_images/tabela_241g.png" class="align-center" src="../_images/tabela_241g.png" style="width: 497.6px; height: 257.6px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241h.png"><img alt="../_images/tabela_241h.png" class="align-center" src="../_images/tabela_241h.png" style="width: 1008.8000000000001px; height: 222.4px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241i.png"><img alt="../_images/tabela_241i.png" class="align-center" src="../_images/tabela_241i.png" style="width: 587.2px; height: 230.4px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241j.png"><img alt="../_images/tabela_241j.png" class="align-center" src="../_images/tabela_241j.png" style="width: 686.4000000000001px; height: 343.20000000000005px;" /></a>
-<a class="reference internal image-reference" href="../_images/tabela_241k.png"><img alt="../_images/tabela_241k.png" class="align-center" src="../_images/tabela_241k.png" style="width: 902.4000000000001px; height: 314.40000000000003px;" /></a>
-<a class="reference internal image-reference" href="../_images/slika_241l.png"><img alt="../_images/slika_241l.png" class="align-center" src="../_images/slika_241l.png" style="width: 987.2px; height: 552.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241g.png"><img alt="../_images/tabela_241g.png" class="align-center" src="../_images/tabela_241g.png" style="width: 373.2px; height: 193.2px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241h.png"><img alt="../_images/tabela_241h.png" class="align-center" src="../_images/tabela_241h.png" style="width: 756.6px; height: 166.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241i.png"><img alt="../_images/tabela_241i.png" class="align-center" src="../_images/tabela_241i.png" style="width: 440.4px; height: 172.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241j.png"><img alt="../_images/tabela_241j.png" class="align-center" src="../_images/tabela_241j.png" style="width: 514.8px; height: 257.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/tabela_241k.png"><img alt="../_images/tabela_241k.png" class="align-center" src="../_images/tabela_241k.png" style="width: 676.8px; height: 235.79999999999998px;" /></a>
+<a class="reference internal image-reference" href="../_images/slika_241l.png"><img alt="../_images/slika_241l.png" class="align-center" src="../_images/slika_241l.png" style="width: 740.4px; height: 414.0px;" /></a>
 <a class="reference internal image-reference" href="../_images/slika_241m.png"><img alt="../_images/slika_241m.png" class="align-center" src="../_images/slika_241m.png" style="width: 767.2px; height: 604.8000000000001px;" /></a>
 </div>
 

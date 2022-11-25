@@ -485,10 +485,10 @@
     </div></div>
 
     <div data-component="reveal" id="db_4141"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">naziv</span><span class="o">+</span><span class="s1">&#39; - &#39;</span><span class="o">+</span><span class="n">oznaka</span><span class="w"> </span><span class="ss">&quot;Model&quot;</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">modeli</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">broj_vrata</span><span class="o">=</span><span class="mi">5</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">naziv</span><span class="p">,</span><span class="w"> </span><span class="n">oznaka</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">naziv</span><span class="o">+</span><span class="s1">&#39; - &#39;</span><span class="o">+</span><span class="n">oznaka</span> <span class="ss">&quot;Model&quot;</span>
+<span class="k">FROM</span> <span class="n">modeli</span> <span class="k">JOIN</span> <span class="n">proizvodjaci</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span>
+<span class="k">WHERE</span> <span class="n">broj_vrata</span><span class="o">=</span><span class="mi">5</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">naziv</span><span class="p">,</span> <span class="n">oznaka</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_414b.png"><img alt="../_images/slika_414b.png" class="align-center" src="../_images/slika_414b.png" style="width: 450px;" /></a>
@@ -505,11 +505,11 @@
     </div></div>
 
     <div data-component="reveal" id="db_4142"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">oznaka</span><span class="p">,</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="ss">&quot;proizvodjac&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="ss">&quot;kategorija&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">opis</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">modeli</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span><span class="w"></span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">kategorije</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">oznaka</span><span class="p">,</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span> <span class="ss">&quot;proizvodjac&quot;</span><span class="p">,</span>
+<span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span> <span class="ss">&quot;kategorija&quot;</span><span class="p">,</span> <span class="n">opis</span>
+<span class="k">FROM</span> <span class="n">modeli</span> <span class="k">JOIN</span> <span class="n">proizvodjaci</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span>
+<span class="k">JOIN</span> <span class="n">kategorije</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_414c.png"><img alt="../_images/slika_414c.png" class="align-center" src="../_images/slika_414c.png" style="width: 450px;" /></a>
@@ -527,10 +527,10 @@
     </div></div>
 
     <div data-component="reveal" id="db_4143"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">oznaka</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">modeli</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span><span class="w"></span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">kategorije</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;Mercedes-Benz&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;limuzina&#39;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">oznaka</span>
+<span class="k">FROM</span> <span class="n">modeli</span> <span class="k">JOIN</span> <span class="n">proizvodjaci</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span>
+<span class="k">JOIN</span> <span class="n">kategorije</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span>
+<span class="k">WHERE</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;Mercedes-Benz&#39;</span> <span class="k">AND</span> <span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;limuzina&#39;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_414d.png"><img alt="../_images/slika_414d.png" class="align-center" src="../_images/slika_414d.png" style="width: 450px;" /></a>
@@ -548,10 +548,10 @@
     </div></div>
 
     <div data-component="reveal" id="db_4144"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">modeli</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">tip_goriva</span><span class="o">=</span><span class="s1">&#39;dizel&#39;</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">modeli</span> <span class="k">JOIN</span> <span class="n">proizvodjaci</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span>
+<span class="k">WHERE</span> <span class="n">tip_goriva</span><span class="o">=</span><span class="s1">&#39;dizel&#39;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span>
 </pre></div>
 </div>
 
@@ -568,11 +568,11 @@
     </div></div>
 
     <div data-component="reveal" id="db_4145"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">modeli</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span><span class="w"></span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">kategorije</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;dzip&#39;</span><span class="w"></span>
-<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">modeli</span> <span class="k">JOIN</span> <span class="n">proizvodjaci</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">pib</span><span class="o">=</span><span class="n">proizvodjaci</span><span class="p">.</span><span class="n">pib</span><span class="p">)</span>
+<span class="k">JOIN</span> <span class="n">kategorije</span> <span class="k">ON</span> <span class="p">(</span><span class="n">modeli</span><span class="p">.</span><span class="n">id_kategorije</span><span class="o">=</span><span class="n">kategorije</span><span class="p">.</span><span class="n">id_kategorije</span><span class="p">)</span>
+<span class="k">WHERE</span> <span class="n">kategorije</span><span class="p">.</span><span class="n">naziv</span><span class="o">=</span><span class="s1">&#39;dzip&#39;</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">proizvodjaci</span><span class="p">.</span><span class="n">naziv</span>
 </pre></div>
 </div>
 

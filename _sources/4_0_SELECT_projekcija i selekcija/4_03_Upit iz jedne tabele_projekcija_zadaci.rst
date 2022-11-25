@@ -27,7 +27,7 @@
 .. dbpetlja:: db_4032
    :dbfile: it3_biblioteka.sql
    :showresult:
-   :solutionquery: SELECT naziv, vebsajt
+   :solutionquery: SELECT naziv, veb_sajt
                    FROM izdavaci
                    ORDER BY naziv
 

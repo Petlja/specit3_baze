@@ -495,7 +495,7 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>1. Написати упит којим се приказују запослени који зарађују исто као запослена са презименом
-„Лазовић“.</p>
+Лазовић.</p>
 
     </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">plata</span>
@@ -638,12 +638,14 @@
 
     </div></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">DISTINCT</span> <span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">prezime</span>
-<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">clanovi</span> <span class="n">JOIN</span> <span class="n">pozajmice</span>
+   <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="o">=</span><span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span><span class="p">)</span>
 <span class="n">JOIN</span> <span class="n">primerci</span> <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
-<span class="n">WHERE</span> <span class="n">id_knjige</span> <span class="o">=</span> <span class="n">ANY</span><span class="p">(</span><span class="n">SELECT</span> <span class="n">id_knjige</span>
-                      <span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">primerci</span>
-                      <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
-                      <span class="n">WHERE</span> <span class="n">broj_clanske_karte</span> <span class="o">=</span> <span class="mi">33</span><span class="p">)</span>
+<span class="n">WHERE</span> <span class="n">id_knjige</span> <span class="o">=</span> <span class="n">ANY</span><span class="p">(</span>
+       <span class="n">SELECT</span> <span class="n">id_knjige</span>
+       <span class="n">FROM</span> <span class="n">pozajmice</span> <span class="n">JOIN</span> <span class="n">primerci</span>
+       <span class="n">ON</span> <span class="p">(</span><span class="n">pozajmice</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="o">=</span><span class="n">primerci</span><span class="o">.</span><span class="n">inventarski_broj</span><span class="p">)</span>
+       <span class="n">WHERE</span> <span class="n">broj_clanske_karte</span> <span class="o">=</span> <span class="mi">33</span><span class="p">)</span>
 <span class="n">AND</span> <span class="n">clanovi</span><span class="o">.</span><span class="n">broj_clanske_karte</span> <span class="o">&lt;&gt;</span> <span class="mi">33</span>
 </pre></div>
 </div>

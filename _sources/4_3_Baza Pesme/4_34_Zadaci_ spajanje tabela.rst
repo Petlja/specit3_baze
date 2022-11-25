@@ -90,9 +90,9 @@
 	
 		SELECT kompozicija.naziv
 		FROM kompozicija JOIN
-			zanr ON kompozicija.id_zanr = zanr.id_zanr JOIN
-			format ON kompozicija.id_format = format.id_format
-		WHERE zanr.naziv = 'Pop' AND format.naziv LIKE '%AAC%'
+     		album ON kompozicija.id_album = album.id_album JOIN
+     		izvodjac ON izvodjac.id_izvodjac = album.id_izvodjac
+		WHERE izvodjac.naziv = 'Queen'
 	
 	.. image:: ../../_images/slika_434p4.png
 		:width: 450

@@ -482,9 +482,9 @@
     </div></div>
 
     <div data-component="reveal" id="db_4341"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">,</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">zanr</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="n">zanr</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span> <span class="k">AS</span> <span class="n">kompozicija</span><span class="p">,</span> <span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span> <span class="k">AS</span> <span class="n">zanr</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span> <span class="k">JOIN</span>
+<span class="n">zanr</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span> <span class="o">=</span> <span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_434p1.png"><img alt="../_images/slika_434p1.png" class="align-center" src="../_images/slika_434p1.png" style="width: 450px;" /></a>
@@ -496,16 +496,16 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <ol class="arabic simple" start="2">
-<li><p>Прикажи називе свих џез композиција (жанр је Jazz).</p></li>
+<li><p>Прикажи називе свих џез композиција (жанр је „Jazz”).</p></li>
 </ol>
 
     </div></div>
 
     <div data-component="reveal" id="db_4342"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">zanr</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Jazz&#39;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span> <span class="k">JOIN</span>
+        <span class="n">zanr</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span> <span class="o">=</span> <span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span>
+<span class="k">WHERE</span> <span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span> <span class="o">=</span> <span class="s1">&#39;Jazz&#39;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_434p2.png"><img alt="../_images/slika_434p2.png" class="align-center" src="../_images/slika_434p2.png" style="width: 450px;" /></a>
@@ -517,17 +517,17 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <ol class="arabic simple" start="3">
-<li><p>Прикажи називе свих поп композиција (жанр је Pop) које су снимљене у формату AAC.</p></li>
+<li><p>Прикажи називе свих поп композиција (жанр је „Pop”) које су снимљене у формату „AAC”.</p></li>
 </ol>
 
     </div></div>
 
     <div data-component="reveal" id="db_4343"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">zanr</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">format</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">.</span><span class="n">id_format</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Pop&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">format</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%AAC%&#39;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span> <span class="k">JOIN</span>
+        <span class="n">zanr</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span> <span class="o">=</span> <span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span> <span class="k">JOIN</span>
+        <span class="n">format</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_format</span> <span class="o">=</span> <span class="n">format</span><span class="p">.</span><span class="n">id_format</span>
+<span class="k">WHERE</span> <span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span> <span class="o">=</span> <span class="s1">&#39;Pop&#39;</span> <span class="k">AND</span> <span class="n">format</span><span class="p">.</span><span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;%AAC%&#39;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_434p3.png"><img alt="../_images/slika_434p3.png" class="align-center" src="../_images/slika_434p3.png" style="width: 450px;" /></a>
@@ -539,17 +539,17 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <ol class="arabic simple" start="4">
-<li><p>Прикажи називе свих песама групе <em>Queen</em>.</p></li>
+<li><p>Прикажи називе свих песама групе „Queen”.</p></li>
 </ol>
 
     </div></div>
 
     <div data-component="reveal" id="db_4344"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">zanr</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">format</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">.</span><span class="n">id_format</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Pop&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">format</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%AAC%&#39;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span> <span class="k">JOIN</span>
+        <span class="n">zanr</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span> <span class="o">=</span> <span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span> <span class="k">JOIN</span>
+        <span class="n">format</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_format</span> <span class="o">=</span> <span class="n">format</span><span class="p">.</span><span class="n">id_format</span>
+<span class="k">WHERE</span> <span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span> <span class="o">=</span> <span class="s1">&#39;Pop&#39;</span> <span class="k">AND</span> <span class="n">format</span><span class="p">.</span><span class="n">naziv</span> <span class="k">LIKE</span> <span class="s1">&#39;%AAC%&#39;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_434p4.png"><img alt="../_images/slika_434p4.png" class="align-center" src="../_images/slika_434p4.png" style="width: 450px;" /></a>
@@ -561,18 +561,18 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <ol class="arabic simple" start="5">
-<li><p>Приказати називе свих различитих жанрова композиција групе <em>Iron Maiden</em>.</p></li>
+<li><p>Приказати називе свих различитих жанрова композиција групе „Iron Maiden”.</p></li>
 </ol>
 
     </div></div>
 
     <div data-component="reveal" id="db_4345"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј">
-    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">kompozicija</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">album</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_album</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">album</span><span class="p">.</span><span class="n">id_album</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">izvodjac</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">izvodjac</span><span class="p">.</span><span class="n">id_izvodjac</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">album</span><span class="p">.</span><span class="n">id_izvodjac</span><span class="w"> </span><span class="k">JOIN</span><span class="w"></span>
-<span class="w">        </span><span class="n">zanr</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">izvodjac</span><span class="p">.</span><span class="n">naziv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Iron Maiden&#39;</span><span class="w"></span>
+    <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">zanr</span><span class="p">.</span><span class="n">naziv</span>
+<span class="k">FROM</span> <span class="n">kompozicija</span> <span class="k">JOIN</span>
+        <span class="n">album</span> <span class="k">ON</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_album</span> <span class="o">=</span> <span class="n">album</span><span class="p">.</span><span class="n">id_album</span> <span class="k">JOIN</span>
+        <span class="n">izvodjac</span> <span class="k">ON</span> <span class="n">izvodjac</span><span class="p">.</span><span class="n">id_izvodjac</span> <span class="o">=</span> <span class="n">album</span><span class="p">.</span><span class="n">id_izvodjac</span> <span class="k">JOIN</span>
+        <span class="n">zanr</span> <span class="k">ON</span> <span class="n">zanr</span><span class="p">.</span><span class="n">id_zanr</span> <span class="o">=</span> <span class="n">kompozicija</span><span class="p">.</span><span class="n">id_zanr</span>
+<span class="k">WHERE</span> <span class="n">izvodjac</span><span class="p">.</span><span class="n">naziv</span> <span class="o">=</span> <span class="s1">&#39;Iron Maiden&#39;</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/slika_434p5.png"><img alt="../_images/slika_434p5.png" class="align-center" src="../_images/slika_434p5.png" style="width: 450px;" /></a>

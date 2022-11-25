@@ -662,32 +662,16 @@ WHERE izdavaci.naziv='CET'"    db-show-result>
 
     </div></div>
 
-    <div id="db_4136" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT z.mejl "Mejl zaposlenog", m.mejl "Mejl menadzera"
-FROM zaposleni z JOIN zaposleni m ON (z.id_menadzera=m.id)"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_413a"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">z</span><span class="o">.</span><span class="n">mejl</span> <span class="s2">&quot;Mejl zaposlenog&quot;</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">mejl</span> <span class="s2">&quot;Mejl menadzera&quot;</span>
+<span class="n">FROM</span> <span class="n">zaposleni</span> <span class="n">z</span> <span class="n">JOIN</span> <span class="n">zaposleni</span> <span class="n">m</span> <span class="n">ON</span> <span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">id_menadzera</span><span class="o">=</span><span class="n">m</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Треба да се добије резултат као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_413a.png"><img alt="../_images/slika_413a.png" class="align-center" src="../_images/slika_413a.png" style="width: 512.0px; height: 212.8px;" /></a>
 
-
-            
     </div>
-
+    
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
@@ -886,8 +870,8 @@ WHERE broj_clanske_karte=33"    db-show-result>
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>12. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан „Милица
-Зорановић“, али без понављања.</p>
+<p>12. Написати упит којим се приказују називи књигa које је из библиотеке узимао члан Милица
+Зорановић, али без понављања.</p>
 
     </div></div>
 
@@ -924,7 +908,7 @@ WHERE ime='Milica' AND prezime='Zoranovic'"    db-show-result>
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-<p>13. Написати упит којим се приказују имена чланова библиотеке и називи издавача чије су књиге
+<p>13. Написати упит којим се приказују имена и презимена чланова библиотеке и називи издавача чије су књиге
 читали, без понављања (исти члан је могао да чита више књига истог издавача). Резултат уредити
 по називу издавача.</p>
 

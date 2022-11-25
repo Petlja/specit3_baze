@@ -469,38 +469,20 @@
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>1. Написати упит којим се приказујe извештај о запосленима у једној колони са новим заглављем
-„Izvestaj“ у виду реченице која садржи, име, презиме и датум запослења, као у примеру
-који следи:</p>
-<p><code class="docutils literal notranslate"><span class="pre">Aleksandar</span> <span class="pre">Jovic</span> <span class="pre">je</span> <span class="pre">poceo</span> <span class="pre">da</span> <span class="pre">radi</span> <span class="pre">2014-05-25</span></code></p>
+„Izvestaj” у виду реченице која садржи, име, презиме и датум запослења.</p>
 
     </div></div>
 
-    <div id="db_4221" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT ime+' '+prezime+' je poceo da radi '+CONVERT(varchar,datum_zaposlenja) "Izvestaj"
-FROM zaposleni"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_422a"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">ime</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">prezime</span><span class="o">+</span><span class="s1">&#39; je poceo da radi &#39;</span><span class="o">+</span><span class="n">CONVERT</span><span class="p">(</span><span class="n">varchar</span><span class="p">,</span><span class="n">datum_zaposlenja</span><span class="p">)</span> <span class="s2">&quot;Izvestaj&quot;</span>
+<span class="n">FROM</span> <span class="n">zaposleni</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_422a.png"><img alt="../_images/slika_422a.png" class="align-center" src="../_images/slika_422a.png" style="width: 610.4px; height: 278.40000000000003px;" /></a>
 
-
-            
     </div>
-
+    
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
@@ -511,67 +493,35 @@ FROM zaposleni"    db-show-result>
 
     </div></div>
 
-    <div id="db_4222" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT LOWER(SUBSTRING(ime, 1, 2)+SUBSTRING(prezime, 1, 3))+'@biblioteka22.rs' "Mejl adrese"
-FROM zaposleni"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_422b"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">LOWER</span><span class="p">(</span><span class="n">SUBSTRING</span><span class="p">(</span><span class="n">ime</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">SUBSTRING</span><span class="p">(</span><span class="n">prezime</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;@biblioteka22.rs&#39;</span> <span class="s2">&quot;Mejl adrese&quot;</span>
+<span class="n">FROM</span> <span class="n">zaposleni</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_422b.png"><img alt="../_images/slika_422b.png" class="align-center" src="../_images/slika_422b.png" style="width: 611.2px; height: 278.40000000000003px;" /></a>
 
-
-            
     </div>
-
+    
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
 <p>3. Написати упит којим се приказују подаци о члановима: број чланске карте, презиме и имејл адреса.
-Уколико члан нема унету имејл адресу, приказати „Nema mejl adresu“.</p>
+Уколико члан нема унету имејл адресу, приказати „Nema mejl adresu”.</p>
 
     </div></div>
 
-    <div id="db_4223" class="db" data-db-name="it3_biblioteka.sql" db-check = "SELECT broj_clanske_karte, prezime, ISNULL(mejl_adresa, 'Nema mejl adresu')
-FROM clanovi"    db-show-result> 
-        <div class="row">
-        <div class="db-input"> 
-            <div class= "editor-div-db"> 
-            <textarea class="query" rows='6'></textarea>
-            </div>
-            <br>
-            <div class="row">
-                <button class='runQuery btn-db btn-success'>Тестирај упит</button>
-                <button class='test-q btn-db btn-success'>Изврши упит</button>
-                
-                <button class='showresult btn-db btn-success'>Прикажи очекивани резултат</button>
-            </div>
-            <br>
-            <div class='result'  disabled>
-        </div>
-        </div>
-        <div class="stats" > 
-        </div>
-        </div>
+    <div data-component="reveal" id="upit_422c"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SELECT</span> <span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">prezime</span><span class="p">,</span> <span class="n">ISNULL</span><span class="p">(</span><span class="n">mejl_adresa</span><span class="p">,</span> <span class="s1">&#39;Nema mejl adresu&#39;</span><span class="p">)</span>
+<span class="n">FROM</span> <span class="n">clanovi</span>
+</pre></div>
+</div>
+<p>Резултат упита треба да буде као на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/slika_422c.png"><img alt="../_images/slika_422c.png" class="align-center" src="../_images/slika_422c.png" style="width: 606.4px; height: 170.4px;" /></a>
 
-
-            
     </div>
-
+    
     <div class="note-wrapper questionnote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 

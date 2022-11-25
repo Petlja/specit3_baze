@@ -545,7 +545,7 @@
 <span class="n">broj_clanske_karte</span> <span class="n">INT</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
 <span class="n">datum_uzimanja</span> <span class="n">DATE</span> <span class="n">NOT</span> <span class="n">NULL</span><span class="p">,</span>
 <span class="n">FOREIGN</span> <span class="n">KEY</span> <span class="p">(</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">datum_uzimanja</span><span class="p">)</span>
-<span class="n">REFERENCES</span> <span class="n">pozajmice</span><span class="p">(</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">datum_uzimanja</span><span class="p">)</span>
+<span class="n">REFERENCES</span> <span class="n">pozajmice</span><span class="p">(</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">datum_uzimanja</span><span class="p">),</span>
 <span class="n">UNIQUE</span> <span class="p">(</span><span class="n">inventarski_broj</span><span class="p">,</span> <span class="n">broj_clanske_karte</span><span class="p">,</span> <span class="n">datum_uzimanja</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 </div>
