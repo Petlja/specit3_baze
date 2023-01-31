@@ -190,7 +190,7 @@ lessons:
         file: 3_04_Komanda CREATE TABLE_kviz.rst
         guid: 8dd3abe4-297e-4b5f-9bdc-846b955bdfa7  
       - type: reading
-        title: Задатак - салон аутомобила
+        title: Задатак - направи базу за салон аутомобила 
         file: 3_05_Komanda CREATE TABLE_zadatak.rst
         guid: 71390859-703b-488a-8415-6c0f1aaf5180  
       - type: reading
@@ -322,7 +322,7 @@ lessons:
         file: 4_31_Kreiranje baze pesme_1.rst
         guid: 7b2bd923-30a1-416d-af7f-b31d83f8ac31
       - type: reading
-        title: База података за продају дигиталних композиција
+        title: База података за продају дигиталних композиција - наставак
         file: 4_32_Kreiranje baze pesme_2.rst
         guid: 8df796b0-3449-40a6-8514-f23ef1c5e9a3
       - type: reading
