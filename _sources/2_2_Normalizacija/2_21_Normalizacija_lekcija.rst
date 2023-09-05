@@ -86,6 +86,6 @@ PROIZVOD: #id, naziv, cena, naziv_proizvođača, PIB_proizvođača, adresa_proiz
 
 Група атрибута који нису део примарног јединственог идентификатора *naziv_proizvođača*, *PIB_proizvođača*, *adresa_proizvođača* чини засебну целину која описује произвођача. Ситуација се разрешава тако што се уводи нови ентитет чије атрибуте чини уочена група атрибута.
 
-PROIZVOD: #id, naziv, cena.
+PROIZVOD: #id, naziv, cena, id_proizvođača.
 
-PROIZVOĐAČ: #id_proizvoda, naziv, PIB, adresa.
+PROIZVOĐAČ: #id_proizvođača, naziv, PIB, adresa.

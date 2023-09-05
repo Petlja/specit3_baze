@@ -101,7 +101,7 @@
    
 Следи дизајн будуће табеле у бази података за овај ентитет. 
 
-.. image:: ../../_images/tabela_301c.png
+.. image:: ../../_images/slika_301d_novo.png
    :width: 600
    :align: center
    

@@ -117,8 +117,9 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
    
    ::
    
-    SELECT naziv, opis FROM proizvodjaci
-	WHERE naziv='Dacia'
+    SELECT adresa FROM proizvodjaci
+    WHERE naziv='Dacia'
+
 	
    .. image:: ../../_images/slika_408k.png
      :width: 500
@@ -134,8 +135,9 @@ modeli(**id_modela**, oznaka, jacina_motora, broj_vrata, tip_goriva, *pib*, *id_
    
    ::
    
-    SELECT naziv, opis FROM kategorije
-	WHERE id_kategorije=3
+    SELECT naziv FROM kategorije 
+    WHERE id_kategorije=3
+
 	
    .. image:: ../../_images/slika_408l.png
      :width: 500

@@ -53,10 +53,11 @@
 .. dbpetlja:: db_4134
    :dbfile: it3_biblioteka.sql
    :showresult:
-   :solutionquery: SELECT inventarski_broj, knjige.naziv
+   :solutionquery: SELECT inventarski_broj
                    FROM primerci JOIN knjige ON (primerci.id_knjige=knjige.id_knjige)
                    JOIN izdavaci ON (knjige.id_izdavaca=izdavaci.id)
                    WHERE izdavaci.naziv='CET'
+
 
 .. questionnote::
 
