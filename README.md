@@ -2,9 +2,9 @@
 
 Ovaj repozitorijum posvećen je kursu za Baze podataka za treći razred specijalizovanih IT odeljenja. 
 
-Kurs je na Petljom portalu dotupan ovde: [uskoro](https://petlja.org/)
+Kurs je na Petljinom portalu dotupan ovde: [uskoro](https://petlja.org/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit3_baze/releases
+Kurs možete integrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit3_baze/releases
 
 ## Konverzija u *HTML*
 
