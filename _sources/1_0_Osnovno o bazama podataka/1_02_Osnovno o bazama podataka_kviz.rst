@@ -43,7 +43,7 @@
         :answer_b: 2
         :answer_c: 3
         :answer_d: 4
-        :correct: d
+        :correct: b
 
         Колико књига у библиотеци има издавач са називом СЕТ?
 		
